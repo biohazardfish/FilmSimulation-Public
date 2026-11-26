@@ -16,6 +16,7 @@ import subprocess
 ROOT = Path(__file__).resolve().parents[1]
 EXCLUDED_EXACT = {
     "AGENTS.md",
+    "PUBLIC_SNAPSHOT_MANIFEST.json",
     "docs/PUBLIC_RELEASE.md",
     "docs/round1_baseline.json",
     "intermediate/environment.json",

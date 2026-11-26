@@ -19,7 +19,7 @@ def load_script(name: str):
 
 def test_curated_snapshot_has_no_history_or_private_disclosures(tmp_path):
     audit = load_script("audit_public_snapshot")
-    if not (ROOT / ".git").exists():
+    if (ROOT / "PUBLIC_SNAPSHOT_MANIFEST.json").is_file():
         # A pristine snapshot is audited before bootstrap. After bootstrap, the
         # ignored RAW, cache, upstream checkout, virtual environment, and smoke
         # outputs are expected local state, so the test verifies the immutable

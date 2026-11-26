@@ -376,10 +376,10 @@
       "transformations": []
     },
     {
-      "bytes": 7444,
+      "bytes": 7481,
       "path": "scripts/build_public_snapshot.py",
-      "sha256": "5eb9803f0793bd787cce7583d000431758dc6f462fadad3647b8068f33fda5a6",
-      "source_sha256": "592875f49a3c0e047e5d846184a350217441af54969d45808fac16a9b43057f9",
+      "sha256": "4b47b4cab3927d156a1d237597a2db9ee0e79305cf42113951e21b8de30cb1af",
+      "source_sha256": "bc7d8077b89f8a49c88332f44839387eb7e39e3c43385e5dd00719c7dde6bfe9",
       "transformations": [
         "historical-username",
         "private-governance-name",
@@ -620,10 +620,10 @@
       "transformations": []
     },
     {
-      "bytes": 2437,
+      "bytes": 2459,
       "path": "tests/test_public_snapshot.py",
-      "sha256": "382f5f9d1727a5dfe66a8fa701256d0d96fdcb7f0288567e22dedc272701b7a5",
-      "source_sha256": "382f5f9d1727a5dfe66a8fa701256d0d96fdcb7f0288567e22dedc272701b7a5",
+      "sha256": "63c336620a86f6172e7db9f85566c75ad2a23ae7d4b79f3ed481e9866c43c02b",
+      "source_sha256": "63c336620a86f6172e7db9f85566c75ad2a23ae7d4b79f3ed481e9866c43c02b",
       "transformations": []
     },
     {
@@ -783,7 +783,7 @@
   "raw_input_included": false,
   "schema_version": 1,
   "snapshot_type": "history-free curated public research snapshot",
-  "source_commit": "ef980ddb37cec078def70fcdfe29fb2f19efe359",
+  "source_commit": "7501b83049b5a6c5adb4bfb011872df227923aad",
   "source_tree_dirty": false,
   "stale_rendered_roadmap_included": false
 }
