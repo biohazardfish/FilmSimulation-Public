@@ -1,0 +1,61 @@
+{
+  "elapsed_seconds": {
+    "pass_1": {
+      "cmy_film": 3.122443167027086,
+      "cmy_print": 258.21184933406767,
+      "final_print": 482.6548627909506,
+      "log_e_film": 2.4008239170070738,
+      "log_e_print": 242.7247214158997,
+      "negative_scan": 253.9064703329932,
+      "scene": 1.7443357500014827
+    },
+    "pass_2": {
+      "cmy_film": 3.0909556669648737,
+      "cmy_print": 240.27687087503728,
+      "final_print": 454.1808367909398,
+      "log_e_film": 2.5619187499396503,
+      "log_e_print": 246.3518342920579,
+      "negative_scan": 254.02370804105885,
+      "scene": 2.213870167033747
+    }
+  },
+  "evidence": "uncompressed float pixel SHA-256 of two separate full-resolution runs",
+  "matches": {
+    "cmy_film": true,
+    "cmy_print": true,
+    "final_print": true,
+    "log_e_film": true,
+    "log_e_print": true,
+    "negative_scan": true,
+    "scene": true
+  },
+  "pass_1_sha256_uncompressed_pixels": {
+    "cmy_film": "cdd347b63cc1cb6d0cffe0a63f6db6be621a0dfc39465e1cb24b31fdb4767065",
+    "cmy_print": "220e21334daf42f4bf239cabcbd5c1fa333ac15e6847e96b9db1c30982671756",
+    "final_print": "0cb48d20af763201c6bc5021e7cb606f6977b2a22fb196206010fa79ff2b67c0",
+    "log_e_film": "898e419d50e6e30f12d1512fda13b755234bb46f73b0b2941085146345687704",
+    "log_e_print": "6684410ed7e9fbf716660f755dd1e628ab3b28cf610ba453c5042cd50809ac67",
+    "negative_scan": "5c9804e372a70c18f166bb17d857e60680e09ce15591e985661d56554dfbe5a3",
+    "scene": "6162702b301f4b620a5828a1aeb4f5edf15509d74086a4ef03105a7a65039ccc"
+  },
+  "pass_2_sha256_uncompressed_pixels": {
+    "cmy_film": "cdd347b63cc1cb6d0cffe0a63f6db6be621a0dfc39465e1cb24b31fdb4767065",
+    "cmy_print": "220e21334daf42f4bf239cabcbd5c1fa333ac15e6847e96b9db1c30982671756",
+    "final_print": "0cb48d20af763201c6bc5021e7cb606f6977b2a22fb196206010fa79ff2b67c0",
+    "log_e_film": "898e419d50e6e30f12d1512fda13b755234bb46f73b0b2941085146345687704",
+    "log_e_print": "6684410ed7e9fbf716660f755dd1e628ab3b28cf610ba453c5042cd50809ac67",
+    "negative_scan": "5c9804e372a70c18f166bb17d857e60680e09ce15591e985661d56554dfbe5a3",
+    "scene": "6162702b301f4b620a5828a1aeb4f5edf15509d74086a4ef03105a7a65039ccc"
+  },
+  "retained_second_copy": false,
+  "stages": [
+    "scene",
+    "log_e_film",
+    "cmy_film",
+    "log_e_print",
+    "cmy_print",
+    "negative_scan",
+    "final_print"
+  ],
+  "status": "pass"
+}

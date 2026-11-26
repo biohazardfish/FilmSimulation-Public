@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "project": {
+    "command": "PYTHONPATH=src .venv/bin/python -m pytest tests -q",
+    "summary": "20 passed in 1.89s",
+    "exit_code": 0,
+    "classification": "pass"
+  },
+  "upstream_core": {
+    "command": "cd upstream/spektrafilm && ../../.venv/bin/python -m pytest tests --ignore=tests/gui -q",
+    "summary": "623 passed, 4 failed, 1 skipped, 10 warnings in 5.73s",
+    "exit_code": 1,
+    "classification": "four preserved known findings; no newly observed upstream failure",
+    "failures": [
+      {
+        "test": "tests/test_lut_mode.py::test_lut_mode_digest_disables_every_dangerous_effect",
+        "category": "incorrect or stale test assumption",
+        "reason": "test expects GrainParams.mult_usm_amount, which is absent at the pinned source revision"
+      },
+      {
+        "test": "print_rgb_portra_endura_gray_ramp16",
+        "category": "committed regression baseline discrepancy"
+      },
+      {
+        "test": "print_rgb_fuji_crystal_gray_ramp16",
+        "category": "committed regression baseline discrepancy"
+      },
+      {
+        "test": "print_rgb_portra_endura_green_patch8",
+        "category": "committed regression baseline discrepancy"
+      }
+    ],
+    "upstream_modified": false,
+    "baselines_regenerated": false
+  },
+  "root_unscoped_collection": {
+    "command": "PYTHONPATH=src .venv/bin/python -m pytest -q",
+    "summary": "12 GUI collection errors because qtpy is not installed",
+    "classification": "environment and incorrect test scope; not a Phase II regression"
+  }
+}

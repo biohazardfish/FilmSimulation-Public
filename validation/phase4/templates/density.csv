@@ -1,0 +1,3 @@
+run_id,sample_id,material,batch_id,strip_id,step_id,nominal_log_exposure,measured_log_exposure,exposure_unit,densitometry_status,channel,density,repeat_id,instrument_id
+REQUIRED_RUN_ID,REQUIRED_SAMPLE_ID,5219,REQUIRED_5219_BATCH_ID,REQUIRED_STRIP_ID,REQUIRED_STEP_ID,REQUIRED_NUMERIC,REQUIRED_NUMERIC,REQUIRED_UNIT,status_M,R,REQUIRED_NONNEGATIVE_NUMERIC,REQUIRED_REPEAT_ID,REQUIRED_STATUS_M_INSTRUMENT_ID
+

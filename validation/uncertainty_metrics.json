@@ -1,0 +1,230 @@
+{
+  "lut": {
+    "cube_files": [],
+    "included_in_comparison": false,
+    "reason": "This spektrafilm commit does not ship a 5219→2383 LUT whose input and output domains are stated independently of the spectral pipeline. settings.use_enlarger_lut and use_scanner_lut are optional caches inside that same pipeline, not a fair external LUT. No .cube or .3dl file is used as a substitute.",
+    "status": "unavailable",
+    "threedl_files": []
+  },
+  "model_spread": {
+    "max_abs": 0.06857424974441528,
+    "mean_abs_per_channel": [
+      0.002605481306090951,
+      0.002791142091155052,
+      0.0042420499958097935
+    ],
+    "other_method": "mallett2019",
+    "quantity": "scene-linear ACEScg difference between runnable spectral reconstructions",
+    "reference_method": "hanatos2025",
+    "rmse": 0.00595212634385619,
+    "this_is_not_real_film_error": true
+  },
+  "printer_light": {
+    "control": "enlarger.y_filter_shift in Kodak CC, added to the database neutral yellow filter",
+    "samples": [
+      {
+        "rmse_scene_linear_acescg_versus_nominal": 0.036056322977451455,
+        "y_filter_shift_cc": -20.0
+      },
+      {
+        "rmse_scene_linear_acescg_versus_nominal": 0.0,
+        "y_filter_shift_cc": 0.0
+      },
+      {
+        "rmse_scene_linear_acescg_versus_nominal": 0.035519069231923474,
+        "y_filter_shift_cc": 20.0
+      }
+    ]
+  },
+  "relative_to_real_film": {
+    "delta_e00": "not computed",
+    "reason": "No independent controlled measurement of a physical 5219 or 2383 sample is in this project. Source-conformance is not real-film error, and no real-film Delta E00 is computed.",
+    "status": "insufficient"
+  },
+  "sample": {
+    "description": "Deterministic area downsample of the full decoded scene to a long edge of 160 px",
+    "reason": "Spatial effects are disabled, so this probes the per-pixel color model. It is not the G3 full-resolution hash.",
+    "shape": [
+      105,
+      158,
+      3
+    ],
+    "working_space": "ACEScg"
+  },
+  "schema_version": 1,
+  "sensitivity_matrix": [
+    {
+      "negative_exposure_ev": -1.0,
+      "print_exposure": 0.5,
+      "rmse_scene_linear_acescg_versus_nominal": 0.10077842392893063,
+      "white_balance": "as_shot"
+    },
+    {
+      "negative_exposure_ev": -1.0,
+      "print_exposure": 1.0,
+      "rmse_scene_linear_acescg_versus_nominal": 0.0749038191435605,
+      "white_balance": "as_shot"
+    },
+    {
+      "negative_exposure_ev": -1.0,
+      "print_exposure": 2.0,
+      "rmse_scene_linear_acescg_versus_nominal": 0.1285282113709124,
+      "white_balance": "as_shot"
+    },
+    {
+      "negative_exposure_ev": 0.0,
+      "print_exposure": 0.5,
+      "rmse_scene_linear_acescg_versus_nominal": 0.25291864328071123,
+      "white_balance": "as_shot"
+    },
+    {
+      "negative_exposure_ev": 0.0,
+      "print_exposure": 1.0,
+      "rmse_scene_linear_acescg_versus_nominal": 0.0,
+      "white_balance": "as_shot"
+    },
+    {
+      "negative_exposure_ev": 0.0,
+      "print_exposure": 2.0,
+      "rmse_scene_linear_acescg_versus_nominal": 0.11052244316950274,
+      "white_balance": "as_shot"
+    },
+    {
+      "negative_exposure_ev": 1.0,
+      "print_exposure": 0.5,
+      "rmse_scene_linear_acescg_versus_nominal": 0.41912902424588705,
+      "white_balance": "as_shot"
+    },
+    {
+      "negative_exposure_ev": 1.0,
+      "print_exposure": 1.0,
+      "rmse_scene_linear_acescg_versus_nominal": 0.11838482456132342,
+      "white_balance": "as_shot"
+    },
+    {
+      "negative_exposure_ev": 1.0,
+      "print_exposure": 2.0,
+      "rmse_scene_linear_acescg_versus_nominal": 0.06788643531343386,
+      "white_balance": "as_shot"
+    },
+    {
+      "negative_exposure_ev": -1.0,
+      "print_exposure": 0.5,
+      "rmse_scene_linear_acescg_versus_nominal": 0.10139096630371892,
+      "white_balance": "daylight"
+    },
+    {
+      "negative_exposure_ev": -1.0,
+      "print_exposure": 1.0,
+      "rmse_scene_linear_acescg_versus_nominal": 0.07580178456405559,
+      "white_balance": "daylight"
+    },
+    {
+      "negative_exposure_ev": -1.0,
+      "print_exposure": 2.0,
+      "rmse_scene_linear_acescg_versus_nominal": 0.12857874278300244,
+      "white_balance": "daylight"
+    },
+    {
+      "negative_exposure_ev": 0.0,
+      "print_exposure": 0.5,
+      "rmse_scene_linear_acescg_versus_nominal": 0.24912340462885005,
+      "white_balance": "daylight"
+    },
+    {
+      "negative_exposure_ev": 0.0,
+      "print_exposure": 1.0,
+      "rmse_scene_linear_acescg_versus_nominal": 0.015846249289171693,
+      "white_balance": "daylight"
+    },
+    {
+      "negative_exposure_ev": 0.0,
+      "print_exposure": 2.0,
+      "rmse_scene_linear_acescg_versus_nominal": 0.11071856474305451,
+      "white_balance": "daylight"
+    },
+    {
+      "negative_exposure_ev": 1.0,
+      "print_exposure": 0.5,
+      "rmse_scene_linear_acescg_versus_nominal": 0.4114941097240845,
+      "white_balance": "daylight"
+    },
+    {
+      "negative_exposure_ev": 1.0,
+      "print_exposure": 1.0,
+      "rmse_scene_linear_acescg_versus_nominal": 0.11775619450256558,
+      "white_balance": "daylight"
+    },
+    {
+      "negative_exposure_ev": 1.0,
+      "print_exposure": 2.0,
+      "rmse_scene_linear_acescg_versus_nominal": 0.0688745289445964,
+      "white_balance": "daylight"
+    },
+    {
+      "negative_exposure_ev": -1.0,
+      "print_exposure": 0.5,
+      "rmse_scene_linear_acescg_versus_nominal": 0.11153555190149261,
+      "white_balance": "tungsten"
+    },
+    {
+      "negative_exposure_ev": -1.0,
+      "print_exposure": 1.0,
+      "rmse_scene_linear_acescg_versus_nominal": 0.08973779904999261,
+      "white_balance": "tungsten"
+    },
+    {
+      "negative_exposure_ev": -1.0,
+      "print_exposure": 2.0,
+      "rmse_scene_linear_acescg_versus_nominal": 0.12871322274201796,
+      "white_balance": "tungsten"
+    },
+    {
+      "negative_exposure_ev": 0.0,
+      "print_exposure": 0.5,
+      "rmse_scene_linear_acescg_versus_nominal": 0.21683539791270795,
+      "white_balance": "tungsten"
+    },
+    {
+      "negative_exposure_ev": 0.0,
+      "print_exposure": 1.0,
+      "rmse_scene_linear_acescg_versus_nominal": 0.06828099617437877,
+      "white_balance": "tungsten"
+    },
+    {
+      "negative_exposure_ev": 0.0,
+      "print_exposure": 2.0,
+      "rmse_scene_linear_acescg_versus_nominal": 0.11418703105268418,
+      "white_balance": "tungsten"
+    },
+    {
+      "negative_exposure_ev": 1.0,
+      "print_exposure": 0.5,
+      "rmse_scene_linear_acescg_versus_nominal": 0.33709137830188934,
+      "white_balance": "tungsten"
+    },
+    {
+      "negative_exposure_ev": 1.0,
+      "print_exposure": 1.0,
+      "rmse_scene_linear_acescg_versus_nominal": 0.11797158397174251,
+      "white_balance": "tungsten"
+    },
+    {
+      "negative_exposure_ev": 1.0,
+      "print_exposure": 2.0,
+      "rmse_scene_linear_acescg_versus_nominal": 0.08662796963247489,
+      "white_balance": "tungsten"
+    }
+  ],
+  "spectral_methods": {
+    "declared_by_filming_stage": [
+      "hanatos2025",
+      "mallett2019"
+    ],
+    "not_a_pipeline_method": "rgb_to_raw_aces_idt exists in utils/conversions.py but filming.py does not select it",
+    "ran": [
+      "hanatos2025",
+      "mallett2019"
+    ]
+  }
+}

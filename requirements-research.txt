@@ -1,0 +1,18 @@
+# Recorded runtime versions from intermediate/environment.json (Round 1).
+# opt-einsum was required by pinned spektrafilm, but was not recorded in
+# that manifest; a compatible range is used rather than inventing a pin.
+# Python 3.13 required. Not a cross-platform binary reproducibility claim.
+OpenImageIO==3.1.19.0
+Pillow==12.3.0
+colour-science==0.4.7
+exiv2==0.18.1
+lensfunpy==1.18.0
+matplotlib==3.11.2
+numba==0.68.1
+numpy==2.5.5
+opt-einsum~=3.4.0
+pyfftw==0.15.1
+pytest==9.2.0
+rawpy==0.26.1
+scikit-image==0.26.0
+scipy==1.18.1

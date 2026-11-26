@@ -1,0 +1,709 @@
+{
+  "claim_boundary": "This gate establishes numerical reproducibility, parameter provenance, model-domain consistency, and documented comparison with available published references. It does not establish accuracy relative to an independently measured physical film sample.",
+  "gate": "G4 Published-Reference Numerical Validation",
+  "gate_decision": {
+    "basis": "All available references were assessed; non-comparable evidence remains explicit rather than being scored as pass or zero error.",
+    "completed": true,
+    "independent_physical_dataset_required": false,
+    "roadmap_task": "FS-P4-03"
+  },
+  "inputs": {
+    "output/phase2/manifest.json": {
+      "sha256": "a6ab7a54445af0048466d0451dd39e99cca56c905aef34ea6134d3eebdf8c3a6"
+    },
+    "output/phase2/sensitometry_metrics.json": {
+      "sha256": "0b379a0c99c0752072c22459327194c0ccd837aab632ad3fba00cfcdbefd9344"
+    },
+    "output/phase2/sensitometry_samples.csv": {
+      "sha256": "7b190589255478ebfe9c18ad05f9fae8c2a753da0fa06cfe501f235b68738511"
+    },
+    "output/phase2/spectral_profile_audit.json": {
+      "sha256": "06ca2040f5c8416ad408ce6585947812ddc6e5bd007e0d872912d9e521f5d227"
+    },
+    "validation/fullres_repeat.json": {
+      "sha256": "6f3ade2b882d364e786efb44555f61d4b4cce30ffe6925a4ada00814183475bb"
+    },
+    "validation/official_source_conformance.json": {
+      "sha256": "5a79bad4917d80f5cc333a3c355466fb58cb630e0a81986b09c3018a7ccd4ba8"
+    },
+    "validation/raw_input_provenance.json": {
+      "sha256": "fae5c86dd8ed87a2cde678744f2664427798129a47c0ba800515e032f69d9399"
+    },
+    "validation/uncertainty_metrics.json": {
+      "sha256": "12068eeba64403ad85f8abd6b9c1038248277670bfce60dcb8b0c28617729655"
+    }
+  },
+  "model_sensitivity": {
+    "max_abs": 0.06857424974441528,
+    "mean_abs_per_channel": [
+      0.002605481306090951,
+      0.002791142091155052,
+      0.0042420499958097935
+    ],
+    "other_method": "mallett2019",
+    "quantity": "scene-linear ACEScg difference between runnable spectral reconstructions",
+    "reference_method": "hanatos2025",
+    "rmse": 0.00595212634385619,
+    "this_is_not_real_film_error": true
+  },
+  "parameter_provenance": {
+    "environment": {
+      "packages": {
+        "OpenImageIO": "3.1.19.0",
+        "colour-science": "0.4.7",
+        "matplotlib": "3.11.2",
+        "numba": "0.68.1",
+        "numpy": "2.5.5",
+        "opt-einsum": "3.4.0",
+        "pyfftw": "0.15.1",
+        "pytest": "9.2.0",
+        "rawpy": "0.26.1",
+        "scikit-image": "0.26.0",
+        "scipy": "1.18.1",
+        "spektrafilm": "0.3.4"
+      },
+      "platform": "macOS-27.3-arm64-arm-64bit-Mach-O",
+      "python": "3.13.15 (main, Aug  5 2026, 12:25:43) [Clang 21.0.0 (clang-2100.1.1.101)]"
+    },
+    "input_sha256": "f3e47c2d9df3bbb07a16c49b6e283dfd787e066a5dc141fa9d42441a644c3780",
+    "official_pdfs": {
+      "2383": {
+        "actual_sha256": "a72fa4482ebd891a9ac4a823cafe740e3587c56470f27e4dfd4391f5c3e5a207",
+        "path": "cache/kodak_official/vision_2383_3383_H-1-2383.pdf",
+        "sha256": "a72fa4482ebd891a9ac4a823cafe740e3587c56470f27e4dfd4391f5c3e5a207",
+        "url": "https://www.kodak.com/content/products-brochures/motion-picture/KODAK-VISION-Color-Print-Film-2383-3383-technical-information.pdf"
+      },
+      "5219": {
+        "actual_sha256": "6d037d8090373ee50d10bedfff3df14777a575dd107c50edcafc7ec5862d0972",
+        "path": "cache/kodak_official/vision3_500t_5219_7219_H-1-5219.pdf",
+        "sha256": "6d037d8090373ee50d10bedfff3df14777a575dd107c50edcafc7ec5862d0972",
+        "url": "https://www.kodak.com/content/pdfs/motion/KODAK-VISION3-500T-5219-7219-technical-information.pdf"
+      }
+    },
+    "parameters_sha256": "f2dd314b27d87d5bedd2728c943c29932545a7057f265c7a05d95108a33e4d28",
+    "profiles": {
+      "kodak_2383": {
+        "expected_sha256": "eb7fdfa3b75a909bf5c400802f7401160c8017ed1ac3e8e0d1c8448d56fbe184",
+        "pinned": true,
+        "sha256": "eb7fdfa3b75a909bf5c400802f7401160c8017ed1ac3e8e0d1c8448d56fbe184"
+      },
+      "kodak_vision3_500t": {
+        "expected_sha256": "d7beca68bf16db88dbb7373fd13a6a1150a57a911a54bb0309a760a6f9883329",
+        "pinned": true,
+        "sha256": "d7beca68bf16db88dbb7373fd13a6a1150a57a911a54bb0309a760a6f9883329"
+      }
+    },
+    "upstream_commit": "3bb2c2d2801ff68b92019cf1dbcbb133d60832bc"
+  },
+  "physical_fidelity": "not experimentally verified",
+  "published_comparisons": [
+    {
+      "conditions": {
+        "caption": {
+          "densitometry": "Status A",
+          "exposure": "1/500 sec Tungsten plus KODAK HeatAbsorbingGlass, No. 2043 (plus Series 1 700 Filter); 5.0",
+          "process": "ECP-2D"
+        },
+        "profile_densitometer": "status_A",
+        "profile_reference_illuminant": "TH-KG3",
+        "units": {
+          "x": "log10 exposure (lux-seconds)",
+          "y": "density"
+        }
+      },
+      "curve": "characteristic",
+      "profile": "kodak_2383",
+      "reason": "trace incomplete or off the ink; missing=['R', 'G', 'B']; ink_hit_below_0.90=none",
+      "residuals": null,
+      "source": {
+        "page": 4,
+        "publication": "H-1-2383",
+        "sha256": "a72fa4482ebd891a9ac4a823cafe740e3587c56470f27e4dfd4391f5c3e5a207",
+        "url": "https://www.kodak.com/content/products-brochures/motion-picture/KODAK-VISION-Color-Print-Film-2383-3383-technical-information.pdf"
+      },
+      "status": "not_evaluable",
+      "tolerance": {
+        "max_abs": 0.25,
+        "rmse": 0.08,
+        "scored": false,
+        "unit": "density"
+      }
+    },
+    {
+      "conditions": {
+        "caption": {
+          "process": "CP-2D"
+        },
+        "profile_densitometer": "status_A",
+        "profile_reference_illuminant": "TH-KG3",
+        "units": {
+          "x": "wavelength nm",
+          "y": "density"
+        }
+      },
+      "curve": "spectral_dye_density",
+      "profile": "kodak_2383",
+      "reason": "trace incomplete or off the ink; missing=['cyan', 'magenta', 'yellow']; ink_hit_below_0.90=none",
+      "residuals": null,
+      "source": {
+        "page": 5,
+        "publication": "H-1-2383",
+        "sha256": "a72fa4482ebd891a9ac4a823cafe740e3587c56470f27e4dfd4391f5c3e5a207",
+        "url": "https://www.kodak.com/content/products-brochures/motion-picture/KODAK-VISION-Color-Print-Film-2383-3383-technical-information.pdf"
+      },
+      "status": "not_evaluable",
+      "tolerance": {
+        "max_abs": 0.2,
+        "rmse": 0.08,
+        "scored": false,
+        "unit": "normalized density"
+      }
+    },
+    {
+      "conditions": {
+        "caption": {
+          "density_criterion": "D=1.0",
+          "exposure": "Tungsten exp 1/50 sec",
+          "process": "ECP-2D"
+        },
+        "profile_densitometer": "status_A",
+        "profile_reference_illuminant": "TH-KG3",
+        "units": {
+          "x": "wavelength nm",
+          "y": "log10 sensitivity"
+        }
+      },
+      "curve": "spectral_sensitivity",
+      "profile": "kodak_2383",
+      "reason": "trace incomplete or off the ink; missing=['cyan', 'yellow']; ink_hit_below_0.90=none",
+      "residuals": null,
+      "source": {
+        "page": 5,
+        "publication": "H-1-2383",
+        "sha256": "a72fa4482ebd891a9ac4a823cafe740e3587c56470f27e4dfd4391f5c3e5a207",
+        "url": "https://www.kodak.com/content/products-brochures/motion-picture/KODAK-VISION-Color-Print-Film-2383-3383-technical-information.pdf"
+      },
+      "status": "not_evaluable",
+      "tolerance": {
+        "max_abs": 0.55,
+        "rmse": 0.2,
+        "scored": false,
+        "unit": "log10 sensitivity"
+      }
+    },
+    {
+      "conditions": {
+        "caption": {
+          "densitometry": "ECN-2",
+          "exposure": "3200K Tungsten 1/50 sec",
+          "process": "ECN-2"
+        },
+        "profile_densitometer": "status_M",
+        "profile_reference_illuminant": "T",
+        "units": {
+          "x": "log10 exposure (lux-seconds)",
+          "y": "density"
+        }
+      },
+      "curve": "characteristic",
+      "profile": "kodak_vision3_500t",
+      "reason": "densitometer not established as the same quantity: profile=status_M, figure caption=ECN-2",
+      "residuals": null,
+      "source": {
+        "page": 3,
+        "publication": "H-1-5219",
+        "sha256": "6d037d8090373ee50d10bedfff3df14777a575dd107c50edcafc7ec5862d0972",
+        "url": "https://www.kodak.com/content/pdfs/motion/KODAK-VISION3-500T-5219-7219-technical-information.pdf"
+      },
+      "status": "not_evaluable",
+      "tolerance": {
+        "max_abs": 0.25,
+        "rmse": 0.08,
+        "scored": false,
+        "unit": "density"
+      }
+    },
+    {
+      "conditions": {
+        "caption": {
+          "density_criterion": "D-minssubtracted",
+          "process": "ECN-2"
+        },
+        "profile_densitometer": "status_M",
+        "profile_reference_illuminant": "T",
+        "units": {
+          "x": "wavelength nm",
+          "y": "density"
+        }
+      },
+      "curve": "spectral_dye_density",
+      "profile": "kodak_vision3_500t",
+      "reason": "trace incomplete or off the ink; missing=['magenta']; ink_hit_below_0.90=none",
+      "residuals": null,
+      "source": {
+        "page": 4,
+        "publication": "H-1-5219",
+        "sha256": "6d037d8090373ee50d10bedfff3df14777a575dd107c50edcafc7ec5862d0972",
+        "url": "https://www.kodak.com/content/pdfs/motion/KODAK-VISION3-500T-5219-7219-technical-information.pdf"
+      },
+      "status": "not_evaluable",
+      "tolerance": {
+        "max_abs": 0.2,
+        "rmse": 0.08,
+        "scored": false,
+        "unit": "normalized density"
+      }
+    },
+    {
+      "conditions": {
+        "caption": {
+          "densitometry": "Status M",
+          "density_criterion": "0.2>D-min",
+          "exposure": "1/25 sec",
+          "process": "ECN-2"
+        },
+        "profile_densitometer": "status_M",
+        "profile_reference_illuminant": "T",
+        "units": {
+          "x": "wavelength nm",
+          "y": "log10 sensitivity"
+        }
+      },
+      "curve": "spectral_sensitivity",
+      "profile": "kodak_vision3_500t",
+      "reason": "channel identity is not reliable: magenta trace does not pass its own label",
+      "residuals": null,
+      "source": {
+        "page": 4,
+        "publication": "H-1-5219",
+        "sha256": "6d037d8090373ee50d10bedfff3df14777a575dd107c50edcafc7ec5862d0972",
+        "url": "https://www.kodak.com/content/pdfs/motion/KODAK-VISION3-500T-5219-7219-technical-information.pdf"
+      },
+      "status": "not_evaluable",
+      "tolerance": {
+        "max_abs": 0.55,
+        "rmse": 0.2,
+        "scored": false,
+        "unit": "log10 sensitivity"
+      }
+    }
+  ],
+  "raw_input_provenance": {
+    "auxiliary_dual_pixel_data_used": false,
+    "dual_pixel_raw": true,
+    "evidence": "validation/raw_input_provenance.json",
+    "raw_image_count": 2
+  },
+  "reproducibility": {
+    "full_resolution_stage_matches": {
+      "cmy_film": true,
+      "cmy_print": true,
+      "final_print": true,
+      "log_e_film": true,
+      "log_e_print": true,
+      "negative_scan": true,
+      "scene": true
+    },
+    "full_resolution_status": "pass",
+    "parameters_sha256": "f2dd314b27d87d5bedd2728c943c29932545a7057f265c7a05d95108a33e4d28",
+    "synthetic_taps": {
+      "cmy_film": true,
+      "cmy_print": true,
+      "log_e_film": true,
+      "log_e_print": true,
+      "rgb_in": true,
+      "rgb_out": true,
+      "rgb_pre": true
+    }
+  },
+  "schema_version": 1,
+  "spectral_profiles": {
+    "film": {
+      "arrays": {
+        "base_density": {
+          "dtype": "float64",
+          "finite_count": 77,
+          "finite_max": 0.8653309509365279,
+          "finite_min": 0.08250803417713755,
+          "nan_count": 4,
+          "nan_fraction": 0.04938271604938271,
+          "sample_count": 81,
+          "shape": [
+            81
+          ]
+        },
+        "channel_density": {
+          "dtype": "float64",
+          "finite_count": 228,
+          "finite_max": 1.4182321802547053,
+          "finite_min": -0.118799519763609,
+          "nan_count": 15,
+          "nan_fraction": 0.06172839506172839,
+          "sample_count": 243,
+          "shape": [
+            81,
+            3
+          ]
+        },
+        "log_sensitivity": {
+          "dtype": "float64",
+          "finite_count": 243,
+          "finite_max": 0.03724193751226007,
+          "finite_min": -9.559894755337156,
+          "nan_count": 0,
+          "nan_fraction": 0.0,
+          "sample_count": 243,
+          "shape": [
+            81,
+            3
+          ]
+        },
+        "midscale_neutral_density": {
+          "dtype": "float64",
+          "finite_count": 76,
+          "finite_max": 1.6445797090090621,
+          "finite_min": 0.2880521991261336,
+          "nan_count": 5,
+          "nan_fraction": 0.06172839506172839,
+          "sample_count": 81,
+          "shape": [
+            81
+          ]
+        },
+        "wavelengths": {
+          "dtype": "float64",
+          "finite_count": 81,
+          "finite_max": 780.0,
+          "finite_min": 380.0,
+          "nan_count": 0,
+          "nan_fraction": 0.0,
+          "sample_count": 81,
+          "shape": [
+            81
+          ]
+        }
+      },
+      "densitometer": "status_M",
+      "nan_runtime_semantics": "density_to_light replaces NaN transmitted-light samples with zero",
+      "profile_key": "kodak_vision3_500t",
+      "reference_illuminant": "T",
+      "viewing_illuminant": "D50"
+    },
+    "print": {
+      "arrays": {
+        "base_density": {
+          "dtype": "float64",
+          "finite_count": 81,
+          "finite_max": 0.11363710440144138,
+          "finite_min": 0.04922805023487477,
+          "nan_count": 0,
+          "nan_fraction": 0.0,
+          "sample_count": 81,
+          "shape": [
+            81
+          ]
+        },
+        "channel_density": {
+          "dtype": "float64",
+          "finite_count": 224,
+          "finite_max": 1.2504384224993843,
+          "finite_min": 0.00579725058316551,
+          "nan_count": 19,
+          "nan_fraction": 0.07818930041152264,
+          "sample_count": 243,
+          "shape": [
+            81,
+            3
+          ]
+        },
+        "log_sensitivity": {
+          "dtype": "float64",
+          "finite_count": 243,
+          "finite_max": 1.2928695796930745,
+          "finite_min": -11.246016066991963,
+          "nan_count": 0,
+          "nan_fraction": 0.0,
+          "sample_count": 243,
+          "shape": [
+            81,
+            3
+          ]
+        },
+        "midscale_neutral_density": {
+          "dtype": "float64",
+          "finite_count": 74,
+          "finite_max": 0.8882092023932935,
+          "finite_min": 0.32824823566903555,
+          "nan_count": 7,
+          "nan_fraction": 0.08641975308641975,
+          "sample_count": 81,
+          "shape": [
+            81
+          ]
+        },
+        "wavelengths": {
+          "dtype": "float64",
+          "finite_count": 81,
+          "finite_max": 780.0,
+          "finite_min": 380.0,
+          "nan_count": 0,
+          "nan_fraction": 0.0,
+          "sample_count": 81,
+          "shape": [
+            81
+          ]
+        }
+      },
+      "densitometer": "status_A",
+      "nan_runtime_semantics": "density_to_light replaces NaN transmitted-light samples with zero",
+      "profile_key": "kodak_2383",
+      "reference_illuminant": "TH-KG3",
+      "viewing_illuminant": "K75P"
+    }
+  },
+  "status": "complete_with_limitations",
+  "step_wedge": {
+    "channels": {
+      "B": {
+        "film": {
+          "d_max": 1.6644123931283612,
+          "d_min": 0.04081975575090627,
+          "density_span": 1.623592637377455,
+          "monotonicity_vs_scene_ev": {
+            "atol": 1e-09,
+            "direction": "increasing",
+            "max_violation": 0.0,
+            "pass": true,
+            "violations": 0
+          },
+          "reference_error": {
+            "finite_samples": 481,
+            "mae": 0.007174785526579339,
+            "max_abs": 0.01121075521592485,
+            "rmse": 0.0077355625061622324
+          },
+          "shoulder_deviation_rmse_from_straight_line": 0.01951257715782435,
+          "straight_line_gradient": 0.5150367209345631,
+          "straight_line_intercept": 0.802786017011093,
+          "straight_line_samples": 250,
+          "toe_deviation_rmse_from_straight_line": 0.08293035598868422
+        },
+        "print": {
+          "d_max": 2.636809548826255,
+          "d_min": 0.0032469935592415343,
+          "density_span": 2.6335625552670137,
+          "monotonicity_vs_scene_ev": {
+            "atol": 1e-09,
+            "direction": "decreasing",
+            "max_violation": 0.0,
+            "pass": true,
+            "violations": 0
+          },
+          "reference_error": {
+            "finite_samples": 481,
+            "mae": 0.0,
+            "max_abs": 0.0,
+            "rmse": 0.0
+          },
+          "shoulder_deviation_rmse_from_straight_line": 0.06645981104487565,
+          "straight_line_gradient": 3.1085297040666475,
+          "straight_line_intercept": 0.3332298119457071,
+          "straight_line_samples": 132,
+          "toe_deviation_rmse_from_straight_line": 1.4212360636733588
+        }
+      },
+      "G": {
+        "film": {
+          "d_max": 1.413234900009344,
+          "d_min": 0.052533039377249034,
+          "density_span": 1.360701860632095,
+          "monotonicity_vs_scene_ev": {
+            "atol": 1e-09,
+            "direction": "increasing",
+            "max_violation": 0.0,
+            "pass": true,
+            "violations": 0
+          },
+          "reference_error": {
+            "finite_samples": 481,
+            "mae": 0.0014692877980419753,
+            "max_abs": 0.0025537131243764666,
+            "rmse": 0.0015831464708620947
+          },
+          "shoulder_deviation_rmse_from_straight_line": 0.009343771708400509,
+          "straight_line_gradient": 0.4074424315082582,
+          "straight_line_intercept": 0.6911239211329543,
+          "straight_line_samples": 264,
+          "toe_deviation_rmse_from_straight_line": 0.04209770971591003
+        },
+        "print": {
+          "d_max": 2.8772605955540507,
+          "d_min": 0.0019134726969747093,
+          "density_span": 2.875347122857076,
+          "monotonicity_vs_scene_ev": {
+            "atol": 1e-09,
+            "direction": "decreasing",
+            "max_violation": 0.0,
+            "pass": true,
+            "violations": 0
+          },
+          "reference_error": {
+            "finite_samples": 481,
+            "mae": 0.0,
+            "max_abs": 0.0,
+            "rmse": 0.0
+          },
+          "shoulder_deviation_rmse_from_straight_line": 0.07966835869565127,
+          "straight_line_gradient": 2.962556564086897,
+          "straight_line_intercept": 0.476334895476333,
+          "straight_line_samples": 148,
+          "toe_deviation_rmse_from_straight_line": 1.2851000880495485
+        }
+      },
+      "R": {
+        "film": {
+          "d_max": 1.5383160618293166,
+          "d_min": 0.048299845727157224,
+          "density_span": 1.4900162161021593,
+          "monotonicity_vs_scene_ev": {
+            "atol": 1e-09,
+            "direction": "increasing",
+            "max_violation": 0.0,
+            "pass": true,
+            "violations": 0
+          },
+          "reference_error": {
+            "finite_samples": 481,
+            "mae": 0.0020306637304850807,
+            "max_abs": 0.0032702198470969668,
+            "rmse": 0.002175552664366567
+          },
+          "shoulder_deviation_rmse_from_straight_line": 0.02320621634644694,
+          "straight_line_gradient": 0.46582665566447184,
+          "straight_line_intercept": 0.7525423006938577,
+          "straight_line_samples": 254,
+          "toe_deviation_rmse_from_straight_line": 0.05934312568211962
+        },
+        "print": {
+          "d_max": 3.4379731382520435,
+          "d_min": 0.00414295678796246,
+          "density_span": 3.433830181464081,
+          "monotonicity_vs_scene_ev": {
+            "atol": 1e-09,
+            "direction": "decreasing",
+            "max_violation": 0.0,
+            "pass": true,
+            "violations": 0
+          },
+          "reference_error": {
+            "finite_samples": 481,
+            "mae": 0.0,
+            "max_abs": 0.0,
+            "rmse": 0.0
+          },
+          "shoulder_deviation_rmse_from_straight_line": 0.24995890365419596,
+          "straight_line_gradient": 4.0340669712410975,
+          "straight_line_intercept": 0.5626657527918911,
+          "straight_line_samples": 131,
+          "toe_deviation_rmse_from_straight_line": 1.721802901042654
+        }
+      }
+    },
+    "deterministic": {
+      "cmy_film": true,
+      "cmy_print": true,
+      "log_e_film": true,
+      "log_e_print": true,
+      "rgb_in": true,
+      "rgb_out": true,
+      "rgb_pre": true
+    },
+    "ev_range": [
+      -6.0,
+      6.0
+    ],
+    "interpretation": "Native model-domain step-wedge statistics. cmy_film and cmy_print are model channel coefficients, not measured Status M or Status A density.",
+    "sample_count": 481,
+    "scene_linear_definition": "0 EV = 0.18; scene_linear = 0.18 * 2**EV"
+  },
+  "unsupported_assumptions": [
+    {
+      "id": "published_curve_digitization",
+      "quantification": {
+        "not_evaluable": 6,
+        "total": 6
+      },
+      "reason": "Published raster traces lack sufficient channel, axis, or measurement-definition comparability.",
+      "status": "not_evaluable"
+    },
+    {
+      "id": "spectral_nan_to_zero_light",
+      "quantification": {
+        "film": {
+          "base_density": {
+            "nan_count": 4,
+            "nan_fraction": 0.04938271604938271,
+            "sample_count": 81
+          },
+          "channel_density": {
+            "nan_count": 15,
+            "nan_fraction": 0.06172839506172839,
+            "sample_count": 243
+          },
+          "midscale_neutral_density": {
+            "nan_count": 5,
+            "nan_fraction": 0.06172839506172839,
+            "sample_count": 81
+          }
+        },
+        "print": {
+          "channel_density": {
+            "nan_count": 19,
+            "nan_fraction": 0.07818930041152264,
+            "sample_count": 243
+          },
+          "midscale_neutral_density": {
+            "nan_count": 7,
+            "nan_fraction": 0.08641975308641975,
+            "sample_count": 81
+          }
+        }
+      },
+      "reason": "Runtime maps NaN transmitted-light samples to zero; this is not measured interpolation.",
+      "status": "quantified_model_assumption"
+    },
+    {
+      "id": "rgb_to_spectrum_non_uniqueness",
+      "quantification": {
+        "max_abs": 0.06857424974441528,
+        "mean_abs_per_channel": [
+          0.002605481306090951,
+          0.002791142091155052,
+          0.0042420499958097935
+        ],
+        "other_method": "mallett2019",
+        "quantity": "scene-linear ACEScg difference between runnable spectral reconstructions",
+        "reference_method": "hanatos2025",
+        "rmse": 0.00595212634385619,
+        "this_is_not_real_film_error": true
+      },
+      "reason": "Difference between runnable reconstruction methods is not error relative to real film.",
+      "status": "quantified_model_sensitivity"
+    },
+    {
+      "id": "dpraw_auxiliary_image_unused",
+      "quantification": {
+        "raw_images": 2,
+        "used": 1
+      },
+      "reason": "The effect of unused phase/depth information on the scene-linear input was not evaluated and is not spectral evidence.",
+      "status": "not_evaluable"
+    },
+    {
+      "id": "independent_real_film_measurement",
+      "quantification": null,
+      "reason": "No independent controlled measurement of a physical 5219 or 2383 sample is in this project. Source-conformance is not real-film error, and no real-film Delta E00 is computed.",
+      "status": "unavailable_limitation"
+    }
+  ]
+}

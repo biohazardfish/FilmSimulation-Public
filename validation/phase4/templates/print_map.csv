@@ -1,0 +1,3 @@
+run_id,negative_sample_id,print_sample_id,printer_light_r,printer_light_g,printer_light_b,printer_exposure,exposure_unit
+REQUIRED_RUN_ID,REQUIRED_5219_SAMPLE_ID,REQUIRED_2383_SAMPLE_ID,REQUIRED_NUMERIC,REQUIRED_NUMERIC,REQUIRED_NUMERIC,REQUIRED_NUMERIC,REQUIRED_UNIT
+

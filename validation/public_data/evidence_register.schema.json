@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "validation/public_data/evidence_register.schema.json",
+  "title": "FS-P6-01 public-data evidence register row",
+  "description": "One row of validation/public_data/evidence_register.csv. Field set and allowed values follow docs/phase6/PUBLIC_DATA_STUDY_DEFINITION.md §5; archive_url, credibility_reason and found_by are the companion fields named there. Cross-field rules (permitted_use against class and lineage, comparable rows, hashes for downloads) are enforced by scripts/validate_public_data_register.py.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "entry_id", "product", "quantity", "evidence_class", "lineage", "lineage_evidence",
+    "source_url", "archive_url", "citation", "publisher_role", "measurement_conditions",
+    "data_format", "values_via", "digitization_record", "availability", "license",
+    "retrieved_at", "sha256", "credibility", "credibility_reason", "usable_for_residuals",
+    "permitted_use", "status", "reason", "verified_by", "found_by"
+  ],
+  "properties": {
+    "entry_id": {"type": "string", "pattern": "^PD-[0-9]{3}$"},
+    "product": {"type": "string", "pattern": "^(5219|2383|both|other:[^\\s].*)$"},
+    "quantity": {"enum": ["characteristic_curve", "spectral_sensitivity", "spectral_dye_density", "dmin_spectrum", "spectral_transmittance", "printing_density", "lad_aim", "density_conversion", "other"]},
+    "evidence_class": {"enum": ["INDEPENDENT_PHYSICAL_MEASUREMENT", "MANUFACTURER_PUBLISHED_MEASUREMENT", "DIGITIZED_PUBLISHED_DATA", "DERIVED_OR_SIMULATED_DATA", "NOT_COMPARABLE"]},
+    "lineage": {"enum": ["none", "same_primary_source", "derived_from_spektrafilm", "unknown"]},
+    "lineage_evidence": {"type": "string", "minLength": 1},
+    "source_url": {"type": "string", "pattern": "^https?://"},
+    "archive_url": {"type": "string", "pattern": "^(https?://.+|n/a)$"},
+    "citation": {"type": "string", "minLength": 1},
+    "publisher_role": {"enum": ["manufacturer", "standards_body", "academic", "archive", "independent_dev", "other"]},
+    "measurement_conditions": {"type": "string", "minLength": 1},
+    "data_format": {"enum": ["table", "csv", "json", "raster_figure", "vector_figure", "text", "none"]},
+    "values_via": {"enum": ["native_numeric", "digitized", "computed"]},
+    "digitization_record": {"type": "string", "minLength": 1},
+    "availability": {"enum": ["open_download", "open_view_only", "paywalled_not_acquired", "removed", "unavailable"]},
+    "license": {"type": "string", "minLength": 1},
+    "retrieved_at": {"type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}Z$"},
+    "sha256": {"type": "string", "pattern": "^([0-9a-f]{64}|n/a)$"},
+    "credibility": {"enum": ["high", "medium", "low"]},
+    "credibility_reason": {"type": "string", "minLength": 1},
+    "usable_for_residuals": {"enum": ["true", "false"]},
+    "permitted_use": {"enum": ["independent_validation", "source_conformance", "digitization_uncertainty", "implementation_crosscheck", "support", "none"]},
+    "status": {"enum": ["comparable", "not_evaluable", "unavailable"]},
+    "reason": {"type": "string"},
+    "verified_by": {"enum": ["executor", "qc"]},
+    "found_by": {"type": "string", "pattern": "^Q[0-9]{2}(;Q[0-9]{2})*$"}
+  }
+}

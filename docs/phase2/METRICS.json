@@ -1,0 +1,981 @@
+{
+  "evidence_levels": {
+    "V1": "computational consistency",
+    "V2": "published reference agreement",
+    "V3": "independent physical measurement",
+    "V4": "end-to-end photographic validation"
+  },
+  "metrics": [
+    {
+      "channel": "R",
+      "conditions": {
+        "DIR_couplers": "active, spatial diffusion zero"
+      },
+      "evidence_level": "V1",
+      "independent": false,
+      "metric_id": "A.film.R.dir_active_deviation",
+      "normalization": null,
+      "quantity": "DIR-active film channel coefficient minus no-DIR normalized profile characteristic",
+      "reason": "descriptive model delta only; no documented acceptance tolerance, and this is not Status M physical density",
+      "reference": "pinned no-DIR profile characteristic evaluated at runtime log_e_film",
+      "status": "not_evaluable",
+      "uncertainty": null,
+      "unit": "model channel coefficient",
+      "value": {
+        "finite_samples": 481,
+        "mae": 0.0020306637304850807,
+        "max_abs": 0.0032702198470969668,
+        "rmse": 0.002175552664366567
+      }
+    },
+    {
+      "channel": "R",
+      "conditions": {},
+      "evidence_level": "V1",
+      "independent": false,
+      "metric_id": "A.print.R.profile_internal_error",
+      "normalization": null,
+      "quantity": "print channel-coefficient agreement with profile parametric curve",
+      "reason": "computational consistency only; not Status A physical density",
+      "reference": "pinned print density_curves_model evaluated at runtime log_e_print",
+      "status": "pass",
+      "uncertainty": null,
+      "unit": "model channel coefficient",
+      "value": {
+        "finite_samples": 481,
+        "mae": 0.0,
+        "max_abs": 0.0,
+        "rmse": 0.0
+      }
+    },
+    {
+      "channel": "R",
+      "conditions": {
+        "shoulder": ">80%",
+        "straight_line_region": "20-80% of observed channel span",
+        "toe": "<20%"
+      },
+      "evidence_level": "V1",
+      "independent": false,
+      "metric_id": "A.film.R.curve_statistics",
+      "normalization": null,
+      "quantity": "film sensitometric curve statistics in native model domain",
+      "reason": "native-domain descriptive statistics; not an external physical density score",
+      "reference": null,
+      "status": "pass",
+      "uncertainty": null,
+      "unit": "model channel coefficient and coefficient per log10 relative exposure",
+      "value": {
+        "d_max": 1.5383160618293166,
+        "d_min": 0.048299845727157224,
+        "density_span": 1.4900162161021593,
+        "shoulder_deviation_rmse_from_straight_line": 0.02320621634644694,
+        "straight_line_gradient": 0.46582665566447184,
+        "straight_line_intercept": 0.7525423006938577,
+        "straight_line_samples": 254,
+        "toe_deviation_rmse_from_straight_line": 0.05934312568211962
+      }
+    },
+    {
+      "channel": "R",
+      "conditions": {
+        "shoulder": ">80%",
+        "straight_line_region": "20-80% of observed channel span",
+        "toe": "<20%"
+      },
+      "evidence_level": "V1",
+      "independent": false,
+      "metric_id": "A.print.R.curve_statistics",
+      "normalization": null,
+      "quantity": "print sensitometric curve statistics in native model domain",
+      "reason": "native-domain descriptive statistics; not an external physical density score",
+      "reference": null,
+      "status": "pass",
+      "uncertainty": null,
+      "unit": "model channel coefficient and coefficient per log10 relative exposure",
+      "value": {
+        "d_max": 3.4379731382520435,
+        "d_min": 0.00414295678796246,
+        "density_span": 3.433830181464081,
+        "shoulder_deviation_rmse_from_straight_line": 0.24995890365419596,
+        "straight_line_gradient": 4.0340669712410975,
+        "straight_line_intercept": 0.5626657527918911,
+        "straight_line_samples": 131,
+        "toe_deviation_rmse_from_straight_line": 1.721802901042654
+      }
+    },
+    {
+      "channel": "R",
+      "conditions": {},
+      "evidence_level": "V1",
+      "independent": false,
+      "metric_id": "A.film.R.monotonicity",
+      "normalization": null,
+      "quantity": "film response monotonicity versus scene EV",
+      "reason": null,
+      "reference": null,
+      "status": "pass",
+      "uncertainty": null,
+      "unit": "count",
+      "value": {
+        "atol": 1e-09,
+        "direction": "increasing",
+        "max_violation": 0.0,
+        "pass": true,
+        "violations": 0
+      }
+    },
+    {
+      "channel": "R",
+      "conditions": {},
+      "evidence_level": "V1",
+      "independent": false,
+      "metric_id": "A.print.R.monotonicity",
+      "normalization": null,
+      "quantity": "print density response direction versus scene EV",
+      "reason": null,
+      "reference": null,
+      "status": "pass",
+      "uncertainty": null,
+      "unit": "count",
+      "value": {
+        "atol": 1e-09,
+        "direction": "decreasing",
+        "max_violation": 0.0,
+        "pass": true,
+        "violations": 0
+      }
+    },
+    {
+      "channel": "G",
+      "conditions": {
+        "DIR_couplers": "active, spatial diffusion zero"
+      },
+      "evidence_level": "V1",
+      "independent": false,
+      "metric_id": "A.film.G.dir_active_deviation",
+      "normalization": null,
+      "quantity": "DIR-active film channel coefficient minus no-DIR normalized profile characteristic",
+      "reason": "descriptive model delta only; no documented acceptance tolerance, and this is not Status M physical density",
+      "reference": "pinned no-DIR profile characteristic evaluated at runtime log_e_film",
+      "status": "not_evaluable",
+      "uncertainty": null,
+      "unit": "model channel coefficient",
+      "value": {
+        "finite_samples": 481,
+        "mae": 0.0014692877980419753,
+        "max_abs": 0.0025537131243764666,
+        "rmse": 0.0015831464708620947
+      }
+    },
+    {
+      "channel": "G",
+      "conditions": {},
+      "evidence_level": "V1",
+      "independent": false,
+      "metric_id": "A.print.G.profile_internal_error",
+      "normalization": null,
+      "quantity": "print channel-coefficient agreement with profile parametric curve",
+      "reason": "computational consistency only; not Status A physical density",
+      "reference": "pinned print density_curves_model evaluated at runtime log_e_print",
+      "status": "pass",
+      "uncertainty": null,
+      "unit": "model channel coefficient",
+      "value": {
+        "finite_samples": 481,
+        "mae": 0.0,
+        "max_abs": 0.0,
+        "rmse": 0.0
+      }
+    },
+    {
+      "channel": "G",
+      "conditions": {
+        "shoulder": ">80%",
+        "straight_line_region": "20-80% of observed channel span",
+        "toe": "<20%"
+      },
+      "evidence_level": "V1",
+      "independent": false,
+      "metric_id": "A.film.G.curve_statistics",
+      "normalization": null,
+      "quantity": "film sensitometric curve statistics in native model domain",
+      "reason": "native-domain descriptive statistics; not an external physical density score",
+      "reference": null,
+      "status": "pass",
+      "uncertainty": null,
+      "unit": "model channel coefficient and coefficient per log10 relative exposure",
+      "value": {
+        "d_max": 1.413234900009344,
+        "d_min": 0.052533039377249034,
+        "density_span": 1.360701860632095,
+        "shoulder_deviation_rmse_from_straight_line": 0.009343771708400509,
+        "straight_line_gradient": 0.4074424315082582,
+        "straight_line_intercept": 0.6911239211329543,
+        "straight_line_samples": 264,
+        "toe_deviation_rmse_from_straight_line": 0.04209770971591003
+      }
+    },
+    {
+      "channel": "G",
+      "conditions": {
+        "shoulder": ">80%",
+        "straight_line_region": "20-80% of observed channel span",
+        "toe": "<20%"
+      },
+      "evidence_level": "V1",
+      "independent": false,
+      "metric_id": "A.print.G.curve_statistics",
+      "normalization": null,
+      "quantity": "print sensitometric curve statistics in native model domain",
+      "reason": "native-domain descriptive statistics; not an external physical density score",
+      "reference": null,
+      "status": "pass",
+      "uncertainty": null,
+      "unit": "model channel coefficient and coefficient per log10 relative exposure",
+      "value": {
+        "d_max": 2.8772605955540507,
+        "d_min": 0.0019134726969747093,
+        "density_span": 2.875347122857076,
+        "shoulder_deviation_rmse_from_straight_line": 0.07966835869565127,
+        "straight_line_gradient": 2.962556564086897,
+        "straight_line_intercept": 0.476334895476333,
+        "straight_line_samples": 148,
+        "toe_deviation_rmse_from_straight_line": 1.2851000880495485
+      }
+    },
+    {
+      "channel": "G",
+      "conditions": {},
+      "evidence_level": "V1",
+      "independent": false,
+      "metric_id": "A.film.G.monotonicity",
+      "normalization": null,
+      "quantity": "film response monotonicity versus scene EV",
+      "reason": null,
+      "reference": null,
+      "status": "pass",
+      "uncertainty": null,
+      "unit": "count",
+      "value": {
+        "atol": 1e-09,
+        "direction": "increasing",
+        "max_violation": 0.0,
+        "pass": true,
+        "violations": 0
+      }
+    },
+    {
+      "channel": "G",
+      "conditions": {},
+      "evidence_level": "V1",
+      "independent": false,
+      "metric_id": "A.print.G.monotonicity",
+      "normalization": null,
+      "quantity": "print density response direction versus scene EV",
+      "reason": null,
+      "reference": null,
+      "status": "pass",
+      "uncertainty": null,
+      "unit": "count",
+      "value": {
+        "atol": 1e-09,
+        "direction": "decreasing",
+        "max_violation": 0.0,
+        "pass": true,
+        "violations": 0
+      }
+    },
+    {
+      "channel": "B",
+      "conditions": {
+        "DIR_couplers": "active, spatial diffusion zero"
+      },
+      "evidence_level": "V1",
+      "independent": false,
+      "metric_id": "A.film.B.dir_active_deviation",
+      "normalization": null,
+      "quantity": "DIR-active film channel coefficient minus no-DIR normalized profile characteristic",
+      "reason": "descriptive model delta only; no documented acceptance tolerance, and this is not Status M physical density",
+      "reference": "pinned no-DIR profile characteristic evaluated at runtime log_e_film",
+      "status": "not_evaluable",
+      "uncertainty": null,
+      "unit": "model channel coefficient",
+      "value": {
+        "finite_samples": 481,
+        "mae": 0.007174785526579339,
+        "max_abs": 0.01121075521592485,
+        "rmse": 0.0077355625061622324
+      }
+    },
+    {
+      "channel": "B",
+      "conditions": {},
+      "evidence_level": "V1",
+      "independent": false,
+      "metric_id": "A.print.B.profile_internal_error",
+      "normalization": null,
+      "quantity": "print channel-coefficient agreement with profile parametric curve",
+      "reason": "computational consistency only; not Status A physical density",
+      "reference": "pinned print density_curves_model evaluated at runtime log_e_print",
+      "status": "pass",
+      "uncertainty": null,
+      "unit": "model channel coefficient",
+      "value": {
+        "finite_samples": 481,
+        "mae": 0.0,
+        "max_abs": 0.0,
+        "rmse": 0.0
+      }
+    },
+    {
+      "channel": "B",
+      "conditions": {
+        "shoulder": ">80%",
+        "straight_line_region": "20-80% of observed channel span",
+        "toe": "<20%"
+      },
+      "evidence_level": "V1",
+      "independent": false,
+      "metric_id": "A.film.B.curve_statistics",
+      "normalization": null,
+      "quantity": "film sensitometric curve statistics in native model domain",
+      "reason": "native-domain descriptive statistics; not an external physical density score",
+      "reference": null,
+      "status": "pass",
+      "uncertainty": null,
+      "unit": "model channel coefficient and coefficient per log10 relative exposure",
+      "value": {
+        "d_max": 1.6644123931283612,
+        "d_min": 0.04081975575090627,
+        "density_span": 1.623592637377455,
+        "shoulder_deviation_rmse_from_straight_line": 0.01951257715782435,
+        "straight_line_gradient": 0.5150367209345631,
+        "straight_line_intercept": 0.802786017011093,
+        "straight_line_samples": 250,
+        "toe_deviation_rmse_from_straight_line": 0.08293035598868422
+      }
+    },
+    {
+      "channel": "B",
+      "conditions": {
+        "shoulder": ">80%",
+        "straight_line_region": "20-80% of observed channel span",
+        "toe": "<20%"
+      },
+      "evidence_level": "V1",
+      "independent": false,
+      "metric_id": "A.print.B.curve_statistics",
+      "normalization": null,
+      "quantity": "print sensitometric curve statistics in native model domain",
+      "reason": "native-domain descriptive statistics; not an external physical density score",
+      "reference": null,
+      "status": "pass",
+      "uncertainty": null,
+      "unit": "model channel coefficient and coefficient per log10 relative exposure",
+      "value": {
+        "d_max": 2.636809548826255,
+        "d_min": 0.0032469935592415343,
+        "density_span": 2.6335625552670137,
+        "shoulder_deviation_rmse_from_straight_line": 0.06645981104487565,
+        "straight_line_gradient": 3.1085297040666475,
+        "straight_line_intercept": 0.3332298119457071,
+        "straight_line_samples": 132,
+        "toe_deviation_rmse_from_straight_line": 1.4212360636733588
+      }
+    },
+    {
+      "channel": "B",
+      "conditions": {},
+      "evidence_level": "V1",
+      "independent": false,
+      "metric_id": "A.film.B.monotonicity",
+      "normalization": null,
+      "quantity": "film response monotonicity versus scene EV",
+      "reason": null,
+      "reference": null,
+      "status": "pass",
+      "uncertainty": null,
+      "unit": "count",
+      "value": {
+        "atol": 1e-09,
+        "direction": "increasing",
+        "max_violation": 0.0,
+        "pass": true,
+        "violations": 0
+      }
+    },
+    {
+      "channel": "B",
+      "conditions": {},
+      "evidence_level": "V1",
+      "independent": false,
+      "metric_id": "A.print.B.monotonicity",
+      "normalization": null,
+      "quantity": "print density response direction versus scene EV",
+      "reason": null,
+      "reference": null,
+      "status": "pass",
+      "uncertainty": null,
+      "unit": "count",
+      "value": {
+        "atol": 1e-09,
+        "direction": "decreasing",
+        "max_violation": 0.0,
+        "pass": true,
+        "violations": 0
+      }
+    },
+    {
+      "channel": null,
+      "conditions": {},
+      "evidence_level": "V1",
+      "independent": false,
+      "metric_id": "A.pipeline.finite",
+      "normalization": null,
+      "quantity": "finite outputs at all synthetic taps",
+      "reason": null,
+      "reference": null,
+      "status": "pass",
+      "uncertainty": null,
+      "unit": "boolean",
+      "value": {
+        "ev": true,
+        "negative_cmy_film": true,
+        "negative_log_e_film": true,
+        "negative_rgb_in": true,
+        "negative_rgb_out": true,
+        "negative_rgb_pre": true,
+        "print_cmy_film": true,
+        "print_cmy_print": true,
+        "print_log_e_film": true,
+        "print_log_e_print": true,
+        "print_rgb_in": true,
+        "print_rgb_out": true,
+        "print_rgb_pre": true,
+        "scene_linear_reference": true
+      }
+    },
+    {
+      "channel": null,
+      "conditions": {},
+      "evidence_level": "V1",
+      "independent": false,
+      "metric_id": "A.pipeline.deterministic",
+      "normalization": null,
+      "quantity": "exact repeat pixel hashes",
+      "reason": null,
+      "reference": null,
+      "status": "pass",
+      "uncertainty": null,
+      "unit": "boolean",
+      "value": {
+        "cmy_film": true,
+        "cmy_print": true,
+        "log_e_film": true,
+        "log_e_print": true,
+        "rgb_in": true,
+        "rgb_out": true,
+        "rgb_pre": true
+      }
+    },
+    {
+      "channel": null,
+      "conditions": {
+        "densitometry": "Status A",
+        "exposure": "1/500 sec Tungsten plus KODAK HeatAbsorbingGlass, No. 2043 (plus Series 1 700 Filter); 5.0",
+        "process": "ECP-2D"
+      },
+      "evidence_level": "V2",
+      "independent": false,
+      "metric_id": "B.kodak.kodak_2383.characteristic",
+      "normalization": "not applied",
+      "quantity": "Kodak published characteristic agreement",
+      "reason": "trace incomplete or off the ink; missing=['R', 'G', 'B']; ink_hit_below_0.90=none",
+      "reference": {
+        "page": 4,
+        "publication": "H-1-2383",
+        "sha256": "a72fa4482ebd891a9ac4a823cafe740e3587c56470f27e4dfd4391f5c3e5a207",
+        "url": "https://www.kodak.com/content/products-brochures/motion-picture/KODAK-VISION-Color-Print-Film-2383-3383-technical-information.pdf"
+      },
+      "status": "not_evaluable",
+      "uncertainty": 0.03173555991796896,
+      "unit": "density",
+      "value": null
+    },
+    {
+      "channel": null,
+      "conditions": {
+        "process": "CP-2D"
+      },
+      "evidence_level": "V2",
+      "independent": false,
+      "metric_id": "B.kodak.kodak_2383.spectral_dye_density",
+      "normalization": "not applied",
+      "quantity": "Kodak published spectral_dye_density agreement",
+      "reason": "trace incomplete or off the ink; missing=['cyan', 'magenta', 'yellow']; ink_hit_below_0.90=none",
+      "reference": {
+        "page": 5,
+        "publication": "H-1-2383",
+        "sha256": "a72fa4482ebd891a9ac4a823cafe740e3587c56470f27e4dfd4391f5c3e5a207",
+        "url": "https://www.kodak.com/content/products-brochures/motion-picture/KODAK-VISION-Color-Print-Film-2383-3383-technical-information.pdf"
+      },
+      "status": "not_evaluable",
+      "uncertainty": 0.007463613441012834,
+      "unit": "normalized density",
+      "value": null
+    },
+    {
+      "channel": null,
+      "conditions": {
+        "density_criterion": "D=1.0",
+        "exposure": "Tungsten exp 1/50 sec",
+        "process": "ECP-2D"
+      },
+      "evidence_level": "V2",
+      "independent": false,
+      "metric_id": "B.kodak.kodak_2383.spectral_sensitivity",
+      "normalization": "not applied",
+      "quantity": "Kodak published spectral_sensitivity agreement",
+      "reason": "trace incomplete or off the ink; missing=['cyan', 'yellow']; ink_hit_below_0.90=none",
+      "reference": {
+        "page": 5,
+        "publication": "H-1-2383",
+        "sha256": "a72fa4482ebd891a9ac4a823cafe740e3587c56470f27e4dfd4391f5c3e5a207",
+        "url": "https://www.kodak.com/content/products-brochures/motion-picture/KODAK-VISION-Color-Print-Film-2383-3383-technical-information.pdf"
+      },
+      "status": "not_evaluable",
+      "uncertainty": 0.00844375406004179,
+      "unit": "log10 sensitivity",
+      "value": null
+    },
+    {
+      "channel": null,
+      "conditions": {
+        "densitometry": "ECN-2",
+        "exposure": "3200K Tungsten 1/50 sec",
+        "process": "ECN-2"
+      },
+      "evidence_level": "V2",
+      "independent": false,
+      "metric_id": "B.kodak.kodak_vision3_500t.characteristic",
+      "normalization": "not applied",
+      "quantity": "Kodak published characteristic agreement",
+      "reason": "densitometer not established as the same quantity: profile=status_M, figure caption=ECN-2",
+      "reference": {
+        "page": 3,
+        "publication": "H-1-5219",
+        "sha256": "6d037d8090373ee50d10bedfff3df14777a575dd107c50edcafc7ec5862d0972",
+        "url": "https://www.kodak.com/content/pdfs/motion/KODAK-VISION3-500T-5219-7219-technical-information.pdf"
+      },
+      "status": "not_evaluable",
+      "uncertainty": 0.0021531381444731684,
+      "unit": "density",
+      "value": null
+    },
+    {
+      "channel": null,
+      "conditions": {
+        "density_criterion": "D-minssubtracted",
+        "process": "ECN-2"
+      },
+      "evidence_level": "V2",
+      "independent": false,
+      "metric_id": "B.kodak.kodak_vision3_500t.spectral_dye_density",
+      "normalization": "not applied",
+      "quantity": "Kodak published spectral_dye_density agreement",
+      "reason": "trace incomplete or off the ink; missing=['magenta']; ink_hit_below_0.90=none",
+      "reference": {
+        "page": 4,
+        "publication": "H-1-5219",
+        "sha256": "6d037d8090373ee50d10bedfff3df14777a575dd107c50edcafc7ec5862d0972",
+        "url": "https://www.kodak.com/content/pdfs/motion/KODAK-VISION3-500T-5219-7219-technical-information.pdf"
+      },
+      "status": "not_evaluable",
+      "uncertainty": 0.01461359674607602,
+      "unit": "normalized density",
+      "value": null
+    },
+    {
+      "channel": null,
+      "conditions": {
+        "densitometry": "Status M",
+        "density_criterion": "0.2>D-min",
+        "exposure": "1/25 sec",
+        "process": "ECN-2"
+      },
+      "evidence_level": "V2",
+      "independent": false,
+      "metric_id": "B.kodak.kodak_vision3_500t.spectral_sensitivity",
+      "normalization": "not applied",
+      "quantity": "Kodak published spectral_sensitivity agreement",
+      "reason": "channel identity is not reliable: magenta trace does not pass its own label",
+      "reference": {
+        "page": 4,
+        "publication": "H-1-5219",
+        "sha256": "6d037d8090373ee50d10bedfff3df14777a575dd107c50edcafc7ec5862d0972",
+        "url": "https://www.kodak.com/content/pdfs/motion/KODAK-VISION3-500T-5219-7219-technical-information.pdf"
+      },
+      "status": "not_evaluable",
+      "uncertainty": 0.009233679110328444,
+      "unit": "log10 sensitivity",
+      "value": null
+    },
+    {
+      "channel": null,
+      "conditions": {},
+      "evidence_level": "V2",
+      "independent": false,
+      "metric_id": "B.kodak.kodak_vision3_500t.granularity",
+      "normalization": null,
+      "quantity": "Kodak published granularity agreement",
+      "reason": "the deterministic Phase II configuration disables grain/spatial effects and exposes no model quantity measured under the Kodak aperture/MTF conditions",
+      "reference": null,
+      "status": "not_evaluable",
+      "uncertainty": null,
+      "unit": null,
+      "value": null
+    },
+    {
+      "channel": null,
+      "conditions": {},
+      "evidence_level": "V2",
+      "independent": false,
+      "metric_id": "B.kodak.kodak_vision3_500t.modulation_transfer",
+      "normalization": null,
+      "quantity": "Kodak published modulation_transfer agreement",
+      "reason": "the deterministic Phase II configuration disables grain/spatial effects and exposes no model quantity measured under the Kodak aperture/MTF conditions",
+      "reference": null,
+      "status": "not_evaluable",
+      "uncertainty": null,
+      "unit": null,
+      "value": null
+    },
+    {
+      "channel": null,
+      "conditions": {},
+      "evidence_level": "V2",
+      "independent": false,
+      "metric_id": "B.kodak.kodak_2383.granularity",
+      "normalization": null,
+      "quantity": "Kodak published granularity agreement",
+      "reason": "the deterministic Phase II configuration disables grain/spatial effects and exposes no model quantity measured under the Kodak aperture/MTF conditions",
+      "reference": null,
+      "status": "not_evaluable",
+      "uncertainty": null,
+      "unit": null,
+      "value": null
+    },
+    {
+      "channel": null,
+      "conditions": {},
+      "evidence_level": "V2",
+      "independent": false,
+      "metric_id": "B.kodak.kodak_2383.modulation_transfer",
+      "normalization": null,
+      "quantity": "Kodak published modulation_transfer agreement",
+      "reason": "the deterministic Phase II configuration disables grain/spatial effects and exposes no model quantity measured under the Kodak aperture/MTF conditions",
+      "reference": null,
+      "status": "not_evaluable",
+      "uncertainty": null,
+      "unit": null,
+      "value": null
+    },
+    {
+      "channel": null,
+      "conditions": {},
+      "evidence_level": "V1",
+      "independent": false,
+      "metric_id": "B.rgb_to_spectrum.model_spread",
+      "normalization": null,
+      "quantity": "scene-linear ACEScg difference between runnable spectral reconstructions",
+      "reason": "method sensitivity only; explicitly not error relative to real film",
+      "reference": "hanatos2025 versus mallett2019",
+      "status": "pass",
+      "uncertainty": null,
+      "unit": "scene-linear ACEScg",
+      "value": {
+        "max_abs": 0.06857424974441528,
+        "mean_abs_per_channel": [
+          0.002605481306090951,
+          0.002791142091155052,
+          0.0042420499958097935
+        ],
+        "rmse": 0.00595212634385619
+      }
+    },
+    {
+      "channel": null,
+      "conditions": {},
+      "evidence_level": "V3",
+      "independent": false,
+      "metric_id": "B.color.independent_delta_e00",
+      "normalization": null,
+      "quantity": "CIEDE2000 against independent real-film measurements",
+      "reason": "no independent color measurement dataset supplied",
+      "reference": null,
+      "status": "not_evaluable",
+      "uncertainty": null,
+      "unit": "Delta E00",
+      "value": null
+    },
+    {
+      "channel": null,
+      "conditions": {
+        "branch": "negative",
+        "repeats": 3,
+        "size": 256
+      },
+      "evidence_level": "V1",
+      "independent": false,
+      "metric_id": "C.performance.256.negative.determinism",
+      "normalization": null,
+      "quantity": "repeated benchmark output determinism",
+      "reason": null,
+      "reference": null,
+      "status": "pass",
+      "uncertainty": null,
+      "unit": "boolean",
+      "value": {
+        "finite": true,
+        "hashes": [
+          "cb32746eef38152d2665dc92c3c945cb235c2ed63d68e2c9c4689e20c8129acd",
+          "cb32746eef38152d2665dc92c3c945cb235c2ed63d68e2c9c4689e20c8129acd",
+          "cb32746eef38152d2665dc92c3c945cb235c2ed63d68e2c9c4689e20c8129acd"
+        ]
+      }
+    },
+    {
+      "channel": null,
+      "conditions": {
+        "branch": "print",
+        "repeats": 3,
+        "size": 256
+      },
+      "evidence_level": "V1",
+      "independent": false,
+      "metric_id": "C.performance.256.print.determinism",
+      "normalization": null,
+      "quantity": "repeated benchmark output determinism",
+      "reason": null,
+      "reference": null,
+      "status": "pass",
+      "uncertainty": null,
+      "unit": "boolean",
+      "value": {
+        "finite": true,
+        "hashes": [
+          "2ed470f481250c415f716f8da74ba5a2e4df8a30798e81e2da99d7549775a6b6",
+          "2ed470f481250c415f716f8da74ba5a2e4df8a30798e81e2da99d7549775a6b6",
+          "2ed470f481250c415f716f8da74ba5a2e4df8a30798e81e2da99d7549775a6b6"
+        ]
+      }
+    },
+    {
+      "channel": null,
+      "conditions": {
+        "branch": "negative",
+        "repeats": 3,
+        "size": 512
+      },
+      "evidence_level": "V1",
+      "independent": false,
+      "metric_id": "C.performance.512.negative.determinism",
+      "normalization": null,
+      "quantity": "repeated benchmark output determinism",
+      "reason": null,
+      "reference": null,
+      "status": "pass",
+      "uncertainty": null,
+      "unit": "boolean",
+      "value": {
+        "finite": true,
+        "hashes": [
+          "265994f65bce6dc98f750a837c512ca764fe06fd6627b44756cb88509c0e5cb2",
+          "265994f65bce6dc98f750a837c512ca764fe06fd6627b44756cb88509c0e5cb2",
+          "265994f65bce6dc98f750a837c512ca764fe06fd6627b44756cb88509c0e5cb2"
+        ]
+      }
+    },
+    {
+      "channel": null,
+      "conditions": {
+        "branch": "print",
+        "repeats": 3,
+        "size": 512
+      },
+      "evidence_level": "V1",
+      "independent": false,
+      "metric_id": "C.performance.512.print.determinism",
+      "normalization": null,
+      "quantity": "repeated benchmark output determinism",
+      "reason": null,
+      "reference": null,
+      "status": "pass",
+      "uncertainty": null,
+      "unit": "boolean",
+      "value": {
+        "finite": true,
+        "hashes": [
+          "5a46f2939d8864b5f715d0bcc35f9b8c51e6455de811acd9d490d202a3b4c02e",
+          "5a46f2939d8864b5f715d0bcc35f9b8c51e6455de811acd9d490d202a3b4c02e",
+          "5a46f2939d8864b5f715d0bcc35f9b8c51e6455de811acd9d490d202a3b4c02e"
+        ]
+      }
+    },
+    {
+      "channel": null,
+      "conditions": {
+        "branch": "negative",
+        "repeats": 3,
+        "size": 1024
+      },
+      "evidence_level": "V1",
+      "independent": false,
+      "metric_id": "C.performance.1024.negative.determinism",
+      "normalization": null,
+      "quantity": "repeated benchmark output determinism",
+      "reason": null,
+      "reference": null,
+      "status": "pass",
+      "uncertainty": null,
+      "unit": "boolean",
+      "value": {
+        "finite": true,
+        "hashes": [
+          "c8c00d1314e1286ae18a6925268789a321a283cf4d096ca9a6fccbcc5ffba4fa",
+          "c8c00d1314e1286ae18a6925268789a321a283cf4d096ca9a6fccbcc5ffba4fa",
+          "c8c00d1314e1286ae18a6925268789a321a283cf4d096ca9a6fccbcc5ffba4fa"
+        ]
+      }
+    },
+    {
+      "channel": null,
+      "conditions": {
+        "branch": "print",
+        "repeats": 3,
+        "size": 1024
+      },
+      "evidence_level": "V1",
+      "independent": false,
+      "metric_id": "C.performance.1024.print.determinism",
+      "normalization": null,
+      "quantity": "repeated benchmark output determinism",
+      "reason": null,
+      "reference": null,
+      "status": "pass",
+      "uncertainty": null,
+      "unit": "boolean",
+      "value": {
+        "finite": true,
+        "hashes": [
+          "258d947a7d4eddae72570cefaef46f0787228df0569f314230031c8e9404615f",
+          "258d947a7d4eddae72570cefaef46f0787228df0569f314230031c8e9404615f",
+          "258d947a7d4eddae72570cefaef46f0787228df0569f314230031c8e9404615f"
+        ]
+      }
+    },
+    {
+      "channel": null,
+      "conditions": {
+        "branch": "negative",
+        "repeats": 3,
+        "size": 2048
+      },
+      "evidence_level": "V1",
+      "independent": false,
+      "metric_id": "C.performance.2048.negative.determinism",
+      "normalization": null,
+      "quantity": "repeated benchmark output determinism",
+      "reason": null,
+      "reference": null,
+      "status": "pass",
+      "uncertainty": null,
+      "unit": "boolean",
+      "value": {
+        "finite": true,
+        "hashes": [
+          "6e54c5042af71850fd01dd0f35f015e83e1eb4d431a4981eebec371b347aaada",
+          "6e54c5042af71850fd01dd0f35f015e83e1eb4d431a4981eebec371b347aaada",
+          "6e54c5042af71850fd01dd0f35f015e83e1eb4d431a4981eebec371b347aaada"
+        ]
+      }
+    },
+    {
+      "channel": null,
+      "conditions": {
+        "branch": "print",
+        "repeats": 3,
+        "size": 2048
+      },
+      "evidence_level": "V1",
+      "independent": false,
+      "metric_id": "C.performance.2048.print.determinism",
+      "normalization": null,
+      "quantity": "repeated benchmark output determinism",
+      "reason": null,
+      "reference": null,
+      "status": "pass",
+      "uncertainty": null,
+      "unit": "boolean",
+      "value": {
+        "finite": true,
+        "hashes": [
+          "dff5ffee2df7689f488cbd1f499778e98719bbce6c4dc39306329fdc68e0f47c",
+          "dff5ffee2df7689f488cbd1f499778e98719bbce6c4dc39306329fdc68e0f47c",
+          "dff5ffee2df7689f488cbd1f499778e98719bbce6c4dc39306329fdc68e0f47c"
+        ]
+      }
+    },
+    {
+      "channel": null,
+      "conditions": {
+        "size": 1024,
+        "spatial_effects": false,
+        "stochastic_effects": false
+      },
+      "evidence_level": "V1",
+      "independent": false,
+      "metric_id": "C.tile.negative",
+      "normalization": null,
+      "quantity": "whole-frame versus 2x2 tile numerical agreement",
+      "reason": "a pass only establishes the restricted per-pixel configuration, not general bit-exact tiling",
+      "reference": null,
+      "status": "pass",
+      "uncertainty": null,
+      "unit": "scene-linear ACEScg",
+      "value": {
+        "bit_exact": true,
+        "mae": 0.0,
+        "max_abs": 0.0,
+        "rmse": 0.0
+      }
+    },
+    {
+      "channel": null,
+      "conditions": {
+        "size": 1024,
+        "spatial_effects": false,
+        "stochastic_effects": false
+      },
+      "evidence_level": "V1",
+      "independent": false,
+      "metric_id": "C.tile.print",
+      "normalization": null,
+      "quantity": "whole-frame versus 2x2 tile numerical agreement",
+      "reason": "a pass only establishes the restricted per-pixel configuration, not general bit-exact tiling",
+      "reference": null,
+      "status": "pass",
+      "uncertainty": null,
+      "unit": "scene-linear ACEScg",
+      "value": {
+        "bit_exact": true,
+        "mae": 0.0,
+        "max_abs": 0.0,
+        "rmse": 0.0
+      }
+    }
+  ],
+  "no_overall_authenticity_score": true,
+  "schema_version": 1
+}

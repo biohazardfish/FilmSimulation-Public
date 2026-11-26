@@ -1,0 +1,124 @@
+{
+  "film": {
+    "arrays": {
+      "base_density": {
+        "dtype": "float64",
+        "finite_count": 77,
+        "finite_max": 0.8653309509365279,
+        "finite_min": 0.08250803417713755,
+        "nan_count": 4,
+        "shape": [
+          81
+        ]
+      },
+      "channel_density": {
+        "dtype": "float64",
+        "finite_count": 228,
+        "finite_max": 1.4182321802547053,
+        "finite_min": -0.118799519763609,
+        "nan_count": 15,
+        "shape": [
+          81,
+          3
+        ]
+      },
+      "log_sensitivity": {
+        "dtype": "float64",
+        "finite_count": 243,
+        "finite_max": 0.03724193751226007,
+        "finite_min": -9.559894755337156,
+        "nan_count": 0,
+        "shape": [
+          81,
+          3
+        ]
+      },
+      "midscale_neutral_density": {
+        "dtype": "float64",
+        "finite_count": 76,
+        "finite_max": 1.6445797090090621,
+        "finite_min": 0.2880521991261336,
+        "nan_count": 5,
+        "shape": [
+          81
+        ]
+      },
+      "wavelengths": {
+        "dtype": "float64",
+        "finite_count": 81,
+        "finite_max": 780.0,
+        "finite_min": 380.0,
+        "nan_count": 0,
+        "shape": [
+          81
+        ]
+      }
+    },
+    "densitometer": "status_M",
+    "nan_runtime_semantics": "density_to_light replaces NaN transmitted-light samples with zero",
+    "profile_key": "kodak_vision3_500t",
+    "reference_illuminant": "T",
+    "viewing_illuminant": "D50"
+  },
+  "print": {
+    "arrays": {
+      "base_density": {
+        "dtype": "float64",
+        "finite_count": 81,
+        "finite_max": 0.11363710440144138,
+        "finite_min": 0.04922805023487477,
+        "nan_count": 0,
+        "shape": [
+          81
+        ]
+      },
+      "channel_density": {
+        "dtype": "float64",
+        "finite_count": 224,
+        "finite_max": 1.2504384224993843,
+        "finite_min": 0.00579725058316551,
+        "nan_count": 19,
+        "shape": [
+          81,
+          3
+        ]
+      },
+      "log_sensitivity": {
+        "dtype": "float64",
+        "finite_count": 243,
+        "finite_max": 1.2928695796930745,
+        "finite_min": -11.246016066991963,
+        "nan_count": 0,
+        "shape": [
+          81,
+          3
+        ]
+      },
+      "midscale_neutral_density": {
+        "dtype": "float64",
+        "finite_count": 74,
+        "finite_max": 0.8882092023932935,
+        "finite_min": 0.32824823566903555,
+        "nan_count": 7,
+        "shape": [
+          81
+        ]
+      },
+      "wavelengths": {
+        "dtype": "float64",
+        "finite_count": 81,
+        "finite_max": 780.0,
+        "finite_min": 380.0,
+        "nan_count": 0,
+        "shape": [
+          81
+        ]
+      }
+    },
+    "densitometer": "status_A",
+    "nan_runtime_semantics": "density_to_light replaces NaN transmitted-light samples with zero",
+    "profile_key": "kodak_2383",
+    "reference_illuminant": "TH-KG3",
+    "viewing_illuminant": "K75P"
+  }
+}

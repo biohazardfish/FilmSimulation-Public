@@ -1,0 +1,7 @@
+stock,curve,channel,x,official,profile_aligned,residual,status,source_page,x_unit,y_unit,sampling_range,alignment,tolerance_rmse,tolerance_max_abs,tolerance_scored
+kodak_2383,characteristic,,,,,,insufficient,4,log10 exposure (lux-seconds),density,figure axis calibrated; curve samples were not accepted for numeric comparison,not applied,0.08,0.25,False
+kodak_2383,spectral_dye_density,,,,,,insufficient,5,wavelength nm,density,figure axis calibrated; curve samples were not accepted for numeric comparison,not applied,0.08,0.2,False
+kodak_2383,spectral_sensitivity,,,,,,insufficient,5,wavelength nm,log10 sensitivity,figure axis calibrated; curve samples were not accepted for numeric comparison,not applied,0.2,0.55,False
+kodak_vision3_500t,characteristic,,,,,,insufficient,3,log10 exposure (lux-seconds),density,figure axis calibrated; curve samples were not accepted for numeric comparison,not applied,0.08,0.25,False
+kodak_vision3_500t,spectral_dye_density,,,,,,insufficient,4,wavelength nm,density,figure axis calibrated; curve samples were not accepted for numeric comparison,not applied,0.08,0.2,False
+kodak_vision3_500t,spectral_sensitivity,,,,,,insufficient,4,wavelength nm,log10 sensitivity,figure axis calibrated; curve samples were not accepted for numeric comparison,not applied,0.2,0.55,False

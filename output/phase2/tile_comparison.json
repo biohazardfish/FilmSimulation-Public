@@ -1,0 +1,31 @@
+{
+  "configuration": "spatial, stochastic, auto-exposure and scanner corrections disabled",
+  "general_blockers": [
+    "auto-exposure uses image-global statistics",
+    "highlight boost uses an image-global maximum",
+    "crop/rescale changes sampling geometry",
+    "DIR diffusion crosses tile boundaries when enabled",
+    "halation, diffusion, blur, glare and unsharp mask require spatial neighborhoods",
+    "grain is stochastic and needs a globally stable random-field policy"
+  ],
+  "negative": {
+    "bit_exact": true,
+    "finite": true,
+    "full_sha256": "c8c00d1314e1286ae18a6925268789a321a283cf4d096ca9a6fccbcc5ffba4fa",
+    "mae": 0.0,
+    "max_abs": 0.0,
+    "rmse": 0.0,
+    "tiled_sha256": "c8c00d1314e1286ae18a6925268789a321a283cf4d096ca9a6fccbcc5ffba4fa"
+  },
+  "print": {
+    "bit_exact": true,
+    "finite": true,
+    "full_sha256": "258d947a7d4eddae72570cefaef46f0787228df0569f314230031c8e9404615f",
+    "mae": 0.0,
+    "max_abs": 0.0,
+    "rmse": 0.0,
+    "tiled_sha256": "258d947a7d4eddae72570cefaef46f0787228df0569f314230031c8e9404615f"
+  },
+  "size": 1024,
+  "tiles": "2x2"
+}

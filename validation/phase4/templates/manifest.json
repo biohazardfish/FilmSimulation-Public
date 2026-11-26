@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "run_id": "REQUIRED_UNIQUE_RUN_ID",
+  "project": "FilmSimulation",
+  "measurement_scope": "independent_physical_validation",
+  "film": {
+    "material": "5219",
+    "stock": "KODAK VISION3 500T Color Negative Film 5219",
+    "batch_id": "REQUIRED_5219_BATCH_ID",
+    "format": "35 mm"
+  },
+  "print": {
+    "material": "2383",
+    "stock": "KODAK VISION Color Print Film 2383",
+    "batch_id": "REQUIRED_2383_BATCH_ID",
+    "format": "35 mm"
+  },
+  "sensitometer": {
+    "instrument_id": "REQUIRED_INSTRUMENT_MODEL_AND_SERIAL",
+    "calibration_id": "REQUIRED_CALIBRATION_ID",
+    "calibration_date": "YYYY-MM-DD",
+    "illuminant_cct_k": 3200,
+    "step_wedge_id": "REQUIRED_STEP_WEDGE_ID",
+    "exposure_unit": "REQUIRED_UNIT",
+    "measurement_uncertainty": "REQUIRED_VALUE_AND_UNIT"
+  },
+  "processes": {
+    "negative": {
+      "name": "ECN-2",
+      "run_id": "REQUIRED_ECN2_RUN_ID",
+      "time_seconds": "REQUIRED_MEASURED_VALUE",
+      "temperature_c": "REQUIRED_MEASURED_VALUE",
+      "chemistry_lot": "REQUIRED_CHEMISTRY_LOT",
+      "deviations": "REQUIRED_NONE_OR_DESCRIPTION"
+    },
+    "print": {
+      "name": "ECP-2D",
+      "run_id": "REQUIRED_ECP2D_RUN_ID",
+      "time_seconds": "REQUIRED_MEASURED_VALUE",
+      "temperature_c": "REQUIRED_MEASURED_VALUE",
+      "chemistry_lot": "REQUIRED_CHEMISTRY_LOT",
+      "deviations": "REQUIRED_NONE_OR_DESCRIPTION"
+    }
+  },
+  "printer": {
+    "instrument_id": "REQUIRED_PRINTER_MODEL_AND_SERIAL",
+    "run_id": "REQUIRED_PRINT_EXPOSURE_RUN_ID",
+    "light_unit": "REQUIRED_PRINTER_LIGHT_UNIT",
+    "exposure_unit": "REQUIRED_PRINT_EXPOSURE_UNIT"
+  },
+  "densitometers": {
+    "status_m": {
+      "instrument_id": "REQUIRED_STATUS_M_MODEL_AND_SERIAL",
+      "calibration_id": "REQUIRED_CALIBRATION_ID",
+      "calibration_date": "YYYY-MM-DD",
+      "measurement_uncertainty": "REQUIRED_VALUE_AND_UNIT"
+    },
+    "status_a": {
+      "instrument_id": "REQUIRED_STATUS_A_MODEL_AND_SERIAL",
+      "calibration_id": "REQUIRED_CALIBRATION_ID",
+      "calibration_date": "YYYY-MM-DD",
+      "measurement_uncertainty": "REQUIRED_VALUE_AND_UNIT"
+    }
+  },
+  "spectrophotometer": {
+    "instrument_id": "REQUIRED_MODEL_AND_SERIAL",
+    "calibration_id": "REQUIRED_CALIBRATION_ID",
+    "calibration_date": "YYYY-MM-DD",
+    "native_wavelength_min_nm": "REQUIRED_MEASURED_VALUE_AT_OR_BELOW_380",
+    "native_wavelength_max_nm": "REQUIRED_MEASURED_VALUE_AT_OR_ABOVE_780",
+    "native_sampling_interval_nm": "REQUIRED_VALUE",
+    "spectral_bandwidth_nm": "REQUIRED_VALUE",
+    "measurement_uncertainty": "REQUIRED_VALUE_AND_UNIT"
+  },
+  "files": {
+    "density.csv": {"sha256": "REQUIRED_SHA256"},
+    "print_map.csv": {"sha256": "REQUIRED_SHA256"},
+    "spectral_transmittance.csv": {"sha256": "REQUIRED_SHA256"}
+  }
+}
+

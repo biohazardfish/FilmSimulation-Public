@@ -1,0 +1,1166 @@
+{
+  "task": "FS-P6-02",
+  "generated_at": "2026-11-20T19:21:36Z",
+  "register": "validation/public_data/evidence_register.csv",
+  "procedure": "docs/phase6/PUBLIC_DATA_STUDY_DEFINITION.md §6",
+  "command": "python3 scripts/compute_public_data_comparisons.py",
+  "reference_profiles": {
+    "url": "https://github.com/andreavolpato/spektrafilm.git",
+    "legacy_commit": "77d448adb7d9562823c4b4e6cb5ba78eeef71452",
+    "legacy_tag": "v0.2.0-legacy",
+    "profile_commit": "3bb2c2d2801ff68b92019cf1dbcbb133d60832bc"
+  },
+  "summary": {
+    "register_entries": 58,
+    "compared": 4,
+    "not_evaluable": 51,
+    "unavailable": 3,
+    "independent_validation_comparisons": 0,
+    "comparable_entry_ids": [
+      "PD-001",
+      "PD-018",
+      "PD-042",
+      "PD-048"
+    ]
+  },
+  "fs_p4_historical": {
+    "note": "Six historical FS-P4 published_comparison not_evaluable rows are unchanged by this task",
+    "modified": false
+  },
+  "independent_physical_validation": {
+    "status": "unavailable",
+    "reason": "Register has zero INDEPENDENT_PHYSICAL_MEASUREMENT with lineage=none (FS-P6-01 QC)"
+  },
+  "entries": [
+    {
+      "entry_id": "PD-001",
+      "outcome": "compared",
+      "label": "implementation cross-check",
+      "evidence_class": "DERIVED_OR_SIMULATED_DATA",
+      "lineage": "unknown",
+      "permitted_use": "implementation_crosscheck",
+      "evidence_level": "V2",
+      "quantity": "density_conversion",
+      "conditions": {
+        "source": "S-2008-002 Annex C via film-scan-calibration",
+        "commit": "3716966fbc82760ed9be38362519689ff2aca811",
+        "densitometry_input": "Status M (profile characteristic_curve densities treated as Status M samples)",
+        "densitometry_output": "Academy Printing Density (APD)",
+        "model_note": "spektrafilm profile does not implement APD; this records the Academy transform applied to pinned profile samples"
+      },
+      "results": [
+        {
+          "comparison": "academy_matrix_applied_to_profile_status_m",
+          "matrix": [
+            [
+              1.100481,
+              -0.017433,
+              -0.00016
+            ],
+            [
+              -0.005245,
+              1.021893,
+              0.009767
+            ],
+            [
+              -0.008288,
+              0.028113,
+              0.9576
+            ]
+          ],
+          "offset": [
+            -0.04652,
+            -0.02568,
+            0.01055
+          ],
+          "example_triplet_status_m": [
+            0.98549,
+            0.89042,
+            1.07635
+          ],
+          "example_triplet_apd": [
+            1.02229,
+            0.88958,
+            1.05812
+          ],
+          "along_curve_samples": [
+            {
+              "log_exposure": -3.0,
+              "status_m_rgb": [
+                -0.00035,
+                -0.00014,
+                -0.00031
+              ],
+              "apd_rgb": [
+                -0.0469,
+                -0.02582,
+                0.01025
+              ]
+            },
+            {
+              "log_exposure": -2.42353,
+              "status_m_rgb": [
+                0.00583,
+                0.00667,
+                0.00473
+              ],
+              "apd_rgb": [
+                -0.04022,
+                -0.01884,
+                0.01522
+              ]
+            },
+            {
+              "log_exposure": -1.84706,
+              "status_m_rgb": [
+                0.04269,
+                0.04739,
+                0.04107
+              ],
+              "apd_rgb": [
+                -0.00037,
+                0.02293,
+                0.05085
+              ]
+            },
+            {
+              "log_exposure": -1.27059,
+              "status_m_rgb": [
+                0.17741,
+                0.18433,
+                0.18091
+              ],
+              "apd_rgb": [
+                0.14548,
+                0.16352,
+                0.1875
+              ]
+            },
+            {
+              "log_exposure": -0.69412,
+              "status_m_rgb": [
+                0.42544,
+                0.40706,
+                0.45196
+              ],
+              "apd_rgb": [
+                0.4145,
+                0.39248,
+                0.45127
+              ]
+            },
+            {
+              "log_exposure": -0.11765,
+              "status_m_rgb": [
+                0.69335,
+                0.64139,
+                0.75506
+              ],
+              "apd_rgb": [
+                0.7052,
+                0.6335,
+                0.74588
+              ]
+            },
+            {
+              "log_exposure": 0.45882,
+              "status_m_rgb": [
+                0.96134,
+                0.87058,
+                1.0471
+              ],
+              "apd_rgb": [
+                0.99607,
+                0.86915,
+                1.02976
+              ]
+            },
+            {
+              "log_exposure": 1.03529,
+              "status_m_rgb": [
+                1.23198,
+                1.11766,
+                1.34233
+              ],
+              "apd_rgb": [
+                1.28955,
+                1.1231,
+                1.31717
+              ]
+            },
+            {
+              "log_exposure": 1.61176,
+              "status_m_rgb": [
+                1.47284,
+                1.3516,
+                1.61247
+              ],
+              "apd_rgb": [
+                1.55049,
+                1.36354,
+                1.58044
+              ]
+            },
+            {
+              "log_exposure": 2.18824,
+              "status_m_rgb": [
+                1.6318,
+                1.51398,
+                1.79143
+              ],
+              "apd_rgb": [
+                1.72256,
+                1.53038,
+                1.75506
+              ]
+            },
+            {
+              "log_exposure": 2.76471,
+              "status_m_rgb": [
+                1.71148,
+                1.59875,
+                1.88148
+              ],
+              "apd_rgb": [
+                1.80876,
+                1.61748,
+                1.84302
+              ]
+            },
+            {
+              "log_exposure": 3.34118,
+              "status_m_rgb": [
+                1.73814,
+                1.62989,
+                1.91318
+              ],
+              "apd_rgb": [
+                1.83755,
+                1.64947,
+                1.87402
+              ]
+            },
+            {
+              "log_exposure": 3.91765,
+              "status_m_rgb": [
+                1.74461,
+                1.63829,
+                1.92086
+              ],
+              "apd_rgb": [
+                1.84452,
+                1.65809,
+                1.88156
+              ]
+            }
+          ]
+        }
+      ],
+      "uncertainty": {
+        "academy_fit_residuals_5219": {
+          "mean abs error (all)": [
+            0.003,
+            0.006,
+            0.002
+          ],
+          "max abs error (all)": [
+            0.013,
+            0.032,
+            0.009
+          ],
+          "max abs error (gray)": [
+            0.006,
+            0.004,
+            0.003
+          ],
+          "max abs error (Macbeth)": [
+            0.005,
+            0.007,
+            0.002
+          ],
+          "max abs error (large)": [
+            0.019,
+            0.048,
+            0.013
+          ]
+        },
+        "interpretation": "Academy least-squares fit errors on unpublished patch spectra; not a model residual"
+      },
+      "reason": null,
+      "pass_fail": null,
+      "independent_validation": false
+    },
+    {
+      "entry_id": "PD-002",
+      "outcome": "not_evaluable",
+      "evidence_class": "DERIVED_OR_SIMULATED_DATA",
+      "lineage": "unknown",
+      "permitted_use": "support",
+      "status_in_register": "not_evaluable",
+      "usable_for_residuals": false,
+      "reason": "duplicate transcription of PD-001; use the primary PD-001",
+      "product": "5219",
+      "quantity": "density_conversion"
+    },
+    {
+      "entry_id": "PD-003",
+      "outcome": "not_evaluable",
+      "evidence_class": "NOT_COMPARABLE",
+      "lineage": "unknown",
+      "permitted_use": "support",
+      "status_in_register": "not_evaluable",
+      "usable_for_residuals": false,
+      "reason": "metric definition only; supporting entry needed to compute APD for PD-001 comparisons",
+      "product": "both",
+      "quantity": "printing_density"
+    },
+    {
+      "entry_id": "PD-004",
+      "outcome": "unavailable",
+      "evidence_class": "NOT_COMPARABLE",
+      "lineage": "unknown",
+      "permitted_use": "none",
+      "status_in_register": "unavailable",
+      "usable_for_residuals": false,
+      "reason": "paywalled; not purchased (no purchases authorized); free equivalent definition in PD-003",
+      "product": "both",
+      "quantity": "printing_density"
+    },
+    {
+      "entry_id": "PD-005",
+      "outcome": "not_evaluable",
+      "evidence_class": "NOT_COMPARABLE",
+      "lineage": "unknown",
+      "permitted_use": "support",
+      "status_in_register": "not_evaluable",
+      "usable_for_residuals": false,
+      "reason": "metric definition only; supporting entry for printing-density computations",
+      "product": "both",
+      "quantity": "printing_density"
+    },
+    {
+      "entry_id": "PD-006",
+      "outcome": "not_evaluable",
+      "evidence_class": "NOT_COMPARABLE",
+      "lineage": "unknown",
+      "permitted_use": "none",
+      "status_in_register": "not_evaluable",
+      "usable_for_residuals": false,
+      "reason": "no film data",
+      "product": "both",
+      "quantity": "printing_density"
+    },
+    {
+      "entry_id": "PD-007",
+      "outcome": "not_evaluable",
+      "evidence_class": "NOT_COMPARABLE",
+      "lineage": "unknown",
+      "permitted_use": "none",
+      "status_in_register": "not_evaluable",
+      "usable_for_residuals": false,
+      "reason": "no per-patch 2383 values; quantity (cross-stock APD equivalence) not exposed by the model; negative stocks unnamed",
+      "product": "2383",
+      "quantity": "other"
+    },
+    {
+      "entry_id": "PD-008",
+      "outcome": "not_evaluable",
+      "evidence_class": "NOT_COMPARABLE",
+      "lineage": "unknown",
+      "permitted_use": "none",
+      "status_in_register": "not_evaluable",
+      "usable_for_residuals": false,
+      "reason": "not 5219-specific (universal unbuild)",
+      "product": "other:universal-negative",
+      "quantity": "density_conversion"
+    },
+    {
+      "entry_id": "PD-009",
+      "outcome": "not_evaluable",
+      "evidence_class": "NOT_COMPARABLE",
+      "lineage": "unknown",
+      "permitted_use": "none",
+      "status_in_register": "not_evaluable",
+      "usable_for_residuals": false,
+      "reason": "no 5219/2383 data",
+      "product": "other:universal-negative",
+      "quantity": "printing_density"
+    },
+    {
+      "entry_id": "PD-010",
+      "outcome": "not_evaluable",
+      "evidence_class": "NOT_COMPARABLE",
+      "lineage": "unknown",
+      "permitted_use": "none",
+      "status_in_register": "not_evaluable",
+      "usable_for_residuals": false,
+      "reason": "different product (5218/5242); draft without data",
+      "product": "other:5218",
+      "quantity": "printing_density"
+    },
+    {
+      "entry_id": "PD-011",
+      "outcome": "not_evaluable",
+      "evidence_class": "MANUFACTURER_PUBLISHED_MEASUREMENT",
+      "lineage": "same_primary_source",
+      "permitted_use": "source_conformance",
+      "status_in_register": "not_evaluable",
+      "usable_for_residuals": false,
+      "reason": "curves (characteristic, spectral sensitivity, spectral dye density) published only as raster figures; numeric use needs an audited digitization; FS-P4 raster tracing of this source family was not_evaluable",
+      "product": "5219",
+      "quantity": "characteristic_curve"
+    },
+    {
+      "entry_id": "PD-012",
+      "outcome": "not_evaluable",
+      "evidence_class": "MANUFACTURER_PUBLISHED_MEASUREMENT",
+      "lineage": "same_primary_source",
+      "permitted_use": "source_conformance",
+      "status_in_register": "not_evaluable",
+      "usable_for_residuals": false,
+      "reason": "curves (characteristic, spectral sensitivity, spectral dye density) published only as raster figures; numeric use needs an audited digitization; FS-P4 raster tracing of this source family was not_evaluable",
+      "product": "5219",
+      "quantity": "characteristic_curve"
+    },
+    {
+      "entry_id": "PD-013",
+      "outcome": "not_evaluable",
+      "evidence_class": "MANUFACTURER_PUBLISHED_MEASUREMENT",
+      "lineage": "same_primary_source",
+      "permitted_use": "source_conformance",
+      "status_in_register": "not_evaluable",
+      "usable_for_residuals": false,
+      "reason": "curves (characteristic, spectral sensitivity, spectral dye density) published only as raster figures; numeric use needs an audited digitization; FS-P4 raster tracing of this source family was not_evaluable",
+      "product": "5219",
+      "quantity": "characteristic_curve"
+    },
+    {
+      "entry_id": "PD-014",
+      "outcome": "not_evaluable",
+      "evidence_class": "MANUFACTURER_PUBLISHED_MEASUREMENT",
+      "lineage": "same_primary_source",
+      "permitted_use": "source_conformance",
+      "status_in_register": "not_evaluable",
+      "usable_for_residuals": false,
+      "reason": "curves (characteristic, spectral sensitivity, spectral dye density) published only as raster figures; numeric use needs an audited digitization; FS-P4 raster tracing of this source family was not_evaluable",
+      "product": "2383",
+      "quantity": "characteristic_curve"
+    },
+    {
+      "entry_id": "PD-015",
+      "outcome": "not_evaluable",
+      "evidence_class": "MANUFACTURER_PUBLISHED_MEASUREMENT",
+      "lineage": "same_primary_source",
+      "permitted_use": "source_conformance",
+      "status_in_register": "not_evaluable",
+      "usable_for_residuals": false,
+      "reason": "curves (characteristic, spectral sensitivity, spectral dye density) published only as raster figures; numeric use needs an audited digitization; FS-P4 raster tracing of this source family was not_evaluable",
+      "product": "2383",
+      "quantity": "characteristic_curve"
+    },
+    {
+      "entry_id": "PD-016",
+      "outcome": "not_evaluable",
+      "evidence_class": "MANUFACTURER_PUBLISHED_MEASUREMENT",
+      "lineage": "same_primary_source",
+      "permitted_use": "source_conformance",
+      "status_in_register": "not_evaluable",
+      "usable_for_residuals": false,
+      "reason": "curves (characteristic, spectral sensitivity, spectral dye density) published only as raster figures; numeric use needs an audited digitization; FS-P4 raster tracing of this source family was not_evaluable",
+      "product": "2383",
+      "quantity": "characteristic_curve"
+    },
+    {
+      "entry_id": "PD-017",
+      "outcome": "not_evaluable",
+      "evidence_class": "MANUFACTURER_PUBLISHED_MEASUREMENT",
+      "lineage": "same_primary_source",
+      "permitted_use": "source_conformance",
+      "status_in_register": "not_evaluable",
+      "usable_for_residuals": false,
+      "reason": "curves (characteristic, spectral sensitivity, spectral dye density) published only as raster figures; numeric use needs an audited digitization; FS-P4 raster tracing of this source family was not_evaluable",
+      "product": "2383",
+      "quantity": "characteristic_curve"
+    },
+    {
+      "entry_id": "PD-018",
+      "outcome": "compared",
+      "label": "manufacturer cross-check",
+      "evidence_class": "MANUFACTURER_PUBLISHED_MEASUREMENT",
+      "lineage": "same_primary_source",
+      "permitted_use": "source_conformance",
+      "evidence_level": "V2",
+      "quantity": "lad_aim",
+      "conditions": {
+        "published": "Kodak H-61B LAD Status A aim for 2383/3383",
+        "process": "ECP-2D",
+        "densitometry_reference": "Status A",
+        "densitometry_model": "profile density_curves (model channel coefficients; not Status A)",
+        "alignment": "nearest profile sample to published aim (log_exposure index 116)"
+      },
+      "results": [
+        {
+          "comparison": "lad_aim_vs_nearest_profile_density",
+          "reference_status_a_rgb": [
+            1.09,
+            1.06,
+            1.03
+          ],
+          "profile_rgb_at_nearest": [
+            1.26789,
+            0.99089,
+            0.87093
+          ],
+          "residual_rgb": [
+            0.17789,
+            -0.06911,
+            -0.15907
+          ],
+          "rmse": 0.14344,
+          "mae": 0.13536,
+          "max_abs": 0.17789,
+          "log_exposure": 0.18431
+        }
+      ],
+      "uncertainty": {
+        "densitometry_mismatch": "Published values are Status A; profile curves are not Status A without a declared conversion",
+        "interpretation": "Source-conformance proximity only; not physical print measurement"
+      },
+      "reason": null,
+      "pass_fail": null,
+      "independent_validation": false
+    },
+    {
+      "entry_id": "PD-019",
+      "outcome": "not_evaluable",
+      "evidence_class": "NOT_COMPARABLE",
+      "lineage": "unknown",
+      "permitted_use": "none",
+      "status_in_register": "not_evaluable",
+      "usable_for_residuals": false,
+      "reason": "different product (LAD control film, not 5219)",
+      "product": "other:LAD-control-film",
+      "quantity": "lad_aim"
+    },
+    {
+      "entry_id": "PD-020",
+      "outcome": "not_evaluable",
+      "evidence_class": "NOT_COMPARABLE",
+      "lineage": "unknown",
+      "permitted_use": "none",
+      "status_in_register": "not_evaluable",
+      "usable_for_residuals": false,
+      "reason": "different products (no 5219 table)",
+      "product": "other:2242;2254;5203",
+      "quantity": "printing_density"
+    },
+    {
+      "entry_id": "PD-021",
+      "outcome": "not_evaluable",
+      "evidence_class": "NOT_COMPARABLE",
+      "lineage": "unknown",
+      "permitted_use": "none",
+      "status_in_register": "not_evaluable",
+      "usable_for_residuals": false,
+      "reason": "no 5219/2383 sensitometric values; aims are batch-specific (Module 9A SHA-256 2432b325e9ec504a2058a070e4189389a8919effe2f6093e1045f61cf4461221)",
+      "product": "both",
+      "quantity": "other"
+    },
+    {
+      "entry_id": "PD-022",
+      "outcome": "not_evaluable",
+      "evidence_class": "MANUFACTURER_PUBLISHED_MEASUREMENT",
+      "lineage": "same_primary_source",
+      "permitted_use": "source_conformance",
+      "status_in_register": "not_evaluable",
+      "usable_for_residuals": false,
+      "reason": "raster plot only; no audited digitization exists",
+      "product": "5219",
+      "quantity": "printing_density"
+    },
+    {
+      "entry_id": "PD-023",
+      "outcome": "not_evaluable",
+      "evidence_class": "NOT_COMPARABLE",
+      "lineage": "unknown",
+      "permitted_use": "none",
+      "status_in_register": "not_evaluable",
+      "usable_for_residuals": false,
+      "reason": "conditions cannot be established (no densitometry status, instrument or numeric table)",
+      "product": "5219",
+      "quantity": "characteristic_curve"
+    },
+    {
+      "entry_id": "PD-024",
+      "outcome": "not_evaluable",
+      "evidence_class": "NOT_COMPARABLE",
+      "lineage": "unknown",
+      "permitted_use": "none",
+      "status_in_register": "not_evaluable",
+      "usable_for_residuals": false,
+      "reason": "different product: ARRI AQUA test leader on Kodak 2254; Konica Minolta CM-36dGV transmittance of grey frames",
+      "product": "other:2254",
+      "quantity": "spectral_transmittance"
+    },
+    {
+      "entry_id": "PD-025",
+      "outcome": "not_evaluable",
+      "evidence_class": "NOT_COMPARABLE",
+      "lineage": "unknown",
+      "permitted_use": "none",
+      "status_in_register": "not_evaluable",
+      "usable_for_residuals": false,
+      "reason": "different products (still films); no 5219/2383",
+      "product": "other:Ektachrome;Provia;RSX;Portra",
+      "quantity": "spectral_transmittance"
+    },
+    {
+      "entry_id": "PD-026",
+      "outcome": "unavailable",
+      "evidence_class": "NOT_COMPARABLE",
+      "lineage": "unknown",
+      "permitted_use": "none",
+      "status_in_register": "unavailable",
+      "usable_for_residuals": false,
+      "reason": "paywalled; title indicates a recorder/intermediate film design paper; not acquired",
+      "product": "other:unknown",
+      "quantity": "other"
+    },
+    {
+      "entry_id": "PD-027",
+      "outcome": "not_evaluable",
+      "evidence_class": "NOT_COMPARABLE",
+      "lineage": "unknown",
+      "permitted_use": "none",
+      "status_in_register": "not_evaluable",
+      "usable_for_residuals": false,
+      "reason": "different products (Vision3 5207 250D and still stocks); learned LUT emulator",
+      "product": "other:5207",
+      "quantity": "other"
+    },
+    {
+      "entry_id": "PD-028",
+      "outcome": "not_evaluable",
+      "evidence_class": "NOT_COMPARABLE",
+      "lineage": "unknown",
+      "permitted_use": "none",
+      "status_in_register": "not_evaluable",
+      "usable_for_residuals": false,
+      "reason": "unnamed colour-positive stock; fitted 30-parameter model; no 5219/2383",
+      "product": "other:unnamed-colour-positive",
+      "quantity": "other"
+    },
+    {
+      "entry_id": "PD-029",
+      "outcome": "not_evaluable",
+      "evidence_class": "NOT_COMPARABLE",
+      "lineage": "unknown",
+      "permitted_use": "none",
+      "status_in_register": "not_evaluable",
+      "usable_for_residuals": false,
+      "reason": "different product (KODAK Color Asset Protection Film 2332)",
+      "product": "other:2332",
+      "quantity": "other"
+    },
+    {
+      "entry_id": "PD-030",
+      "outcome": "not_evaluable",
+      "evidence_class": "NOT_COMPARABLE",
+      "lineage": "unknown",
+      "permitted_use": "none",
+      "status_in_register": "not_evaluable",
+      "usable_for_residuals": false,
+      "reason": "camera spectral sensitivities, not film",
+      "product": "other:digital-cameras",
+      "quantity": "other"
+    },
+    {
+      "entry_id": "PD-031",
+      "outcome": "not_evaluable",
+      "evidence_class": "NOT_COMPARABLE",
+      "lineage": "unknown",
+      "permitted_use": "none",
+      "status_in_register": "not_evaluable",
+      "usable_for_residuals": false,
+      "reason": "different/discontinued products (George Eastman Museum collections)",
+      "product": "other:Technicolor;Eastman-Color",
+      "quantity": "spectral_transmittance"
+    },
+    {
+      "entry_id": "PD-032",
+      "outcome": "not_evaluable",
+      "evidence_class": "NOT_COMPARABLE",
+      "lineage": "unknown",
+      "permitted_use": "none",
+      "status_in_register": "not_evaluable",
+      "usable_for_residuals": false,
+      "reason": "different product (Fujichrome Provia 400X, Shimadzu UV-1800); method paper",
+      "product": "other:Provia",
+      "quantity": "spectral_dye_density"
+    },
+    {
+      "entry_id": "PD-033",
+      "outcome": "not_evaluable",
+      "evidence_class": "NOT_COMPARABLE",
+      "lineage": "unknown",
+      "permitted_use": "none",
+      "status_in_register": "not_evaluable",
+      "usable_for_residuals": false,
+      "reason": "historical film materials (e.g. Dufaycolor); no 5219/2383 (text search returned 0 matches)",
+      "product": "other:historical",
+      "quantity": "other"
+    },
+    {
+      "entry_id": "PD-034",
+      "outcome": "not_evaluable",
+      "evidence_class": "NOT_COMPARABLE",
+      "lineage": "unknown",
+      "permitted_use": "none",
+      "status_in_register": "not_evaluable",
+      "usable_for_residuals": false,
+      "reason": "general dye-fading chapter; no 2383/5219 values",
+      "product": "other:historical",
+      "quantity": "other"
+    },
+    {
+      "entry_id": "PD-035",
+      "outcome": "not_evaluable",
+      "evidence_class": "NOT_COMPARABLE",
+      "lineage": "unknown",
+      "permitted_use": "none",
+      "status_in_register": "not_evaluable",
+      "usable_for_residuals": false,
+      "reason": "different product (Vericolor III); stability testing",
+      "product": "other:Vericolor",
+      "quantity": "other"
+    },
+    {
+      "entry_id": "PD-036",
+      "outcome": "not_evaluable",
+      "evidence_class": "NOT_COMPARABLE",
+      "lineage": "unknown",
+      "permitted_use": "none",
+      "status_in_register": "not_evaluable",
+      "usable_for_residuals": false,
+      "reason": "densitometry calibration service; no film data",
+      "product": "other:none",
+      "quantity": "other"
+    },
+    {
+      "entry_id": "PD-037",
+      "outcome": "not_evaluable",
+      "evidence_class": "NOT_COMPARABLE",
+      "lineage": "unknown",
+      "permitted_use": "none",
+      "status_in_register": "not_evaluable",
+      "usable_for_residuals": false,
+      "reason": "guidance only; no measurements",
+      "product": "other:none",
+      "quantity": "other"
+    },
+    {
+      "entry_id": "PD-038",
+      "outcome": "not_evaluable",
+      "evidence_class": "NOT_COMPARABLE",
+      "lineage": "unknown",
+      "permitted_use": "none",
+      "status_in_register": "not_evaluable",
+      "usable_for_residuals": false,
+      "reason": "discontinued products (LAD values for 5247/5384 etc.)",
+      "product": "other:5247;5384;5243;5244",
+      "quantity": "lad_aim"
+    },
+    {
+      "entry_id": "PD-039",
+      "outcome": "not_evaluable",
+      "evidence_class": "NOT_COMPARABLE",
+      "lineage": "unknown",
+      "permitted_use": "none",
+      "status_in_register": "not_evaluable",
+      "usable_for_residuals": false,
+      "reason": "bibliographic entry; its only data is the mirrored Kodak sheet PD-017",
+      "product": "2383",
+      "quantity": "other"
+    },
+    {
+      "entry_id": "PD-040",
+      "outcome": "not_evaluable",
+      "evidence_class": "DIGITIZED_PUBLISHED_DATA",
+      "lineage": "same_primary_source",
+      "permitted_use": "digitization_uncertainty",
+      "status_in_register": "not_evaluable",
+      "usable_for_residuals": false,
+      "reason": "digitization lacks axis calibration and error record (credibility=low per §4.1 rule 5); source PDFs removed from the project on 2026-06-21",
+      "product": "5219",
+      "quantity": "characteristic_curve"
+    },
+    {
+      "entry_id": "PD-041",
+      "outcome": "not_evaluable",
+      "evidence_class": "DIGITIZED_PUBLISHED_DATA",
+      "lineage": "same_primary_source",
+      "permitted_use": "digitization_uncertainty",
+      "status_in_register": "not_evaluable",
+      "usable_for_residuals": false,
+      "reason": "digitization lacks axis calibration and error record; undocumented R/B offsets",
+      "product": "2383",
+      "quantity": "characteristic_curve"
+    },
+    {
+      "entry_id": "PD-042",
+      "outcome": "compared",
+      "label": "digitization uncertainty",
+      "evidence_class": "DIGITIZED_PUBLISHED_DATA",
+      "lineage": "same_primary_source",
+      "permitted_use": "digitization_uncertainty",
+      "evidence_level": "V2",
+      "quantity": "characteristic_curve",
+      "conditions": {
+        "digitizer": "film_scan_calibration",
+        "commit": "3716966fbc82760ed9be38362519689ff2aca811",
+        "reference": "pinned profile density_curves / log_sensitivity / channel_density",
+        "alignment": "x-shift search for characteristic_curve; mean y-offset removed"
+      },
+      "results": [
+        {
+          "curve": "characteristic_curve:b",
+          "n_points": 239,
+          "aligned_rms": 0.01549,
+          "aligned_max_abs": 0.04276,
+          "x_shift": 1.48,
+          "y_offset": -0.8432,
+          "reference": "pinned spektrafilm profile (3bb2c2d)"
+        },
+        {
+          "curve": "characteristic_curve:g",
+          "n_points": 239,
+          "aligned_rms": 0.1369,
+          "aligned_max_abs": 0.26909,
+          "x_shift": 1.645,
+          "y_offset": -0.68828,
+          "reference": "pinned spektrafilm profile (3bb2c2d)"
+        },
+        {
+          "curve": "characteristic_curve:r",
+          "n_points": 239,
+          "aligned_rms": 0.00848,
+          "aligned_max_abs": 0.01891,
+          "x_shift": 1.415,
+          "y_offset": -0.18793,
+          "reference": "pinned spektrafilm profile (3bb2c2d)"
+        },
+        {
+          "curve": "spectral_dye_density:c",
+          "n_points": 397,
+          "aligned_rms": 0.10485,
+          "aligned_max_abs": 0.1662,
+          "x_shift": 0.0,
+          "y_offset": 0.03189,
+          "reference": "pinned spektrafilm profile (3bb2c2d)"
+        },
+        {
+          "curve": "spectral_dye_density:m",
+          "n_points": 397,
+          "aligned_rms": 0.15246,
+          "aligned_max_abs": 0.33856,
+          "x_shift": 0.0,
+          "y_offset": 0.0958,
+          "reference": "pinned spektrafilm profile (3bb2c2d)"
+        },
+        {
+          "curve": "spectral_dye_density:mid",
+          "n_points": 239,
+          "aligned_rms": 0.00371,
+          "aligned_max_abs": 0.00883,
+          "x_shift": 0.0,
+          "y_offset": 0.00125,
+          "reference": "pinned spektrafilm profile (3bb2c2d)"
+        },
+        {
+          "curve": "spectral_dye_density:min",
+          "n_points": 397,
+          "aligned_rms": 0.00203,
+          "aligned_max_abs": 0.00887,
+          "x_shift": 0.0,
+          "y_offset": -0.00133,
+          "reference": "pinned spektrafilm profile (3bb2c2d)"
+        },
+        {
+          "curve": "spectral_dye_density:y",
+          "n_points": 397,
+          "aligned_rms": 0.10744,
+          "aligned_max_abs": 0.26226,
+          "x_shift": 0.0,
+          "y_offset": 0.01608,
+          "reference": "pinned spektrafilm profile (3bb2c2d)"
+        },
+        {
+          "curve": "spectral_sensitivity:b",
+          "n_points": 161,
+          "aligned_rms": null,
+          "aligned_max_abs": null,
+          "x_shift": null,
+          "y_offset": null,
+          "reference": "pinned spektrafilm profile (3bb2c2d)"
+        },
+        {
+          "curve": "spectral_sensitivity:g",
+          "n_points": 147,
+          "aligned_rms": null,
+          "aligned_max_abs": null,
+          "x_shift": null,
+          "y_offset": null,
+          "reference": "pinned spektrafilm profile (3bb2c2d)"
+        },
+        {
+          "curve": "spectral_sensitivity:r",
+          "n_points": 172,
+          "aligned_rms": null,
+          "aligned_max_abs": null,
+          "x_shift": null,
+          "y_offset": null,
+          "reference": "pinned spektrafilm profile (3bb2c2d)"
+        }
+      ],
+      "uncertainty": {
+        "inter_digitizer_yardstick_D": "0.0006–0.0007 RMS between film-scan-calibration and luce-develop (fingerprints.json)",
+        "profile_note": "profile arrays are re-gridded and D-min processed; aligned RMS is the meaningful metric"
+      },
+      "reason": null,
+      "pass_fail": null,
+      "independent_validation": false
+    },
+    {
+      "entry_id": "PD-043",
+      "outcome": "not_evaluable",
+      "evidence_class": "DIGITIZED_PUBLISHED_DATA",
+      "lineage": "same_primary_source",
+      "permitted_use": "digitization_uncertainty",
+      "status_in_register": "not_evaluable",
+      "usable_for_residuals": false,
+      "reason": "digitization lacks an error record (credibility=low per §4.1 rule 5) despite vector source",
+      "product": "5219",
+      "quantity": "characteristic_curve"
+    },
+    {
+      "entry_id": "PD-044",
+      "outcome": "not_evaluable",
+      "evidence_class": "DIGITIZED_PUBLISHED_DATA",
+      "lineage": "same_primary_source",
+      "permitted_use": "digitization_uncertainty",
+      "status_in_register": "not_evaluable",
+      "usable_for_residuals": false,
+      "reason": "digitization lacks an error record",
+      "product": "2383",
+      "quantity": "characteristic_curve"
+    },
+    {
+      "entry_id": "PD-045",
+      "outcome": "not_evaluable",
+      "evidence_class": "DIGITIZED_PUBLISHED_DATA",
+      "lineage": "same_primary_source",
+      "permitted_use": "digitization_uncertainty",
+      "status_in_register": "not_evaluable",
+      "usable_for_residuals": false,
+      "reason": "digitization lacks error record; lineage borderline (see lineage_evidence)",
+      "product": "5219",
+      "quantity": "characteristic_curve"
+    },
+    {
+      "entry_id": "PD-046",
+      "outcome": "not_evaluable",
+      "evidence_class": "DIGITIZED_PUBLISHED_DATA",
+      "lineage": "same_primary_source",
+      "permitted_use": "digitization_uncertainty",
+      "status_in_register": "not_evaluable",
+      "usable_for_residuals": false,
+      "reason": "digitization lacks an error record",
+      "product": "2383",
+      "quantity": "characteristic_curve"
+    },
+    {
+      "entry_id": "PD-047",
+      "outcome": "not_evaluable",
+      "evidence_class": "DIGITIZED_PUBLISHED_DATA",
+      "lineage": "same_primary_source",
+      "permitted_use": "none",
+      "status_in_register": "not_evaluable",
+      "usable_for_residuals": false,
+      "reason": "duplicate of PD-041; not an independent digitization",
+      "product": "2383",
+      "quantity": "characteristic_curve"
+    },
+    {
+      "entry_id": "PD-048",
+      "outcome": "compared",
+      "label": "digitization uncertainty",
+      "evidence_class": "DIGITIZED_PUBLISHED_DATA",
+      "lineage": "same_primary_source",
+      "permitted_use": "digitization_uncertainty",
+      "evidence_level": "V2",
+      "quantity": "characteristic_curve",
+      "conditions": {
+        "digitizer": "moderates_film_simulator",
+        "commit": "f83a8b5941fb708c59c386e57883a2e20ffe9c6b",
+        "reference": "pinned profile density_curves / log_sensitivity / channel_density",
+        "alignment": "x-shift search for characteristic_curve; mean y-offset removed"
+      },
+      "results": [
+        {
+          "curve": "characteristic_curve:b",
+          "n_points": 21,
+          "aligned_rms": 0.01752,
+          "aligned_max_abs": 0.052,
+          "x_shift": -0.035,
+          "y_offset": -0.83578,
+          "reference": "pinned spektrafilm profile (3bb2c2d)"
+        },
+        {
+          "curve": "characteristic_curve:g",
+          "n_points": 21,
+          "aligned_rms": 0.12488,
+          "aligned_max_abs": 0.24897,
+          "x_shift": 0.16,
+          "y_offset": -0.65725,
+          "reference": "pinned spektrafilm profile (3bb2c2d)"
+        },
+        {
+          "curve": "characteristic_curve:r",
+          "n_points": 21,
+          "aligned_rms": 0.00474,
+          "aligned_max_abs": 0.01137,
+          "x_shift": -0.135,
+          "y_offset": -0.19277,
+          "reference": "pinned spektrafilm profile (3bb2c2d)"
+        }
+      ],
+      "uncertainty": {
+        "inter_digitizer_yardstick_D": "0.0006–0.0007 RMS between film-scan-calibration and luce-develop (fingerprints.json)",
+        "profile_note": "profile arrays are re-gridded and D-min processed; aligned RMS is the meaningful metric"
+      },
+      "reason": null,
+      "pass_fail": null,
+      "independent_validation": false
+    },
+    {
+      "entry_id": "PD-049",
+      "outcome": "not_evaluable",
+      "evidence_class": "DIGITIZED_PUBLISHED_DATA",
+      "lineage": "same_primary_source",
+      "permitted_use": "digitization_uncertainty",
+      "status_in_register": "not_evaluable",
+      "usable_for_residuals": false,
+      "reason": "scalar readings only, no digitization record",
+      "product": "5219",
+      "quantity": "characteristic_curve"
+    },
+    {
+      "entry_id": "PD-050",
+      "outcome": "not_evaluable",
+      "evidence_class": "DERIVED_OR_SIMULATED_DATA",
+      "lineage": "unknown",
+      "permitted_use": "none",
+      "status_in_register": "not_evaluable",
+      "usable_for_residuals": false,
+      "reason": "emulator output with unknown provenance",
+      "product": "5219",
+      "quantity": "characteristic_curve"
+    },
+    {
+      "entry_id": "PD-051",
+      "outcome": "not_evaluable",
+      "evidence_class": "DERIVED_OR_SIMULATED_DATA",
+      "lineage": "same_primary_source",
+      "permitted_use": "implementation_crosscheck",
+      "status_in_register": "not_evaluable",
+      "usable_for_residuals": false,
+      "reason": "derived from PD-040/PD-041; no new data",
+      "product": "both",
+      "quantity": "other"
+    },
+    {
+      "entry_id": "PD-052",
+      "outcome": "not_evaluable",
+      "evidence_class": "DERIVED_OR_SIMULATED_DATA",
+      "lineage": "derived_from_spektrafilm",
+      "permitted_use": "implementation_crosscheck",
+      "status_in_register": "not_evaluable",
+      "usable_for_residuals": false,
+      "reason": "copies of the pinned reference; software regression only, never external",
+      "product": "2383",
+      "quantity": "other"
+    },
+    {
+      "entry_id": "PD-053",
+      "outcome": "not_evaluable",
+      "evidence_class": "DERIVED_OR_SIMULATED_DATA",
+      "lineage": "derived_from_spektrafilm",
+      "permitted_use": "implementation_crosscheck",
+      "status_in_register": "not_evaluable",
+      "usable_for_residuals": false,
+      "reason": "spektrafilm port; software regression only",
+      "product": "both",
+      "quantity": "other"
+    },
+    {
+      "entry_id": "PD-054",
+      "outcome": "not_evaluable",
+      "evidence_class": "DERIVED_OR_SIMULATED_DATA",
+      "lineage": "derived_from_spektrafilm",
+      "permitted_use": "implementation_crosscheck",
+      "status_in_register": "not_evaluable",
+      "usable_for_residuals": false,
+      "reason": "spektrafilm port; software regression only",
+      "product": "both",
+      "quantity": "other"
+    },
+    {
+      "entry_id": "PD-055",
+      "outcome": "unavailable",
+      "evidence_class": "NOT_COMPARABLE",
+      "lineage": "unknown",
+      "permitted_use": "none",
+      "status_in_register": "unavailable",
+      "usable_for_residuals": false,
+      "reason": "commercial product, not purchased; scanner RGB of charts, not densitometric data",
+      "product": "5219",
+      "quantity": "other"
+    },
+    {
+      "entry_id": "PD-056",
+      "outcome": "not_evaluable",
+      "evidence_class": "NOT_COMPARABLE",
+      "lineage": "unknown",
+      "permitted_use": "none",
+      "status_in_register": "not_evaluable",
+      "usable_for_residuals": false,
+      "reason": "commercial emulator; characterized 250D (5207) contact-printed to 2383 with an unpublished custom rig; no data published",
+      "product": "other:5207",
+      "quantity": "other"
+    },
+    {
+      "entry_id": "PD-057",
+      "outcome": "not_evaluable",
+      "evidence_class": "DIGITIZED_PUBLISHED_DATA",
+      "lineage": "derived_from_spektrafilm",
+      "permitted_use": "implementation_crosscheck",
+      "status_in_register": "not_evaluable",
+      "usable_for_residuals": false,
+      "reason": "lineage reference itself; never external",
+      "product": "both",
+      "quantity": "characteristic_curve"
+    },
+    {
+      "entry_id": "PD-058",
+      "outcome": "not_evaluable",
+      "evidence_class": "DERIVED_OR_SIMULATED_DATA",
+      "lineage": "derived_from_spektrafilm",
+      "permitted_use": "implementation_crosscheck",
+      "status_in_register": "not_evaluable",
+      "usable_for_residuals": false,
+      "reason": "the model input itself; never external",
+      "product": "both",
+      "quantity": "other"
+    }
+  ]
+}

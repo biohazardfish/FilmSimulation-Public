@@ -1,0 +1,39 @@
+.DS_Store
+.venv/
+.pytest_cache/
+__pycache__/
+*.py[cod]
+.mypy_cache/
+
+# Local upstream checkout and downloaded primary-source cache.
+upstream/
+cache/
+
+# Camera RAW. The experiment reads it and records its hash; it is not source.
+input/*.CR3
+input/*.cr3
+input/*.CR2
+input/*.NEF
+input/*.ARW
+
+# Large intermediate and display binaries. JSON, Markdown, CSV, and PNG charts stay.
+intermediate/*.exr
+intermediate/*.tif
+intermediate/*.tiff
+intermediate/*.jpg
+intermediate/*.jpeg
+output/*.exr
+output/*.tif
+output/*.tiff
+output/*.jpg
+output/*.jpeg
+
+# Local-only input and credentials for any future experiment rounds.
+# Note: these patterns do not remove previously committed content.
+input/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12

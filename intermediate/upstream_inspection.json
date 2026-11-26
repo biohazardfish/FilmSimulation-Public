@@ -1,0 +1,114 @@
+{
+  "api": {
+    "documentation_difference": "Root README says create_params, but this commit exports init_params; implementation follows source and example.",
+    "parameter_entry": "spektrafilm.init_params(film_profile, print_profile)",
+    "simulation_entry": "spektrafilm.simulate(image, params, digest_params_first=True, print_timings=False)",
+    "tap_names": [
+      "log_e_film",
+      "cmy_film",
+      "log_e_print",
+      "cmy_print"
+    ],
+    "tap_parameter": "params.taps.collect"
+  },
+  "commit": "3bb2c2d2801ff68b92019cf1dbcbb133d60832bc",
+  "licenses": {
+    "code": "GPLv3 / GPL-3.0-or-later as declared by pyproject.toml and CITATION.cff",
+    "profiles": "CC BY-SA 4.0 with attribution and ShareAlike requirements in SPEKTRAFILM_LICENSE.txt"
+  },
+  "package_version": "0.3.4",
+  "profiles": {
+    "kodak_2383": {
+      "data_keys": [
+        "base_density",
+        "channel_density",
+        "density_curves",
+        "density_curves_layers",
+        "density_curves_model",
+        "hanatos2025_adaptation_surface_params",
+        "hanatos2025_adaptation_window_params",
+        "log_exposure",
+        "log_sensitivity",
+        "midscale_neutral_density",
+        "wavelengths"
+      ],
+      "info": {
+        "antihalation": "strong",
+        "channel_model": "color",
+        "densitometer": "status_A",
+        "log_sensitivity_density_over_min": 1.0,
+        "name": "Kodak Vision 2383",
+        "reference_illuminant": "TH-KG3",
+        "stage": "printing",
+        "stock": "kodak_2383",
+        "support": "film",
+        "target_print": null,
+        "type": "negative",
+        "use": "cine",
+        "viewing_illuminant": "K75P"
+      },
+      "metadata": {
+        "citation": "If you use this profile in your work, please cite the spektrafilm project: https://github.com/andreavolpato/spektrafilm, see CITATION.cff for details.",
+        "copyright": "Copyright (c) 2026 Andrea Volpato. Licensed under CC BY-SA 4.0.",
+        "created": "2026-05-28",
+        "datasource": "This profile was created by processing raw measurement data from data-sheets and/or scientific papers. Original data are property of the respective holders.\n    Film/photo-paper: Kodak and Fujifilm data-sheets, scientific publications, and technical material.\n    Reflectance: Otsu (https://github.com/enneract/otsu2018), Munsell (https://zenodo.org/records/3269912), human skin (https://www.nist.gov/programs-projects/reflectance-measurements-human-skin), forest colors (https://zenodo.org/records/3269920), Japan colors (https://zenodo.org/records/5217752).\n    All data publicly available.",
+        "license": "spektrafilm profile by Andrea Volpato, licensed under CC BY-SA 4.0. Redistribution and derivatives must credit the author, link the project (https://github.com/andreavolpato/spektrafilm),preserve this license, and remain CC BY-SA 4.0.Modifications must be noted. Full text of the license and attribution requirements: https://github.com/andreavolpato/spektrafilm/blob/main/SPEKTRAFILM_LICENSE.txt.",
+        "version": "0.3.2"
+      },
+      "numeric_values_checked": 4059,
+      "sha256": "eb7fdfa3b75a909bf5c400802f7401160c8017ed1ac3e8e0d1c8448d56fbe184"
+    },
+    "kodak_vision3_500t": {
+      "data_keys": [
+        "base_density",
+        "channel_density",
+        "density_curves",
+        "density_curves_layers",
+        "density_curves_model",
+        "hanatos2025_adaptation_surface_params",
+        "hanatos2025_adaptation_window_params",
+        "log_exposure",
+        "log_sensitivity",
+        "midscale_neutral_density",
+        "wavelengths"
+      ],
+      "info": {
+        "antihalation": "strong",
+        "channel_model": "color",
+        "densitometer": "status_M",
+        "log_sensitivity_density_over_min": 0.2,
+        "name": "Kodak Vision3 500T",
+        "reference_illuminant": "T",
+        "stage": "filming",
+        "stock": "kodak_vision3_500t",
+        "support": "film",
+        "target_print": "kodak_2383",
+        "type": "negative",
+        "use": "cine",
+        "viewing_illuminant": "D50"
+      },
+      "metadata": {
+        "citation": "If you use this profile in your work, please cite the spektrafilm project: https://github.com/andreavolpato/spektrafilm, see CITATION.cff for details.",
+        "copyright": "Copyright (c) 2026 Andrea Volpato. Licensed under CC BY-SA 4.0.",
+        "created": "2026-05-28",
+        "datasource": "This profile was created by processing raw measurement data from data-sheets and/or scientific papers. Original data are property of the respective holders.\n    Film/photo-paper: Kodak and Fujifilm data-sheets, scientific publications, and technical material.\n    Reflectance: Otsu (https://github.com/enneract/otsu2018), Munsell (https://zenodo.org/records/3269912), human skin (https://www.nist.gov/programs-projects/reflectance-measurements-human-skin), forest colors (https://zenodo.org/records/3269920), Japan colors (https://zenodo.org/records/5217752).\n    All data publicly available.",
+        "license": "spektrafilm profile by Andrea Volpato, licensed under CC BY-SA 4.0. Redistribution and derivatives must credit the author, link the project (https://github.com/andreavolpato/spektrafilm),preserve this license, and remain CC BY-SA 4.0.Modifications must be noted. Full text of the license and attribution requirements: https://github.com/andreavolpato/spektrafilm/blob/main/SPEKTRAFILM_LICENSE.txt.",
+        "version": "0.3.2"
+      },
+      "numeric_values_checked": 4110,
+      "sha256": "d7beca68bf16db88dbb7373fd13a6a1150a57a911a54bb0309a760a6f9883329"
+    }
+  },
+  "python_requirement": "~=3.13",
+  "repository": "https://github.com/andreavolpato/spektrafilm",
+  "required_files_checked": [
+    "README.md",
+    "src/spektrafilm/README.md",
+    "examples/run_simulation.py",
+    "pyproject.toml",
+    "src/spektrafilm/data/profiles/kodak_vision3_500t.json",
+    "src/spektrafilm/data/profiles/kodak_2383.json",
+    "SPEKTRAFILM_LICENSE.txt",
+    "CITATION.cff"
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "artifacts": [
+    {
+      "bytes": 32788,
+      "path": "docs/phase2/METRICS.json",
+      "sha256": "a3a647cffc9f4ae91eee9a5d657e537ed3c3e5b38bcdaa8d58b527293ae75a6c"
+    },
+    {
+      "bytes": 2109,
+      "path": "docs/phase2/PERFORMANCE_REPORT.md",
+      "sha256": "44ecb784a9f7d22f79ab9c2bcd9856a24f78dbeea0d38d38c0164faa5fad3e2b"
+    },
+    {
+      "bytes": 1732,
+      "path": "docs/phase2/PHASE2_STATUS.md",
+      "sha256": "e69eba7cc997db67a99d0b78e9c8c5543bbe86e277d377eae257d65f9ddde761"
+    },
+    {
+      "bytes": 4374,
+      "path": "docs/phase2/PHYSICAL_VALIDATION_REPORT.md",
+      "sha256": "94be80273d49002c79fa948451337e121841a5c5f325810aea488e142ab1911f"
+    },
+    {
+      "bytes": 4441,
+      "path": "docs/phase2/REFERENCE_DATA_PROVENANCE.md",
+      "sha256": "20adf54ef43a6ee1885eb32e4751674239a03bb2f87596594c32167f4779c117"
+    },
+    {
+      "bytes": 4369,
+      "path": "docs/phase2/SIGNAL_FLOW_AUDIT.md",
+      "sha256": "f332580c2bff7cac980d1c38de9c29b03f1aaf7fea05e298232bc33226c9eb27"
+    },
+    {
+      "bytes": 476,
+      "path": "output/phase2/environment.json",
+      "sha256": "2d5e70a01231bab4b544bdc6249281b438c1320c2baf17b0d2a7fc55fca326bd"
+    },
+    {
+      "bytes": 9329,
+      "path": "output/phase2/fixed_parameters.json",
+      "sha256": "f2dd314b27d87d5bedd2728c943c29932545a7057f265c7a05d95108a33e4d28"
+    },
+    {
+      "bytes": 18596,
+      "path": "output/phase2/performance_benchmarks.json",
+      "sha256": "b63c2ab4252478b7a5c99214d2a1f2fa92c969873a777f317168cadd657d1928"
+    },
+    {
+      "bytes": 92761,
+      "path": "output/phase2/performance_scaling.png",
+      "sha256": "25902d28c656a33e5da2cbb311acad57f8193e8c69d762b14e86415af1406910"
+    },
+    {
+      "bytes": 20546,
+      "path": "output/phase2/phase1_integrity_before_after.json",
+      "sha256": "775e32f8e23bd87ad3ecf2e5bc03c42d628ba0411598aca4ded819c36dd260da"
+    },
+    {
+      "bytes": 236608,
+      "path": "output/phase2/sensitometric_response.png",
+      "sha256": "c3e99a70be0be3566cfc7b487b1957958fcebd8c6467f44ebfa542c7d8ca7de7"
+    },
+    {
+      "bytes": 23901,
+      "path": "output/phase2/sensitometry_metrics.json",
+      "sha256": "0b379a0c99c0752072c22459327194c0ccd837aab632ad3fba00cfcdbefd9344"
+    },
+    {
+      "bytes": 181178,
+      "path": "output/phase2/sensitometry_samples.csv",
+      "sha256": "7b190589255478ebfe9c18ad05f9fae8c2a753da0fa06cfe501f235b68738511"
+    },
+    {
+      "bytes": 99822,
+      "path": "output/phase2/sensitometry_taps.npz",
+      "sha256": "c2b80cadcf79ce7ef90304d2f7645a4ef77f0af5500a5f97fe3d8a66d2a5b9b6"
+    },
+    {
+      "bytes": 2989,
+      "path": "output/phase2/spectral_profile_audit.json",
+      "sha256": "06ca2040f5c8416ad408ce6585947812ddc6e5bd007e0d872912d9e521f5d227"
+    },
+    {
+      "bytes": 282763,
+      "path": "output/phase2/spectral_profiles.png",
+      "sha256": "10bc70c1624a2b22b48aee15d064977f0f6c9220b365f5efc259ebf4dfb21630"
+    },
+    {
+      "bytes": 1555,
+      "path": "output/phase2/test_results.json",
+      "sha256": "000b5828eb0be8f40cf8e2556546d43d2a4465894a041ea59487bbae4068fa8d"
+    },
+    {
+      "bytes": 1102,
+      "path": "output/phase2/tile_comparison.json",
+      "sha256": "1d83b8d5b7421f1a86c5acdca9a69d3da37bd97b5eb2befa1fa44b5ae3129ce8"
+    }
+  ],
+  "evidence_policy": "V1 does not establish V2-V4; no overall authenticity percentage",
+  "experiment": "FilmSimulation Phase II Physical Fidelity Benchmark",
+  "metric_status_counts": {
+    "fail": 0,
+    "not_evaluable": 14,
+    "pass": 28
+  },
+  "provenance": {
+    "environment": {
+      "packages": {
+        "OpenImageIO": "3.1.19.0",
+        "colour-science": "0.4.7",
+        "matplotlib": "3.11.2",
+        "numba": "0.68.1",
+        "numpy": "2.5.5",
+        "opt-einsum": "3.4.0",
+        "pyfftw": "0.15.1",
+        "pytest": "9.2.0",
+        "rawpy": "0.26.1",
+        "scikit-image": "0.26.0",
+        "scipy": "1.18.1",
+        "spektrafilm": "0.3.4"
+      },
+      "platform": "macOS-27.3-arm64-arm-64bit-Mach-O",
+      "python": "3.13.15 (main, Aug  5 2026, 12:25:43) [Clang 21.0.0 (clang-2100.1.1.101)]"
+    },
+    "input_sha256": "f3e47c2d9df3bbb07a16c49b6e283dfd787e066a5dc141fa9d42441a644c3780",
+    "official_pdfs": {
+      "2383": {
+        "actual_sha256": "a72fa4482ebd891a9ac4a823cafe740e3587c56470f27e4dfd4391f5c3e5a207",
+        "path": "cache/kodak_official/vision_2383_3383_H-1-2383.pdf",
+        "sha256": "a72fa4482ebd891a9ac4a823cafe740e3587c56470f27e4dfd4391f5c3e5a207",
+        "url": "https://www.kodak.com/content/products-brochures/motion-picture/KODAK-VISION-Color-Print-Film-2383-3383-technical-information.pdf"
+      },
+      "5219": {
+        "actual_sha256": "6d037d8090373ee50d10bedfff3df14777a575dd107c50edcafc7ec5862d0972",
+        "path": "cache/kodak_official/vision3_500t_5219_7219_H-1-5219.pdf",
+        "sha256": "6d037d8090373ee50d10bedfff3df14777a575dd107c50edcafc7ec5862d0972",
+        "url": "https://www.kodak.com/content/pdfs/motion/KODAK-VISION3-500T-5219-7219-technical-information.pdf"
+      }
+    },
+    "parameters_sha256": "f2dd314b27d87d5bedd2728c943c29932545a7057f265c7a05d95108a33e4d28",
+    "profiles": {
+      "kodak_2383": {
+        "expected_sha256": "eb7fdfa3b75a909bf5c400802f7401160c8017ed1ac3e8e0d1c8448d56fbe184",
+        "pinned": true,
+        "sha256": "eb7fdfa3b75a909bf5c400802f7401160c8017ed1ac3e8e0d1c8448d56fbe184"
+      },
+      "kodak_vision3_500t": {
+        "expected_sha256": "d7beca68bf16db88dbb7373fd13a6a1150a57a911a54bb0309a760a6f9883329",
+        "pinned": true,
+        "sha256": "d7beca68bf16db88dbb7373fd13a6a1150a57a911a54bb0309a760a6f9883329"
+      }
+    },
+    "upstream_commit": "3bb2c2d2801ff68b92019cf1dbcbb133d60832bc"
+  },
+  "schema_version": 1,
+  "status": "complete"
+}

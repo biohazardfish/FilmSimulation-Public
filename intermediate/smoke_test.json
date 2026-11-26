@@ -1,0 +1,240 @@
+{
+  "checks": {
+    "finite_values": "pass",
+    "full_negative_print_flow": "pass",
+    "package_import": "pass",
+    "repeat_bit_exact": "pass",
+    "required_profiles": "pass",
+    "tap_shapes_and_channels": "pass"
+  },
+  "input_contract": "scene-linear ACEScg AP1 D60",
+  "profiles_loaded": {
+    "film": {
+      "antihalation": "strong",
+      "channel_model": "color",
+      "densitometer": "status_M",
+      "log_sensitivity_density_over_min": 0.2,
+      "name": "Kodak Vision3 500T",
+      "reference_illuminant": "T",
+      "stage": "filming",
+      "stock": "kodak_vision3_500t",
+      "support": "film",
+      "target_print": "kodak_2383",
+      "type": "negative",
+      "use": "cine",
+      "viewing_illuminant": "D50"
+    },
+    "print": {
+      "antihalation": "strong",
+      "channel_model": "color",
+      "densitometer": "status_A",
+      "log_sensitivity_density_over_min": 1.0,
+      "name": "Kodak Vision 2383",
+      "reference_illuminant": "TH-KG3",
+      "stage": "printing",
+      "stock": "kodak_2383",
+      "support": "film",
+      "target_print": null,
+      "type": "negative",
+      "use": "cine",
+      "viewing_illuminant": "K75P"
+    }
+  },
+  "records": {
+    "cmy_film": {
+      "dtype": "float64",
+      "finite": true,
+      "maximum": 1.1618204743654745,
+      "mean": 0.8821312521328233,
+      "minimum": 0.0,
+      "repeat_bit_exact": true,
+      "sha256_uncompressed_pixels": "11472eb2eda26b2822f16b6662e52f205b9053464e2e50a35741291393a4d40a",
+      "shape": [
+        16,
+        256,
+        3
+      ]
+    },
+    "cmy_print": {
+      "dtype": "float64",
+      "finite": true,
+      "maximum": 3.5195556022643255,
+      "mean": 0.42752941036921904,
+      "minimum": 0.10583269158822903,
+      "repeat_bit_exact": true,
+      "sha256_uncompressed_pixels": "790ee26efef2c9f07cb9b3a59767c5364e3043dc8d16d66733048a7a02a3e656",
+      "shape": [
+        16,
+        256,
+        3
+      ]
+    },
+    "exposure_steps_rgb_out": {
+      "dtype": "float64",
+      "finite": true,
+      "input_ev_relative_to_18_percent": [
+        -8.0,
+        -7.0,
+        -6.0,
+        -5.0,
+        -4.0,
+        -3.0,
+        -2.0,
+        -1.0,
+        0.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0
+      ],
+      "input_linear_values": [
+        0.000703125,
+        0.00140625,
+        0.0028125,
+        0.005625,
+        0.01125,
+        0.0225,
+        0.045,
+        0.09,
+        0.18,
+        0.36,
+        0.72,
+        1.44,
+        2.88,
+        5.76,
+        11.52
+      ],
+      "maximum": 0.8768136053829358,
+      "mean": 0.2862917745787618,
+      "minimum": 0.0002439501695544036,
+      "output_channel_values": [
+        [
+          0.0002439501695544036,
+          0.00028778807376940023,
+          0.00026522890195461603
+        ],
+        [
+          0.0002568619101521006,
+          0.0003050629971313925,
+          0.0002788597502526492
+        ],
+        [
+          0.0002939758962615777,
+          0.00035479479910231813,
+          0.0003186079847578564
+        ],
+        [
+          0.0004011397457896633,
+          0.0004997950266074744,
+          0.00043538323517316964
+        ],
+        [
+          0.0007725689061645411,
+          0.0010108013485438025,
+          0.0008413512117796225
+        ],
+        [
+          0.0024052989376909827,
+          0.0032923348036552206,
+          0.0027584936257773495
+        ],
+        [
+          0.011707379049106365,
+          0.015008380394505723,
+          0.013845598246864257
+        ],
+        [
+          0.054317940457101144,
+          0.06161260555853373,
+          0.06240207497889865
+        ],
+        [
+          0.17113893239315922,
+          0.17194184372899365,
+          0.17253288769212236
+        ],
+        [
+          0.3558710999497049,
+          0.3451693217573401,
+          0.32862129721512373
+        ],
+        [
+          0.5677151680783424,
+          0.5521200908531493,
+          0.5021982436158928
+        ],
+        [
+          0.7325956227462985,
+          0.7223971407752005,
+          0.6485483146851494
+        ],
+        [
+          0.8254610662750353,
+          0.8139133422987574,
+          0.7332141744206828
+        ],
+        [
+          0.8639709838715752,
+          0.850330751114217,
+          0.7701024081925948
+        ],
+        [
+          0.8768136053829358,
+          0.8614683997754284,
+          0.7830888852134491
+        ]
+      ],
+      "sha256_uncompressed_pixels": "1ef9e4c6a40bc6e97cb69e32b7ee09b7ad55781ac95c2ca08b68a40306dbec56",
+      "shape": [
+        16,
+        15,
+        3
+      ]
+    },
+    "log_e_film": {
+      "dtype": "float64",
+      "finite": true,
+      "maximum": 0.7415073811817492,
+      "mean": 0.2581468532971572,
+      "minimum": -10.0,
+      "repeat_bit_exact": true,
+      "sha256_uncompressed_pixels": "4432e37dc141a6834479061bb82341c0eb64aa58a7548b9cb861117ec9bdc632",
+      "shape": [
+        16,
+        256,
+        3
+      ]
+    },
+    "log_e_print": {
+      "dtype": "float64",
+      "finite": true,
+      "maximum": 0.9329686561114526,
+      "mean": -0.15555403759039318,
+      "minimum": -0.39162822663221214,
+      "repeat_bit_exact": true,
+      "sha256_uncompressed_pixels": "b593389a48927b329bf40a758dcfb0f116202457feec931fe5127892dd1ab6ce",
+      "shape": [
+        16,
+        256,
+        3
+      ]
+    },
+    "rgb_out": {
+      "dtype": "float64",
+      "finite": true,
+      "maximum": 0.6548305590458295,
+      "mean": 0.3865815399992232,
+      "minimum": 0.000237839400151473,
+      "repeat_bit_exact": true,
+      "sha256_uncompressed_pixels": "8ec109beedfec19f9c77f65e1956dade342daee0587fccf1d9c787594534621c",
+      "shape": [
+        16,
+        256,
+        3
+      ]
+    }
+  },
+  "status": "pass"
+}

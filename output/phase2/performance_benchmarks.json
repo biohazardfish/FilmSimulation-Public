@@ -1,0 +1,485 @@
+{
+  "deferred": [],
+  "hardware": {
+    "physical_ram_bytes": 51539607552,
+    "platform": "macOS-27.3-arm64-arm-64bit-Mach-O"
+  },
+  "results": [
+    {
+      "branch": "negative",
+      "deterministic": true,
+      "deterministic_hashes": [
+        "cb32746eef38152d2665dc92c3c945cb235c2ed63d68e2c9c4689e20c8129acd",
+        "cb32746eef38152d2665dc92c3c945cb235c2ed63d68e2c9c4689e20c8129acd",
+        "cb32746eef38152d2665dc92c3c945cb235c2ed63d68e2c9c4689e20c8129acd"
+      ],
+      "finite": true,
+      "input_bytes": 786432,
+      "input_dtype": "float32",
+      "median_total_seconds": 0.039518708945252,
+      "output_bytes": 1572864,
+      "output_dtype": "float64",
+      "output_shape": [
+        256,
+        256,
+        3
+      ],
+      "peak_rss_bytes": 443777024,
+      "peak_rss_method": "resource.getrusage(RUSAGE_SELF).ru_maxrss; bytes on macOS",
+      "repeats": 3,
+      "size": 256,
+      "stage_timings_seconds": [
+        {
+          "SpectralLUTService.get_filming_tc_lut": 5.749985575675964e-06,
+          "SpectralLUTService.spectral_compute_scanner": 0.03437374997884035,
+          "filming.develop": 0.001435082987882197,
+          "filming.expose": 0.006208708975464106,
+          "preprocess": 3.825000021606684e-05,
+          "scanning.scan_film": 0.03766337502747774
+        },
+        {
+          "SpectralLUTService.get_filming_tc_lut": 8.833943866193295e-06,
+          "SpectralLUTService.spectral_compute_scanner": 0.028797041974030435,
+          "filming.develop": 0.0012413329677656293,
+          "filming.expose": 0.005983083043247461,
+          "preprocess": 4.108308348804712e-05,
+          "scanning.scan_film": 0.032196084037423134
+        },
+        {
+          "SpectralLUTService.get_filming_tc_lut": 9.00006853044033e-06,
+          "SpectralLUTService.spectral_compute_scanner": 0.02906587510369718,
+          "filming.develop": 0.0012583750067278743,
+          "filming.expose": 0.005973916966468096,
+          "preprocess": 4.2750034481287e-05,
+          "scanning.scan_film": 0.0322370840003714
+        }
+      ],
+      "total_seconds": [
+        0.04535316594410688,
+        0.039468541042879224,
+        0.039518708945252
+      ]
+    },
+    {
+      "branch": "print",
+      "deterministic": true,
+      "deterministic_hashes": [
+        "2ed470f481250c415f716f8da74ba5a2e4df8a30798e81e2da99d7549775a6b6",
+        "2ed470f481250c415f716f8da74ba5a2e4df8a30798e81e2da99d7549775a6b6",
+        "2ed470f481250c415f716f8da74ba5a2e4df8a30798e81e2da99d7549775a6b6"
+      ],
+      "finite": true,
+      "input_bytes": 786432,
+      "input_dtype": "float32",
+      "median_total_seconds": 0.07298095803707838,
+      "output_bytes": 1572864,
+      "output_dtype": "float64",
+      "output_shape": [
+        256,
+        256,
+        3
+      ],
+      "peak_rss_bytes": 447348736,
+      "peak_rss_method": "resource.getrusage(RUSAGE_SELF).ru_maxrss; bytes on macOS",
+      "repeats": 3,
+      "size": 256,
+      "stage_timings_seconds": [
+        {
+          "SpectralLUTService.get_filming_tc_lut": 6.209011189639568e-06,
+          "SpectralLUTService.spectral_compute_enlarger": 0.03402766596991569,
+          "SpectralLUTService.spectral_compute_scanner": 0.028391333995386958,
+          "filming.develop": 0.001495208009146154,
+          "filming.expose": 0.00738687498960644,
+          "preprocess": 3.783300053328276e-05,
+          "printing.develop": 0.0008703339844942093,
+          "printing.expose": 0.03571783297229558,
+          "scanning.scan_print": 0.03169966605491936
+        },
+        {
+          "SpectralLUTService.get_filming_tc_lut": 8.749892003834248e-06,
+          "SpectralLUTService.spectral_compute_enlarger": 0.02918379195034504,
+          "SpectralLUTService.spectral_compute_scanner": 0.02815891709178686,
+          "filming.develop": 0.0012753329938277602,
+          "filming.expose": 0.007706709089688957,
+          "preprocess": 4.2750034481287e-05,
+          "printing.develop": 0.000759666902013123,
+          "printing.expose": 0.030762957991100848,
+          "scanning.scan_print": 0.03156108397524804
+        },
+        {
+          "SpectralLUTService.get_filming_tc_lut": 1.0458985343575478e-05,
+          "SpectralLUTService.spectral_compute_enlarger": 0.02920404204633087,
+          "SpectralLUTService.spectral_compute_scanner": 0.028879125020466745,
+          "filming.develop": 0.0012465420877560973,
+          "filming.expose": 0.008007374941371381,
+          "preprocess": 4.666694439947605e-05,
+          "printing.develop": 0.0007409590762108564,
+          "printing.expose": 0.030791959026828408,
+          "scanning.scan_print": 0.032137167057953775
+        }
+      ],
+      "total_seconds": [
+        0.0772192080039531,
+        0.07211945799645036,
+        0.07298095803707838
+      ]
+    },
+    {
+      "branch": "negative",
+      "deterministic": true,
+      "deterministic_hashes": [
+        "265994f65bce6dc98f750a837c512ca764fe06fd6627b44756cb88509c0e5cb2",
+        "265994f65bce6dc98f750a837c512ca764fe06fd6627b44756cb88509c0e5cb2",
+        "265994f65bce6dc98f750a837c512ca764fe06fd6627b44756cb88509c0e5cb2"
+      ],
+      "finite": true,
+      "input_bytes": 3145728,
+      "input_dtype": "float32",
+      "median_total_seconds": 0.14688979100901634,
+      "output_bytes": 6291456,
+      "output_dtype": "float64",
+      "output_shape": [
+        512,
+        512,
+        3
+      ],
+      "peak_rss_bytes": 902266880,
+      "peak_rss_method": "resource.getrusage(RUSAGE_SELF).ru_maxrss; bytes on macOS",
+      "repeats": 3,
+      "size": 512,
+      "stage_timings_seconds": [
+        {
+          "SpectralLUTService.get_filming_tc_lut": 6.707967258989811e-06,
+          "SpectralLUTService.spectral_compute_scanner": 0.1369818749371916,
+          "filming.develop": 0.004434834001585841,
+          "filming.expose": 0.01717104099225253,
+          "preprocess": 0.0005526659078896046,
+          "scanning.scan_film": 0.14829254208598286
+        },
+        {
+          "SpectralLUTService.get_filming_tc_lut": 8.582952432334423e-06,
+          "SpectralLUTService.spectral_compute_scanner": 0.11569537501782179,
+          "filming.develop": 0.0038112920010462403,
+          "filming.expose": 0.015776499989442527,
+          "preprocess": 0.00015862495638430119,
+          "scanning.scan_film": 0.12707445898558944
+        },
+        {
+          "SpectralLUTService.get_filming_tc_lut": 9.25001222640276e-06,
+          "SpectralLUTService.spectral_compute_scanner": 0.11604341701604426,
+          "filming.develop": 0.0036964169703423977,
+          "filming.expose": 0.015448833932168782,
+          "preprocess": 0.00013554200995713472,
+          "scanning.scan_film": 0.12760045798495412
+        }
+      ],
+      "total_seconds": [
+        0.17045979108661413,
+        0.1468309999909252,
+        0.14688979100901634
+      ]
+    },
+    {
+      "branch": "print",
+      "deterministic": true,
+      "deterministic_hashes": [
+        "5a46f2939d8864b5f715d0bcc35f9b8c51e6455de811acd9d490d202a3b4c02e",
+        "5a46f2939d8864b5f715d0bcc35f9b8c51e6455de811acd9d490d202a3b4c02e",
+        "5a46f2939d8864b5f715d0bcc35f9b8c51e6455de811acd9d490d202a3b4c02e"
+      ],
+      "finite": true,
+      "input_bytes": 3145728,
+      "input_dtype": "float32",
+      "median_total_seconds": 0.2851645000046119,
+      "output_bytes": 6291456,
+      "output_dtype": "float64",
+      "output_shape": [
+        512,
+        512,
+        3
+      ],
+      "peak_rss_bytes": 914587648,
+      "peak_rss_method": "resource.getrusage(RUSAGE_SELF).ru_maxrss; bytes on macOS",
+      "repeats": 3,
+      "size": 512,
+      "stage_timings_seconds": [
+        {
+          "SpectralLUTService.get_filming_tc_lut": 6.66698906570673e-06,
+          "SpectralLUTService.spectral_compute_enlarger": 0.13689462502952665,
+          "SpectralLUTService.spectral_compute_scanner": 0.11435399996116757,
+          "filming.develop": 0.004031167016364634,
+          "filming.expose": 0.032698875060305,
+          "preprocess": 0.0005823749816045165,
+          "printing.develop": 0.002073083072900772,
+          "printing.expose": 0.14233045792207122,
+          "scanning.scan_print": 0.1260333750396967
+        },
+        {
+          "SpectralLUTService.get_filming_tc_lut": 9.500072337687016e-06,
+          "SpectralLUTService.spectral_compute_enlarger": 0.11621562496293336,
+          "SpectralLUTService.spectral_compute_scanner": 0.11406399996485561,
+          "filming.develop": 0.00358925003092736,
+          "filming.expose": 0.03200983302667737,
+          "preprocess": 0.000140791991725564,
+          "printing.develop": 0.0019473339198157191,
+          "printing.expose": 0.1216277499916032,
+          "scanning.scan_print": 0.12583625002298504
+        },
+        {
+          "SpectralLUTService.get_filming_tc_lut": 9.25001222640276e-06,
+          "SpectralLUTService.spectral_compute_enlarger": 0.11564291699323803,
+          "SpectralLUTService.spectral_compute_scanner": 0.11386045906692743,
+          "filming.develop": 0.003604082972742617,
+          "filming.expose": 0.03131245798431337,
+          "preprocess": 0.00013745797332376242,
+          "printing.develop": 0.0019317090045660734,
+          "printing.expose": 0.12103875004686415,
+          "scanning.scan_print": 0.1251594580244273
+        }
+      ],
+      "total_seconds": [
+        0.30776341701857746,
+        0.2851645000046119,
+        0.2831973750144243
+      ]
+    },
+    {
+      "branch": "negative",
+      "deterministic": true,
+      "deterministic_hashes": [
+        "c8c00d1314e1286ae18a6925268789a321a283cf4d096ca9a6fccbcc5ffba4fa",
+        "c8c00d1314e1286ae18a6925268789a321a283cf4d096ca9a6fccbcc5ffba4fa",
+        "c8c00d1314e1286ae18a6925268789a321a283cf4d096ca9a6fccbcc5ffba4fa"
+      ],
+      "finite": true,
+      "input_bytes": 12582912,
+      "input_dtype": "float32",
+      "median_total_seconds": 0.6168464579386637,
+      "output_bytes": 25165824,
+      "output_dtype": "float64",
+      "output_shape": [
+        1024,
+        1024,
+        3
+      ],
+      "peak_rss_bytes": 2706243584,
+      "peak_rss_method": "resource.getrusage(RUSAGE_SELF).ru_maxrss; bytes on macOS",
+      "repeats": 3,
+      "size": 1024,
+      "stage_timings_seconds": [
+        {
+          "SpectralLUTService.get_filming_tc_lut": 9.458046406507492e-06,
+          "SpectralLUTService.spectral_compute_scanner": 0.5765570000512525,
+          "filming.develop": 0.03664500010199845,
+          "filming.expose": 0.06715091608930379,
+          "preprocess": 0.0022111249854788184,
+          "scanning.scan_film": 0.6207033750833943
+        },
+        {
+          "SpectralLUTService.get_filming_tc_lut": 1.008401159197092e-05,
+          "SpectralLUTService.spectral_compute_scanner": 0.47555387497413903,
+          "filming.develop": 0.03516941599082202,
+          "filming.expose": 0.060603874968364835,
+          "preprocess": 0.0004900419153273106,
+          "scanning.scan_film": 0.5205695419572294
+        },
+        {
+          "SpectralLUTService.get_filming_tc_lut": 9.209034033119678e-06,
+          "SpectralLUTService.spectral_compute_scanner": 0.4737198749789968,
+          "filming.develop": 0.03503170795738697,
+          "filming.expose": 0.06089433399029076,
+          "preprocess": 0.000487874960526824,
+          "scanning.scan_film": 0.518440542044118
+        }
+      ],
+      "total_seconds": [
+        0.7267244579270482,
+        0.6168464579386637,
+        0.6148684580111876
+      ]
+    },
+    {
+      "branch": "print",
+      "deterministic": true,
+      "deterministic_hashes": [
+        "258d947a7d4eddae72570cefaef46f0787228df0569f314230031c8e9404615f",
+        "258d947a7d4eddae72570cefaef46f0787228df0569f314230031c8e9404615f",
+        "258d947a7d4eddae72570cefaef46f0787228df0569f314230031c8e9404615f"
+      ],
+      "finite": true,
+      "input_bytes": 12582912,
+      "input_dtype": "float32",
+      "median_total_seconds": 1.1210555840516463,
+      "output_bytes": 25165824,
+      "output_dtype": "float64",
+      "output_shape": [
+        1024,
+        1024,
+        3
+      ],
+      "peak_rss_bytes": 2756837376,
+      "peak_rss_method": "resource.getrusage(RUSAGE_SELF).ru_maxrss; bytes on macOS",
+      "repeats": 3,
+      "size": 1024,
+      "stage_timings_seconds": [
+        {
+          "SpectralLUTService.get_filming_tc_lut": 8.458038792014122e-06,
+          "SpectralLUTService.spectral_compute_enlarger": 0.5786293330602348,
+          "SpectralLUTService.spectral_compute_scanner": 0.4675470000365749,
+          "filming.develop": 0.03876858402509242,
+          "filming.expose": 0.0683007090119645,
+          "preprocess": 0.002120874938555062,
+          "printing.develop": 0.006351458025164902,
+          "printing.expose": 0.5994616670068353,
+          "scanning.scan_print": 0.5134456659434363
+        },
+        {
+          "SpectralLUTService.get_filming_tc_lut": 1.00000761449337e-05,
+          "SpectralLUTService.spectral_compute_enlarger": 0.47924749995581806,
+          "SpectralLUTService.spectral_compute_scanner": 0.4673587499419227,
+          "filming.develop": 0.036739542032592,
+          "filming.expose": 0.0642130000051111,
+          "preprocess": 0.00048595794942229986,
+          "printing.develop": 0.006004250026308,
+          "printing.expose": 0.5002222090261057,
+          "scanning.scan_print": 0.513366875005886
+        },
+        {
+          "SpectralLUTService.get_filming_tc_lut": 1.0624993592500687e-05,
+          "SpectralLUTService.spectral_compute_enlarger": 0.4762959169456735,
+          "SpectralLUTService.spectral_compute_scanner": 0.46924295800272375,
+          "filming.develop": 0.03650479204952717,
+          "filming.expose": 0.06468295806553215,
+          "preprocess": 0.0005192089593037963,
+          "printing.develop": 0.006001124973408878,
+          "printing.expose": 0.49741512490436435,
+          "scanning.scan_print": 0.514549250015989
+        }
+      ],
+      "total_seconds": [
+        1.2284687090432271,
+        1.1210555840516463,
+        1.1196936250198632
+      ]
+    },
+    {
+      "branch": "negative",
+      "deterministic": true,
+      "deterministic_hashes": [
+        "6e54c5042af71850fd01dd0f35f015e83e1eb4d431a4981eebec371b347aaada",
+        "6e54c5042af71850fd01dd0f35f015e83e1eb4d431a4981eebec371b347aaada",
+        "6e54c5042af71850fd01dd0f35f015e83e1eb4d431a4981eebec371b347aaada"
+      ],
+      "finite": true,
+      "input_bytes": 50331648,
+      "input_dtype": "float32",
+      "median_total_seconds": 2.803261874942109,
+      "output_bytes": 100663296,
+      "output_dtype": "float64",
+      "output_shape": [
+        2048,
+        2048,
+        3
+      ],
+      "peak_rss_bytes": 9940238336,
+      "peak_rss_method": "resource.getrusage(RUSAGE_SELF).ru_maxrss; bytes on macOS",
+      "repeats": 3,
+      "size": 2048,
+      "stage_timings_seconds": [
+        {
+          "SpectralLUTService.get_filming_tc_lut": 1.1165975593030453e-05,
+          "SpectralLUTService.spectral_compute_scanner": 2.4521757919574156,
+          "filming.develop": 0.1520217499928549,
+          "filming.expose": 0.46786120906472206,
+          "preprocess": 0.00815749994944781,
+          "scanning.scan_film": 2.6291946669807658
+        },
+        {
+          "SpectralLUTService.get_filming_tc_lut": 9.874929673969746e-06,
+          "SpectralLUTService.spectral_compute_scanner": 1.9094811669783667,
+          "filming.develop": 0.14645370794460177,
+          "filming.expose": 0.4565317089436576,
+          "preprocess": 0.001945834024809301,
+          "scanning.scan_film": 2.092413500067778
+        },
+        {
+          "SpectralLUTService.get_filming_tc_lut": 1.037493348121643e-05,
+          "SpectralLUTService.spectral_compute_scanner": 2.0612394170602784,
+          "filming.develop": 0.14510533399879932,
+          "filming.expose": 0.413251957972534,
+          "preprocess": 0.001927417004480958,
+          "scanning.scan_film": 2.2429603330092505
+        }
+      ],
+      "total_seconds": [
+        3.25725012505427,
+        2.6973633330781013,
+        2.803261874942109
+      ]
+    },
+    {
+      "branch": "print",
+      "deterministic": true,
+      "deterministic_hashes": [
+        "dff5ffee2df7689f488cbd1f499778e98719bbce6c4dc39306329fdc68e0f47c",
+        "dff5ffee2df7689f488cbd1f499778e98719bbce6c4dc39306329fdc68e0f47c",
+        "dff5ffee2df7689f488cbd1f499778e98719bbce6c4dc39306329fdc68e0f47c"
+      ],
+      "finite": true,
+      "input_bytes": 50331648,
+      "input_dtype": "float32",
+      "median_total_seconds": 4.497403000015765,
+      "output_bytes": 100663296,
+      "output_dtype": "float64",
+      "output_shape": [
+        2048,
+        2048,
+        3
+      ],
+      "peak_rss_bytes": 10141351936,
+      "peak_rss_method": "resource.getrusage(RUSAGE_SELF).ru_maxrss; bytes on macOS",
+      "repeats": 3,
+      "size": 2048,
+      "stage_timings_seconds": [
+        {
+          "SpectralLUTService.get_filming_tc_lut": 1.225003506988287e-05,
+          "SpectralLUTService.spectral_compute_enlarger": 2.3338125000009313,
+          "SpectralLUTService.spectral_compute_scanner": 1.9092588749481365,
+          "filming.develop": 0.1519131250679493,
+          "filming.expose": 0.27978624997194856,
+          "preprocess": 0.009167167008854449,
+          "printing.develop": 0.023781042080372572,
+          "printing.expose": 2.4181252499110997,
+          "scanning.scan_print": 2.0925750830210745
+        },
+        {
+          "SpectralLUTService.get_filming_tc_lut": 1.1749914847314358e-05,
+          "SpectralLUTService.spectral_compute_enlarger": 1.916965290904045,
+          "SpectralLUTService.spectral_compute_scanner": 1.8889052090235054,
+          "filming.develop": 0.14495220908429474,
+          "filming.expose": 0.2523075840435922,
+          "preprocess": 0.002059666905552149,
+          "printing.develop": 0.022844791994430125,
+          "printing.expose": 2.002534791943617,
+          "scanning.scan_print": 2.072672083042562
+        },
+        {
+          "SpectralLUTService.get_filming_tc_lut": 1.0875053703784943e-05,
+          "SpectralLUTService.spectral_compute_enlarger": 1.915624790941365,
+          "SpectralLUTService.spectral_compute_scanner": 1.8836999170016497,
+          "filming.develop": 0.14541699993424118,
+          "filming.expose": 0.24809716700110584,
+          "preprocess": 0.0019300829153507948,
+          "printing.develop": 0.022606083075515926,
+          "printing.expose": 1.9999447499867529,
+          "scanning.scan_print": 2.0628479999722913
+        }
+      ],
+      "total_seconds": [
+        4.975374583969824,
+        4.497403000015765,
+        4.480873583001085
+      ]
+    }
+  ]
+}

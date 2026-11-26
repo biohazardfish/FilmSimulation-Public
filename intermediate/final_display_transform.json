@@ -1,0 +1,10 @@
+{
+  "clipped_component_count_above_one": 0,
+  "clipped_component_count_below_zero": 588514,
+  "destination": "display-referred sRGB D65",
+  "display_range_operation": "hard clip linear sRGB to [0, 1]",
+  "encoding": "sRGB CCTF after clipping",
+  "rgb_conversion": "colour.RGB_to_RGB with both CCTF flags false (includes colour-science chromatic adaptation)",
+  "source": "scene-linear ACEScg AP1 D60",
+  "tone_mapper": null
+}

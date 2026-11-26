@@ -1,0 +1,308 @@
+{
+  "camera": {
+    "auto_exposure": false,
+    "auto_exposure_method": "center_weighted",
+    "diffusion_filter": {
+      "active": false,
+      "bloom_intensity": 1.0,
+      "bloom_size": 1.0,
+      "core_intensity": 1.0,
+      "core_size": 1.0,
+      "filter_family": "black_pro_mist",
+      "halo_intensity": 1.0,
+      "halo_size": 1.0,
+      "halo_warmth": 0.0,
+      "spatial_scale": 1.0,
+      "strength": 0.5
+    },
+    "exposure_compensation_ev": 0.0,
+    "film_format_mm": 35.0,
+    "filter_ir": [
+      0.0,
+      675.0,
+      15.0
+    ],
+    "filter_uv": [
+      0.0,
+      410.0,
+      8.0
+    ],
+    "lens_blur_um": 0.0
+  },
+  "debug": {
+    "deactivate_spatial_effects": true,
+    "deactivate_stochastic_effects": true,
+    "lut_mode": false,
+    "print_timings": false
+  },
+  "enlarger": {
+    "c_filter_neutral": 0,
+    "diffusion_filter": {
+      "active": false,
+      "bloom_intensity": 1.0,
+      "bloom_size": 1.0,
+      "core_intensity": 1.0,
+      "core_size": 1.0,
+      "filter_family": "black_pro_mist",
+      "halo_intensity": 1.0,
+      "halo_size": 1.0,
+      "halo_warmth": 0.0,
+      "spatial_scale": 1.0,
+      "strength": 0.5
+    },
+    "illuminant": "TH-KG3",
+    "lens_blur": 0.0,
+    "m_filter_neutral": 65,
+    "m_filter_shift": 0.0,
+    "normalize_print_exposure": true,
+    "preflash_exposure": 0.0,
+    "preflash_m_filter_shift": 0.0,
+    "preflash_y_filter_shift": 0.0,
+    "print_exposure": 1.0,
+    "print_exposure_compensation": false,
+    "y_filter_neutral": 55,
+    "y_filter_shift": 0.0
+  },
+  "film": {
+    "data": "excluded; immutable upstream profile identified by key and SHA-256",
+    "info": {
+      "antihalation": "strong",
+      "channel_model": "color",
+      "densitometer": "status_M",
+      "log_sensitivity_density_over_min": 0.2,
+      "name": "Kodak Vision3 500T",
+      "reference_illuminant": "T",
+      "stage": "filming",
+      "stock": "kodak_vision3_500t",
+      "support": "film",
+      "target_print": "kodak_2383",
+      "type": "negative",
+      "use": "cine",
+      "viewing_illuminant": "D50"
+    },
+    "metadata": {
+      "citation": "If you use this profile in your work, please cite the spektrafilm project: https://github.com/andreavolpato/spektrafilm, see CITATION.cff for details.",
+      "copyright": "Copyright (c) 2026 Andrea Volpato. Licensed under CC BY-SA 4.0.",
+      "created": "2026-05-28",
+      "datasource": "This profile was created by processing raw measurement data from data-sheets and/or scientific papers. Original data are property of the respective holders.\n    Film/photo-paper: Kodak and Fujifilm data-sheets, scientific publications, and technical material.\n    Reflectance: Otsu (https://github.com/enneract/otsu2018), Munsell (https://zenodo.org/records/3269912), human skin (https://www.nist.gov/programs-projects/reflectance-measurements-human-skin), forest colors (https://zenodo.org/records/3269920), Japan colors (https://zenodo.org/records/5217752).\n    All data publicly available.",
+      "license": "spektrafilm profile by Andrea Volpato, licensed under CC BY-SA 4.0. Redistribution and derivatives must credit the author, link the project (https://github.com/andreavolpato/spektrafilm),preserve this license, and remain CC BY-SA 4.0.Modifications must be noted. Full text of the license and attribution requirements: https://github.com/andreavolpato/spektrafilm/blob/main/SPEKTRAFILM_LICENSE.txt.",
+      "version": "0.3.2"
+    },
+    "profile_key": "kodak_vision3_500t",
+    "sha256": "d7beca68bf16db88dbb7373fd13a6a1150a57a911a54bb0309a760a6f9883329"
+  },
+  "film_render": {
+    "density_curve_gamma": 1.0,
+    "dir_couplers": {
+      "active": true,
+      "amount": 1.0,
+      "diffusion_size_um": 0.0,
+      "diffusion_tail_um": 0.0,
+      "diffusion_tail_weight": 0.0,
+      "gamma_interlayer_b_to_rg": [
+        0.171,
+        0.225
+      ],
+      "gamma_interlayer_g_to_rb": [
+        0.154,
+        0.358
+      ],
+      "gamma_interlayer_r_to_gb": [
+        0.355,
+        0.305
+      ],
+      "gamma_samelayer_rgb": [
+        0.341,
+        0.324,
+        0.273
+      ],
+      "inhibition_interlayer": 1.0,
+      "inhibition_samelayer": 1.0
+    },
+    "glare": {
+      "active": false,
+      "blur": 0.5,
+      "percent": 0.03,
+      "roughness": 0.7
+    },
+    "grain": {
+      "active": false,
+      "blur": 0.0,
+      "blur_dye_clouds_um": 0.0,
+      "density_min": [
+        0.03,
+        0.03,
+        0.03
+      ],
+      "micro_structure": [
+        0.2,
+        30
+      ],
+      "n_sub_layers": 1,
+      "particle_area_um2": 0.2,
+      "particle_scale": [
+        1.6,
+        1.6,
+        3.2
+      ],
+      "particle_scale_layers": [
+        2.0,
+        1.0,
+        0.5
+      ],
+      "sublayers_active": false,
+      "uniformity": [
+        0.97,
+        0.99,
+        0.97
+      ]
+    },
+    "halation": {
+      "active": false,
+      "boost_ev": 0.0,
+      "boost_range": 0.3,
+      "halation_amount": 1.0,
+      "halation_bounce_decay": 0.5,
+      "halation_first_sigma_um": [
+        65.0,
+        65.0,
+        65.0
+      ],
+      "halation_n_bounces": 3,
+      "halation_renormalize": true,
+      "halation_spatial_scale": 1.0,
+      "halation_strength": [
+        0.05,
+        0.015,
+        0.0
+      ],
+      "protect_ev": 4.0,
+      "scatter_amount": 1.0,
+      "scatter_core_um": [
+        2.2,
+        2.0,
+        1.6
+      ],
+      "scatter_spatial_scale": 1.0,
+      "scatter_tail_um": [
+        9.3,
+        9.7,
+        9.1
+      ],
+      "scatter_tail_weight": [
+        0.78,
+        0.65,
+        0.67
+      ]
+    }
+  },
+  "io": {
+    "crop": false,
+    "crop_center": [
+      0.5,
+      0.5
+    ],
+    "crop_size": [
+      0.1,
+      0.1
+    ],
+    "input_cctf_decoding": false,
+    "input_color_space": "ACEScg",
+    "input_gamut_compress": {
+      "active": true,
+      "algorithm": "xy",
+      "knee": [
+        0.0,
+        1.0,
+        6.0
+      ]
+    },
+    "output_cctf_encoding": false,
+    "output_color_space": "ACEScg",
+    "output_gamut_compress": {
+      "algorithm": "off",
+      "knee": [
+        0.0,
+        1.0,
+        6.0
+      ],
+      "lightness_compression": null
+    },
+    "scan_film": false,
+    "upscale_factor": 1.0
+  },
+  "print": {
+    "data": "excluded; immutable upstream profile identified by key and SHA-256",
+    "info": {
+      "antihalation": "strong",
+      "channel_model": "color",
+      "densitometer": "status_A",
+      "log_sensitivity_density_over_min": 1.0,
+      "name": "Kodak Vision 2383",
+      "reference_illuminant": "TH-KG3",
+      "stage": "printing",
+      "stock": "kodak_2383",
+      "support": "film",
+      "target_print": null,
+      "type": "negative",
+      "use": "cine",
+      "viewing_illuminant": "K75P"
+    },
+    "metadata": {
+      "citation": "If you use this profile in your work, please cite the spektrafilm project: https://github.com/andreavolpato/spektrafilm, see CITATION.cff for details.",
+      "copyright": "Copyright (c) 2026 Andrea Volpato. Licensed under CC BY-SA 4.0.",
+      "created": "2026-05-28",
+      "datasource": "This profile was created by processing raw measurement data from data-sheets and/or scientific papers. Original data are property of the respective holders.\n    Film/photo-paper: Kodak and Fujifilm data-sheets, scientific publications, and technical material.\n    Reflectance: Otsu (https://github.com/enneract/otsu2018), Munsell (https://zenodo.org/records/3269912), human skin (https://www.nist.gov/programs-projects/reflectance-measurements-human-skin), forest colors (https://zenodo.org/records/3269920), Japan colors (https://zenodo.org/records/5217752).\n    All data publicly available.",
+      "license": "spektrafilm profile by Andrea Volpato, licensed under CC BY-SA 4.0. Redistribution and derivatives must credit the author, link the project (https://github.com/andreavolpato/spektrafilm),preserve this license, and remain CC BY-SA 4.0.Modifications must be noted. Full text of the license and attribution requirements: https://github.com/andreavolpato/spektrafilm/blob/main/SPEKTRAFILM_LICENSE.txt.",
+      "version": "0.3.2"
+    },
+    "profile_key": "kodak_2383",
+    "sha256": "eb7fdfa3b75a909bf5c400802f7401160c8017ed1ac3e8e0d1c8448d56fbe184"
+  },
+  "print_render": {
+    "density_curves_morph": {
+      "active": false,
+      "developer_exhaustion": 0.0,
+      "gamma_factor": 1.0,
+      "gamma_factor_blue": 1.0,
+      "gamma_factor_fast": 1.0,
+      "gamma_factor_green": 1.0,
+      "gamma_factor_red": 1.0,
+      "gamma_factor_slow": 1.0
+    },
+    "glare": {
+      "active": false,
+      "blur": 0.5,
+      "percent": 0.03,
+      "roughness": 0.7
+    }
+  },
+  "scanner": {
+    "black_correction": false,
+    "black_level": 0.01,
+    "lens_blur": 0.0,
+    "unsharp_mask": [
+      0.0,
+      0.0
+    ],
+    "white_correction": false,
+    "white_level": 0.98
+  },
+  "settings": {
+    "apply_hanatos2025_adaptation_surface": false,
+    "apply_hanatos2025_adaptation_window": true,
+    "lut_resolution": 17,
+    "neutral_print_filters_from_database": true,
+    "preview_max_size": 640,
+    "preview_mode": false,
+    "rgb_to_raw_method": "hanatos2025",
+    "spectral_gaussian_blur": 0.0,
+    "use_enlarger_lut": false,
+    "use_fast_stats": false,
+    "use_scanner_lut": false
+  },
+  "taps": {
+    "collect": null,
+    "inject": null
+  }
+}

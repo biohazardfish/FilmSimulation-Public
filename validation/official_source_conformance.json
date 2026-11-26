@@ -1,0 +1,364 @@
+{
+  "claim": "source-conformance against Kodak official technical-data figures. spektrafilm profiles are themselves derived from public datasheets, so agreement is not an independent measurement of a physical roll and is not a real-film Delta E00 or physical validation.",
+  "items": [
+    {
+      "alignment": "not applied",
+      "axis": {
+        "x_fit": {
+          "intercept": -4.047106724324961,
+          "max_pixel_residual": 2.0572582445174703,
+          "sign_restoration": false,
+          "slope_value_per_pixel": 0.01562244096826269
+        },
+        "x_unit": "log10 exposure (lux-seconds)",
+        "y_fit": {
+          "intercept": 6.83686649561597,
+          "max_pixel_residual": 2.0245427398284903,
+          "sign_restoration": false,
+          "slope_value_per_pixel": -0.01567542106849147
+        },
+        "y_uncertainty_in_axis_units": 0.03173555991796896,
+        "y_unit": "density"
+      },
+      "caption": {
+        "densitometry": "Status A",
+        "exposure": "1/500 sec Tungsten plus KODAK HeatAbsorbingGlass, No. 2043 (plus Series 1 700 Filter); 5.0",
+        "process": "ECP-2D"
+      },
+      "channel_order": "Profile column order follows upstream spektrafilm/utils/plotting.py at this commit: sensitivity and characteristic-curve columns are R, G, B; spectral-dye columns are C, M, Y. Kodak's 2383 film-structure text says the blue-sensitive layer forms yellow, the red-sensitive layer forms cyan, and the green-sensitive layer forms magenta. Sensitivity labels therefore map yellow-forming→B, magenta-forming→G, cyan-forming→R.",
+      "claim": "source-conformance against Kodak official technical-data figures. spektrafilm profiles are themselves derived from public datasheets, so agreement is not an independent measurement of a physical roll and is not a real-film Delta E00 or physical validation.",
+      "curve": "characteristic",
+      "ink_hit_ratio": {},
+      "pdf_creation": "Wed Aug 12 02:48:21 2026 CST",
+      "profile_densitometer": "status_A",
+      "profile_log_sensitivity_density_over_min": 1.0,
+      "profile_reference_illuminant": "TH-KG3",
+      "publication_date": "August 2026; Revised 8-26",
+      "reason": "trace incomplete or off the ink; missing=['R', 'G', 'B']; ink_hit_below_0.90=none",
+      "sampling_range": "figure axis calibrated; curve samples were not accepted for numeric comparison",
+      "source_page": 4,
+      "source_publication": "H-1-2383",
+      "source_sha256": "a72fa4482ebd891a9ac4a823cafe740e3587c56470f27e4dfd4391f5c3e5a207",
+      "source_url": "https://www.kodak.com/content/products-brochures/motion-picture/KODAK-VISION-Color-Print-Film-2383-3383-technical-information.pdf",
+      "status": "insufficient",
+      "stock": "kodak_2383",
+      "tolerance": {
+        "max_abs": 0.25,
+        "rmse": 0.08,
+        "scored": false,
+        "unit": "density"
+      },
+      "units": {
+        "x": "log10 exposure (lux-seconds)",
+        "y": "density"
+      }
+    },
+    {
+      "alignment": "not applied",
+      "axis": {
+        "x_fit": {
+          "intercept": 143.0505068614915,
+          "max_pixel_residual": 3.7357646961143303,
+          "sign_restoration": false,
+          "slope_value_per_pixel": 1.0956669338454061
+        },
+        "x_unit": "wavelength nm",
+        "y_fit": {
+          "intercept": 1.6410399009142407,
+          "max_pixel_residual": 2.3927560115123754,
+          "sign_restoration": false,
+          "slope_value_per_pixel": -0.0031192538667138697
+        },
+        "y_uncertainty_in_axis_units": 0.007463613441012834,
+        "y_unit": "density"
+      },
+      "caption": {
+        "process": "CP-2D"
+      },
+      "channel_order": "Profile column order follows upstream spektrafilm/utils/plotting.py at this commit: sensitivity and characteristic-curve columns are R, G, B; spectral-dye columns are C, M, Y. Kodak's 2383 film-structure text says the blue-sensitive layer forms yellow, the red-sensitive layer forms cyan, and the green-sensitive layer forms magenta. Sensitivity labels therefore map yellow-forming→B, magenta-forming→G, cyan-forming→R.",
+      "claim": "source-conformance against Kodak official technical-data figures. spektrafilm profiles are themselves derived from public datasheets, so agreement is not an independent measurement of a physical roll and is not a real-film Delta E00 or physical validation.",
+      "curve": "spectral_dye_density",
+      "ink_hit_ratio": {},
+      "pdf_creation": "Wed Aug 12 02:48:21 2026 CST",
+      "profile_densitometer": "status_A",
+      "profile_log_sensitivity_density_over_min": 1.0,
+      "profile_reference_illuminant": "TH-KG3",
+      "publication_date": "August 2026; Revised 8-26",
+      "reason": "trace incomplete or off the ink; missing=['cyan', 'magenta', 'yellow']; ink_hit_below_0.90=none",
+      "sampling_range": "figure axis calibrated; curve samples were not accepted for numeric comparison",
+      "source_page": 5,
+      "source_publication": "H-1-2383",
+      "source_sha256": "a72fa4482ebd891a9ac4a823cafe740e3587c56470f27e4dfd4391f5c3e5a207",
+      "source_url": "https://www.kodak.com/content/products-brochures/motion-picture/KODAK-VISION-Color-Print-Film-2383-3383-technical-information.pdf",
+      "status": "insufficient",
+      "stock": "kodak_2383",
+      "tolerance": {
+        "max_abs": 0.2,
+        "rmse": 0.08,
+        "scored": false,
+        "unit": "normalized density"
+      },
+      "units": {
+        "x": "wavelength nm",
+        "y": "density"
+      }
+    },
+    {
+      "alignment": "not applied",
+      "axis": {
+        "x_fit": {
+          "intercept": 157.57004333393473,
+          "max_pixel_residual": 3.287369806569643,
+          "sign_restoration": false,
+          "slope_value_per_pixel": 1.510115413988453
+        },
+        "x_unit": "wavelength nm",
+        "y_fit": {
+          "intercept": 1.6863200416731212,
+          "max_pixel_residual": 0.5250000000000341,
+          "sign_restoration": true,
+          "slope_value_per_pixel": -0.01608334106674522
+        },
+        "y_uncertainty_in_axis_units": 0.00844375406004179,
+        "y_unit": "log10 sensitivity"
+      },
+      "caption": {
+        "density_criterion": "D=1.0",
+        "exposure": "Tungsten exp 1/50 sec",
+        "process": "ECP-2D"
+      },
+      "channel_order": "Profile column order follows upstream spektrafilm/utils/plotting.py at this commit: sensitivity and characteristic-curve columns are R, G, B; spectral-dye columns are C, M, Y. Kodak's 2383 film-structure text says the blue-sensitive layer forms yellow, the red-sensitive layer forms cyan, and the green-sensitive layer forms magenta. Sensitivity labels therefore map yellow-forming→B, magenta-forming→G, cyan-forming→R.",
+      "claim": "source-conformance against Kodak official technical-data figures. spektrafilm profiles are themselves derived from public datasheets, so agreement is not an independent measurement of a physical roll and is not a real-film Delta E00 or physical validation.",
+      "curve": "spectral_sensitivity",
+      "ink_hit_ratio": {
+        "magenta": 1.0
+      },
+      "pdf_creation": "Wed Aug 12 02:48:21 2026 CST",
+      "profile_densitometer": "status_A",
+      "profile_log_sensitivity_density_over_min": 1.0,
+      "profile_reference_illuminant": "TH-KG3",
+      "publication_date": "August 2026; Revised 8-26",
+      "reason": "trace incomplete or off the ink; missing=['cyan', 'yellow']; ink_hit_below_0.90=none",
+      "sampling_range": "figure axis calibrated; curve samples were not accepted for numeric comparison",
+      "source_page": 5,
+      "source_publication": "H-1-2383",
+      "source_sha256": "a72fa4482ebd891a9ac4a823cafe740e3587c56470f27e4dfd4391f5c3e5a207",
+      "source_url": "https://www.kodak.com/content/products-brochures/motion-picture/KODAK-VISION-Color-Print-Film-2383-3383-technical-information.pdf",
+      "status": "insufficient",
+      "stock": "kodak_2383",
+      "tolerance": {
+        "max_abs": 0.55,
+        "rmse": 0.2,
+        "scored": false,
+        "unit": "log10 sensitivity"
+      },
+      "units": {
+        "x": "wavelength nm",
+        "y": "log10 sensitivity"
+      }
+    },
+    {
+      "alignment": "not applied",
+      "axis": {
+        "x_fit": {
+          "intercept": -4.732681905970836,
+          "max_pixel_residual": 8.303445229681984,
+          "sign_restoration": false,
+          "slope_value_per_pixel": 0.00882639372421574
+        },
+        "x_unit": "log10 exposure (lux-seconds)",
+        "y_fit": {
+          "intercept": 3.5718865404942215,
+          "max_pixel_residual": 0.39983844911142796,
+          "sign_restoration": false,
+          "slope_value_per_pixel": -0.005385020248198108
+        },
+        "y_uncertainty_in_axis_units": 0.0021531381444731684,
+        "y_unit": "density"
+      },
+      "caption": {
+        "densitometry": "ECN-2",
+        "exposure": "3200K Tungsten 1/50 sec",
+        "process": "ECN-2"
+      },
+      "channel_order": "Profile column order follows upstream spektrafilm/utils/plotting.py at this commit: sensitivity and characteristic-curve columns are R, G, B; spectral-dye columns are C, M, Y. Kodak's 2383 film-structure text says the blue-sensitive layer forms yellow, the red-sensitive layer forms cyan, and the green-sensitive layer forms magenta. Sensitivity labels therefore map yellow-forming→B, magenta-forming→G, cyan-forming→R.",
+      "claim": "source-conformance against Kodak official technical-data figures. spektrafilm profiles are themselves derived from public datasheets, so agreement is not an independent measurement of a physical roll and is not a real-film Delta E00 or physical validation.",
+      "curve": "characteristic",
+      "ink_hit_ratio": {
+        "B": 1.0,
+        "G": 1.0,
+        "R": 1.0
+      },
+      "pdf_creation": "Sat Mar 28 00:47:01 2026 CST",
+      "profile_densitometer": "status_M",
+      "profile_log_sensitivity_density_over_min": 0.2,
+      "profile_reference_illuminant": "T",
+      "publication_date": "March 2026; Revised 3-26",
+      "reason": "densitometer not established as the same quantity: profile=status_M, figure caption=ECN-2",
+      "sampling_range": "figure axis calibrated; curve samples were not accepted for numeric comparison",
+      "source_page": 3,
+      "source_publication": "H-1-5219",
+      "source_sha256": "6d037d8090373ee50d10bedfff3df14777a575dd107c50edcafc7ec5862d0972",
+      "source_url": "https://www.kodak.com/content/pdfs/motion/KODAK-VISION3-500T-5219-7219-technical-information.pdf",
+      "status": "insufficient",
+      "stock": "kodak_vision3_500t",
+      "tolerance": {
+        "max_abs": 0.25,
+        "rmse": 0.08,
+        "scored": false,
+        "unit": "density"
+      },
+      "units": {
+        "x": "log10 exposure (lux-seconds)",
+        "y": "density"
+      }
+    },
+    {
+      "alignment": "not applied",
+      "axis": {
+        "x_fit": {
+          "intercept": 332.6003941848458,
+          "max_pixel_residual": 4.592548026399015,
+          "sign_restoration": false,
+          "slope_value_per_pixel": 0.7060660569034809
+        },
+        "x_unit": "wavelength nm",
+        "y_fit": {
+          "intercept": 2.0907200271160153,
+          "max_pixel_residual": 4.09497964721794,
+          "sign_restoration": false,
+          "slope_value_per_pixel": -0.0035686616308347836
+        },
+        "y_uncertainty_in_axis_units": 0.01461359674607602,
+        "y_unit": "density"
+      },
+      "caption": {
+        "density_criterion": "D-minssubtracted",
+        "process": "ECN-2"
+      },
+      "channel_order": "Profile column order follows upstream spektrafilm/utils/plotting.py at this commit: sensitivity and characteristic-curve columns are R, G, B; spectral-dye columns are C, M, Y. Kodak's 2383 film-structure text says the blue-sensitive layer forms yellow, the red-sensitive layer forms cyan, and the green-sensitive layer forms magenta. Sensitivity labels therefore map yellow-forming→B, magenta-forming→G, cyan-forming→R.",
+      "claim": "source-conformance against Kodak official technical-data figures. spektrafilm profiles are themselves derived from public datasheets, so agreement is not an independent measurement of a physical roll and is not a real-film Delta E00 or physical validation.",
+      "curve": "spectral_dye_density",
+      "ink_hit_ratio": {
+        "cyan": 1.0,
+        "yellow": 1.0
+      },
+      "pdf_creation": "Sat Mar 28 00:47:01 2026 CST",
+      "profile_densitometer": "status_M",
+      "profile_log_sensitivity_density_over_min": 0.2,
+      "profile_reference_illuminant": "T",
+      "publication_date": "March 2026; Revised 3-26",
+      "reason": "trace incomplete or off the ink; missing=['magenta']; ink_hit_below_0.90=none",
+      "sampling_range": "figure axis calibrated; curve samples were not accepted for numeric comparison",
+      "source_page": 4,
+      "source_publication": "H-1-5219",
+      "source_sha256": "6d037d8090373ee50d10bedfff3df14777a575dd107c50edcafc7ec5862d0972",
+      "source_url": "https://www.kodak.com/content/pdfs/motion/KODAK-VISION3-500T-5219-7219-technical-information.pdf",
+      "status": "insufficient",
+      "stock": "kodak_vision3_500t",
+      "tolerance": {
+        "max_abs": 0.2,
+        "rmse": 0.08,
+        "scored": false,
+        "unit": "normalized density"
+      },
+      "units": {
+        "x": "wavelength nm",
+        "y": "density"
+      }
+    },
+    {
+      "alignment": "not applied",
+      "axis": {
+        "x_fit": {
+          "intercept": 162.74301016043182,
+          "max_pixel_residual": 0.607654181770954,
+          "sign_restoration": false,
+          "slope_value_per_pixel": 0.779319632860017
+        },
+        "x_unit": "wavelength nm",
+        "y_fit": {
+          "intercept": 4.671380934581541,
+          "max_pixel_residual": 1.1015926236377993,
+          "sign_restoration": false,
+          "slope_value_per_pixel": -0.008382117774024287
+        },
+        "y_uncertainty_in_axis_units": 0.009233679110328444,
+        "y_unit": "log10 sensitivity"
+      },
+      "caption": {
+        "densitometry": "Status M",
+        "density_criterion": "0.2>D-min",
+        "exposure": "1/25 sec",
+        "process": "ECN-2"
+      },
+      "channel_order": "Profile column order follows upstream spektrafilm/utils/plotting.py at this commit: sensitivity and characteristic-curve columns are R, G, B; spectral-dye columns are C, M, Y. Kodak's 2383 film-structure text says the blue-sensitive layer forms yellow, the red-sensitive layer forms cyan, and the green-sensitive layer forms magenta. Sensitivity labels therefore map yellow-forming→B, magenta-forming→G, cyan-forming→R.",
+      "claim": "source-conformance against Kodak official technical-data figures. spektrafilm profiles are themselves derived from public datasheets, so agreement is not an independent measurement of a physical roll and is not a real-film Delta E00 or physical validation.",
+      "curve": "spectral_sensitivity",
+      "ink_hit_ratio": {
+        "cyan": 1.0,
+        "magenta": 1.0,
+        "yellow": 1.0
+      },
+      "pdf_creation": "Sat Mar 28 00:47:01 2026 CST",
+      "profile_densitometer": "status_M",
+      "profile_log_sensitivity_density_over_min": 0.2,
+      "profile_reference_illuminant": "T",
+      "publication_date": "March 2026; Revised 3-26",
+      "reason": "channel identity is not reliable: magenta trace does not pass its own label",
+      "sampling_range": "figure axis calibrated; curve samples were not accepted for numeric comparison",
+      "source_page": 4,
+      "source_publication": "H-1-5219",
+      "source_sha256": "6d037d8090373ee50d10bedfff3df14777a575dd107c50edcafc7ec5862d0972",
+      "source_url": "https://www.kodak.com/content/pdfs/motion/KODAK-VISION3-500T-5219-7219-technical-information.pdf",
+      "status": "insufficient",
+      "stock": "kodak_vision3_500t",
+      "tolerance": {
+        "max_abs": 0.55,
+        "rmse": 0.2,
+        "scored": false,
+        "unit": "log10 sensitivity"
+      },
+      "units": {
+        "x": "wavelength nm",
+        "y": "log10 sensitivity"
+      }
+    }
+  ],
+  "method": "Embedded images were extracted with poppler pdfimages. They are raster XObjects, not vector curve paths; rendering the page at a higher DPI would only interpolate the same pixels. Axis values come from Tesseract OCR plus geometric tick pairing. Minus signs dropped by OCR are restored only by the documented zero-anchor rule. Curve ink is traced from the OCR channel label. Failed traces stay insufficient.",
+  "not_independent_physical_validation": true,
+  "real_film_delta_e00": "not computed",
+  "schema_version": 1,
+  "sources": [
+    {
+      "pdf_creation": "Sat Mar 28 00:47:01 2026 CST",
+      "product": "KODAK VISION3 500T Color Negative Film 5219 / 7219",
+      "publication": "H-1-5219",
+      "publication_date": "March 2026; Revised 3-26",
+      "sha256": "6d037d8090373ee50d10bedfff3df14777a575dd107c50edcafc7ec5862d0972",
+      "url": "https://www.kodak.com/content/pdfs/motion/KODAK-VISION3-500T-5219-7219-technical-information.pdf"
+    },
+    {
+      "pdf_creation": "Wed Aug 12 02:48:21 2026 CST",
+      "product": "KODAK VISION Color Print Film 2383 / 3383",
+      "publication": "H-1-2383",
+      "publication_date": "August 2026; Revised 8-26",
+      "sha256": "a72fa4482ebd891a9ac4a823cafe740e3587c56470f27e4dfd4391f5c3e5a207",
+      "url": "https://www.kodak.com/content/products-brochures/motion-picture/KODAK-VISION-Color-Print-Film-2383-3383-technical-information.pdf"
+    }
+  ],
+  "tolerances": {
+    "characteristic_density": {
+      "max_abs": 0.25,
+      "rmse": 0.08
+    },
+    "spectral_dye_peak_normalized": {
+      "max_abs": 0.2,
+      "rmse": 0.08
+    },
+    "spectral_sensitivity_log10": {
+      "max_abs": 0.55,
+      "rmse": 0.2
+    }
+  }
+}
